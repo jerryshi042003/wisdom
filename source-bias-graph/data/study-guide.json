@@ -1,0 +1,810 @@
+{
+  "schemaVersion": 4,
+  "release": {
+    "id": "jerry-x-study-2026-07-17",
+    "appRevision": "20260717-8570d1f4ec90",
+    "title": "Jerry's AI Field Manual",
+    "asOf": "2026-07-16",
+    "researchWindow": "2026-07-07 through 2026-07-16",
+    "headline": "Your bottleneck is not finding stronger AI. It is building enough judgment to specify, inspect, and own what the AI ships.",
+    "summary": "Jerry is unusually strong at pushing an agent toward a useful outcome and rejecting shallow answers. The recurring weakness is that acceptance criteria, system understanding, and reusable checks often arrive after the build. This guide turns that pattern into five substantial practice reps and a small role-based X portfolio.",
+    "limits": [
+      "This is a bounded graph audit, not a claim to have read all of X.",
+      "The public app stores representative examples and judgments, not timelines, private transcripts, or Jerry's browsing history.",
+      "Current-feed judgments become stale. Re-audit a person before treating a six-week-old feed decision as current.",
+      "No X follow, list, like, repost, bookmark, message, or account action was taken."
+    ],
+    "coverage": [
+      {"value": "9", "label": "recent personal Codex threads reviewed", "detail": "Public-safe patterns only; raw conversations are not stored."},
+      {"value": "137+", "label": "current-week X posts logged", "detail": "Across the 25-profile first pass, followed by fresh profile and network checks."},
+      {"value": "50+", "label": "owned, official, or primary proofs checked", "detail": "Credentials were verified in the exact lane being judged."},
+      {"value": "6", "label": "full five-layer case studies", "detail": "Claim, recent feed, owned work, counterevidence/incentive, and Jerry activation."}
+    ]
+  },
+  "taskEvidence": [
+    {"id": "task-x-curation", "date": "2026-07-10 to 2026-07-16", "title": "Reputable X voices and trust graph", "summary": "Jerry repeatedly rejected keyword-only discovery, borrowed reputation, unexplained products, one-layer post reads, and a roster without accountable cuts."},
+    {"id": "task-parallel-goals", "date": "2026-07-10 to 2026-07-11", "title": "Parallel project-goal design", "summary": "A request for maximum persistence produced duplicate coordination and unclear boundaries until product ownership and stop conditions were made explicit."},
+    {"id": "task-vector-concept", "date": "2026-07-08 to 2026-07-11", "title": "Technical concept to product understanding", "summary": "A technical idea became useful only after the mechanism, benchmark, product wedge, operator role, and ownership boundary were explained from first principles."},
+    {"id": "task-mobile-access", "date": "2026-07-16", "title": "Durable mobile access", "summary": "Jerry pushed past a local-looking success to ask how state, syncing, GitHub, and phone access continue when the laptop is closed."},
+    {"id": "task-health-verification", "date": "2026-07-13", "title": "Health-log data truth", "summary": "Jerry required another-agent output and visible totals to be checked against the underlying record rather than trusting a polished interface."},
+    {"id": "task-youtube-context", "date": "2026-07-14 to 2026-07-17", "title": "Video source curation", "summary": "Excerpt-only recommendations were rejected when they lacked person context, complete-source evidence, criticism, and a reason the artifact mattered to Jerry."},
+    {"id": "task-chess-interface", "date": "2026-07-14 to 2026-07-15", "title": "Chess pattern review", "summary": "Statistics were not enough; learning improved when the interface showed concrete positions, decisions, and a way to apply the pattern."},
+    {"id": "task-wisdom-priorities", "date": "2026-07-15 to 2026-07-17", "title": "Wisdom study priorities", "summary": "Jerry demanded aggressive curation, whole-person context, source completeness, and clear cuts instead of a broad prestigious shelf."}
+  ],
+  "diagnosis": {
+    "strengths": [
+      {"title": "You reject shallow relevance", "detail": "You repeatedly pushed past keyword matches, follower prestige, and unexplained demos until the causal reason and your use case were explicit."},
+      {"title": "You drive to a real artifact", "detail": "Your strongest Codex sessions end in a deployed page, verified workflow, or concrete recommendation rather than a generic answer."},
+      {"title": "You think across product and human context", "detail": "You naturally ask why a mechanism matters, who can operate it, what role you should play, and whether the result changes a real decision."}
+    ],
+    "gaps": [
+      {
+        "id": "acceptance-first",
+        "rank": 1,
+        "title": "Define proof before autonomy",
+        "verdict": "You often discover the real definition of done by rejecting late outputs.",
+        "observed": "Recent site, research, and curation threads needed repeated corrections such as ‘not one layer,’ ‘explain why this matters to Jerry,’ and ‘push all the way to production.’ Those are good judgments, but they arrived after work had already expanded.",
+        "cause": "The request names the desired outcome but not always the evidence that would falsify a polished result.",
+        "counterevidence": "Once the missing bar is visible, you are decisive and willing to demand a complete rerun.",
+        "evidenceIds": ["task-x-curation", "task-parallel-goals", "task-health-verification"],
+        "practiceId": "rep-acceptance",
+        "transferTest": "Before the next large task, another person should be able to read your acceptance matrix and predict whether the result passes without asking you for taste corrections.",
+        "people": ["simon-willison", "hamel-husain", "francois-chollet"]
+      },
+      {
+        "id": "ownership-gap",
+        "rank": 2,
+        "title": "Make understanding keep pace with output",
+        "verdict": "Codex can finish systems faster than you can explain or debug them.",
+        "observed": "You correctly noticed that an advanced post such as autoresearch is useless unless you commit to applying it. The same boundary appears in software work: a working interface can look finished while its state, cache, permissions, and failure path remain outside your mental model.",
+        "cause": "The agent is optimized to remove mechanics; that also removes the friction that normally builds a system map in your head.",
+        "counterevidence": "When given a first-principles pipeline, you ask strong product, ownership, and boundary questions rather than pretending to be the senior engineer.",
+        "evidenceIds": ["task-vector-concept", "task-mobile-access", "task-chess-interface"],
+        "practiceId": "rep-ownership",
+        "transferTest": "Explain one shipped feature's input → state → side effect → failure path without Codex, then repair an injected failure using that map.",
+        "people": ["cindy-sridharan", "simon-willison", "sebastian-raschka"]
+      },
+      {
+        "id": "correction-compiler",
+        "rank": 3,
+        "title": "Compile repeated corrections into guardrails",
+        "verdict": "Your taste lives in conversations more than in tests, schemas, and reusable instructions.",
+        "observed": "The same classes recur across tasks: shallow source selection, reputation transfer, hidden prerequisites, incomplete production proof, and UI that exposes implementation instead of the decision.",
+        "cause": "A correction fixes the current artifact, but the next task begins without a machine-checkable version of that lesson.",
+        "counterevidence": "You already notice repeated failure classes. The missing move is encoding one after its second occurrence.",
+        "evidenceIds": ["task-x-curation", "task-health-verification", "task-youtube-context"],
+        "practiceId": "rep-guardrail",
+        "transferTest": "A validator or checklist must fail on a plausible old-style bad output and pass on the corrected one.",
+        "people": ["boris-cherny", "shreya-shankar", "hamel-husain"]
+      },
+      {
+        "id": "research-transfer",
+        "rank": 4,
+        "title": "Separate interesting from activatable",
+        "verdict": "You can collect advanced ideas before the prerequisite project, metric, or skill exists.",
+        "observed": "Autoresearch, model launches, demos, and benchmark claims became useful only after you forced the explanation to name what you could retain without building and what commitment actual use required.",
+        "cause": "Tech Twitter compresses months of background into a confident post and makes recognition feel like understanding.",
+        "counterevidence": "You explicitly rejected context-free Karpathy and Ghostty references once the gap became visible.",
+        "evidenceIds": ["task-x-curation", "task-vector-concept", "task-wisdom-priorities"],
+        "practiceId": "rep-benchmark",
+        "transferTest": "Every saved technical post gets one of three outcomes: a no-build rule, a scheduled project with prerequisites, or a deliberate discard.",
+        "people": ["andrej-karpathy", "amelia-wattenberger", "eugene-yan"]
+      },
+      {
+        "id": "permission-trust",
+        "rank": 5,
+        "title": "Treat new agents as untrusted operators first",
+        "verdict": "Capability excitement can outrun permission and data-flow inspection.",
+        "observed": "The Grok Build discussion mattered only when reframed from launch popularity to a concrete trust failure: what a coding agent transmitted was broader than what a user might infer from visible reads.",
+        "cause": "Product UI and marketing describe intended controls; they do not fully reveal runtime egress, storage, or blast radius.",
+        "counterevidence": "You quickly converted the incident into the right practical lesson: be careful with newer tools, especially on real repositories.",
+        "evidenceIds": ["task-x-curation", "task-mobile-access"],
+        "practiceId": "rep-canary",
+        "transferTest": "A new agent touches only a synthetic canary repo until you can state its permissions, outbound data, storage policy, and rollback path.",
+        "people": ["simon-willison", "mitchell-hashimoto", "armin-ronacher"]
+      },
+      {
+        "id": "delegation-governance",
+        "rank": 6,
+        "title": "Bound parallel agents with ownership and stop rules",
+        "verdict": "Persistence and parallelism can become coordination debt when each worker lacks one artifact and one closing proof.",
+        "observed": "A prior push for maximum parallel work created duplicate watchdog behavior and uncertainty about which thread or artifact actually owned completion.",
+        "cause": "‘Keep going,’ ‘use more agents,’ and ‘show progress’ are different requirements but were treated as one control strategy.",
+        "counterevidence": "Jerry wants substantial long-running work, not superficial speed; a small queue with explicit ownership preserves that ambition.",
+        "evidenceIds": ["task-parallel-goals", "task-wisdom-priorities"],
+        "practiceId": "rep-acceptance",
+        "transferTest": "A large task uses one coordinator, at most two or three bounded workers, one deliverable per worker, and no duplicate watchdog threads.",
+        "people": ["boris-cherny", "shreya-shankar"]
+      }
+    ]
+  },
+  "studyPlan": [
+    {
+      "id": "rep-acceptance",
+      "order": 1,
+      "title": "Write the acceptance matrix before Codex starts",
+      "why": "This reduces the expensive late loop where you recognize the real bar only after a polished build exists.",
+      "output": "One task brief with Must pass, Nice to have, Non-goals, Allowed actions, and Evidence required.",
+      "steps": [
+        "Choose one real personal build or research task—not a toy exercise—and cap parallel workers with one named artifact each.",
+        "Write five to eight observable pass conditions and two plausible ways a polished answer could still be wrong.",
+        "Name external-write authority explicitly: what Codex may read, change, deploy, or send.",
+        "Ask Codex to map every requirement to proof before implementation, then use the same matrix in the final audit."
+      ],
+      "doneWhen": "The final handoff has a requirement → proof table, and at least one check would have caught an earlier shallow result.",
+      "codexPrompt": "Before building, turn this request into an acceptance matrix. Separate Must pass, Nice to have, Non-goals, allowed external actions, and exact evidence. List two polished-looking failure modes. Do not implement until the matrix covers the real outcome. At the end, prove each row against current state."
+    },
+    {
+      "id": "rep-ownership",
+      "order": 2,
+      "title": "Own one generated feature end to end",
+      "why": "A working interface is not ownership if you cannot predict where its data lives or repair a failure.",
+      "output": "A one-page system map plus one failure you injected and repaired.",
+      "steps": [
+        "Pick one shipped feature with state, caching, or a network boundary. This PWA is a good candidate: source → data → worker/cache → GitHub main → Render → iPhone.",
+        "Draw input → transformation → stored state → visible output → failure fallback.",
+        "Explain every box aloud without asking Codex to write the explanation.",
+        "Inject one safe failure, diagnose it with logs/devtools/tests, and repair it in a coherent small diff."
+      ],
+      "doneWhen": "You can answer where state lives, what happens offline, what can corrupt it, and which test proves recovery.",
+      "codexPrompt": "Teach me this feature as an owner, not a spectator. First ask me to explain its input, state, side effects, and failure path. Correct my map. Then propose one safe injected failure. Do not repair it for me immediately; guide my inspection until I can identify the boundary, then review my fix and require a regression test."
+    },
+    {
+      "id": "rep-guardrail",
+      "order": 3,
+      "title": "Turn one repeated rejection into automation",
+      "why": "A correction becomes leverage only when the next task cannot silently repeat it.",
+      "output": "One validator, regression test, or reusable review rule with a failing fixture.",
+      "steps": [
+        "Choose a rejection that occurred at least twice: shallow source, borrowed reputation, missing prerequisite, or unproved production state.",
+        "Write the smallest bad fixture that reproduces the failure.",
+        "Add a deterministic check before an LLM judge wherever possible.",
+        "Run the check against both the bad fixture and the corrected artifact."
+      ],
+      "doneWhen": "The old failure demonstrably fails without relying on your memory or taste in the moment.",
+      "codexPrompt": "Find one correction I have made at least twice in this project history. Propose the narrowest deterministic guardrail. Create a plausible failing fixture first, prove it fails, implement the guardrail, then prove the corrected artifact passes. Keep the rule scoped so it does not encode unrelated taste."
+    },
+    {
+      "id": "rep-benchmark",
+      "order": 4,
+      "title": "Build a tiny personal agent benchmark",
+      "why": "Model reputation and viral demos do not predict performance on your actual task and harness.",
+      "output": "Three recurring tasks scored on pass/fail, wall time, intervention count, and total cost when available.",
+      "steps": [
+        "Choose three tasks you can judge reliably: one code change, one source-backed research task, and one structured writing or data task.",
+        "Freeze the inputs, acceptance checks, and allowed tools.",
+        "Run the same task through two products or configurations without changing the rubric afterward.",
+        "Keep failures and interventions, not just the best screenshot."
+      ],
+      "doneWhen": "A tool choice changes because of your repeated results—not a launch post or someone else's leaderboard.",
+      "codexPrompt": "Help me design a three-task personal agent benchmark. The tasks must be repeatable and independently judgeable. Freeze inputs, permissions, and acceptance checks before runs. Record pass/fail, wall time, intervention count, and cost. Do not declare a winner from one run or silently change the rubric."
+    },
+    {
+      "id": "rep-canary",
+      "order": 5,
+      "title": "Run the new-tool canary before a real repo",
+      "why": "The visible files an agent opens are not necessarily the full data it transmits or stores.",
+      "output": "A synthetic repository test with known canaries, permission notes, observed requests, and a go/no-go decision.",
+      "steps": [
+        "Create a fake repository with harmless unique strings in tracked, ignored, history-only, and environment-style files.",
+        "Grant the narrowest read-only or sandboxed permissions available.",
+        "Inspect documented data use and, when stakes justify it, observable network requests or local logs.",
+        "Record what was accessed or transmitted, what remains unknown, and whether a real repository is allowed."
+      ],
+      "doneWhen": "You can state the tool's blast radius and uncertainty without claiming that upload equals training or theft.",
+      "codexPrompt": "Design a harmless canary-repo trust test for this new coding agent. Include tracked, ignored, history-only, and environment-style canaries; use no real secrets or work data. Separate what the UI shows, what documentation promises, what runtime evidence observes, and what remains unknown. End with a bounded go/no-go recommendation."
+    }
+  ],
+  "foundationsShelf": [
+    {"title": "Julia Evans · software fundamentals", "url": "https://jvns.ca/", "why": "The best beginner bridge in this curriculum for Git, HTTP, DNS, terminals, CSS, logs, and debugging. Use the site when a real failure exposes a missing noun; no X follow is required.", "practiceId": "rep-ownership"},
+    {"title": "MDN · Progressive web apps", "url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps", "why": "Use while tracing this app's manifest, service worker, offline cache, install scope, and browser lifecycle.", "practiceId": "rep-ownership"},
+    {"title": "Simon Willison · agentic engineering patterns", "url": "https://simonwillison.net/guides/agentic-engineering-patterns/", "why": "Concrete tests, source control, verification, and tool patterns for a project you already own.", "practiceId": "rep-guardrail"},
+    {"title": "Hamel Husain · evaluation guide", "url": "https://hamel.dev/blog/posts/evals/", "why": "A practical bridge from vague quality complaints to trace review, failure categories, and human-validated checks.", "practiceId": "rep-benchmark"}
+  ],
+  "cultureClusters": [
+    {
+      "id": "builders",
+      "name": "Builders and maintainers",
+      "examples": "Simon Willison, Mitchell Hashimoto, Armin Ronacher",
+      "postType": "Source releases, implementation notes, benchmarks, bugs, and postmortems.",
+      "gain": "Mechanisms you can inspect and operating rules you can reuse.",
+      "risk": "Their favorite developer tools may be irrelevant to Jerry, and personal workflows remain anecdotes.",
+      "readRule": "Follow the artifact; ask what was measured, what failed, and whether the product itself matters to you."
+    },
+    {
+      "id": "reliability",
+      "name": "Reliability and evaluation practitioners",
+      "examples": "Cindy Sridharan, Hamel Husain, Shreya Shankar",
+      "postType": "Failure taxonomies, traces, observability, debugging, and evaluation methods.",
+      "gain": "They turn ‘the AI feels good’ into failure classes, checks, and ownership boundaries.",
+      "risk": "Consulting, courses, and specialist infrastructure can make a simple problem look like a program.",
+      "readRule": "Keep the smallest method that changes your next task; skip the full stack until real failures justify it."
+    },
+    {
+      "id": "insiders",
+      "name": "Lab and product insiders",
+      "examples": "Boris Cherny, Thariq Shihipar, Peter Steinberger",
+      "postType": "Product behavior, launch context, internal workflows, quotas, and feature framing.",
+      "gain": "Fast mechanism truth and vocabulary from people close to the product.",
+      "risk": "Employer, launch, and adoption incentives; insiders are not neutral model comparators.",
+      "readRule": "Trust direct product behavior in their lane, then seek independent comparison for quality or safety."
+    },
+    {
+      "id": "researchers",
+      "name": "Researchers and fundamentals teachers",
+      "examples": "Andrej Karpathy, François Chollet, Sebastian Raschka",
+      "postType": "Mental models, papers, benchmarks, code notebooks, and research hypotheses.",
+      "gain": "Durable concepts that survive a product launch cycle.",
+      "risk": "High prerequisite cost; recognition can masquerade as understanding.",
+      "readRule": "Either extract one no-build principle or commit the metric, code, compute, and review time."
+    },
+    {
+      "id": "interfaces",
+      "name": "Interface and explanation designers",
+      "examples": "Amelia Wattenberger, Chip Huyen, Eugene Yan",
+      "postType": "Visual explanations, long-form guides, workflow diagrams, and prototypes.",
+      "gain": "Better ways to see a system and preserve human judgment.",
+      "risk": "Low posting cadence and beautiful prototypes that are not production evidence.",
+      "readRule": "Use their owned essays and artifacts as a study shelf rather than demanding a daily feed."
+    },
+    {
+      "id": "curators",
+      "name": "Curators, conference hosts, and scene connectors",
+      "examples": "swyx",
+      "postType": "Who is emerging, conference clips, vocabulary, forecasts, and compressed takes.",
+      "gain": "Network discovery and early awareness.",
+      "risk": "Commercial media incentives and repeated claims that look like corroboration but share one source.",
+      "readRule": "Use them to find an edge, then leave for the original person, code, paper, or conversation."
+    },
+    {
+      "id": "radar",
+      "name": "High-volume meme and reaction radar",
+      "examples": "Peter Steinberger, Theo Browne",
+      "postType": "Outages, limits, product drama, jokes, demos, and fast reactions.",
+      "gain": "What Tech Twitter is talking about before careful writers publish.",
+      "risk": "Velocity, confidence, and engagement are not evidence; the feed can consume all attention.",
+      "readRule": "Sample as radar. Never act on a single reaction without a primary source or reproducible test."
+    },
+    {
+      "id": "demo",
+      "name": "Demo, aggregator, and launch accounts",
+      "examples": "One-take product clips and benchmark brand accounts",
+      "postType": "Polished wins, leaderboards, copied clips, and context-free before/after posts.",
+      "gain": "A quick hypothesis or product to test.",
+      "risk": "Cherry-picked runs, missing failures, borrowed authority, and no transferable method.",
+      "readRule": "Usually cut. Admit only when the underlying artifact and evaluation can be inspected."
+    }
+  ],
+  "people": [
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "profileUrl": "https://x.com/simonw",
+      "bucket": "core",
+      "lane": "Independent tool inspection, security, and agentic engineering",
+      "role": "Builder / working notebook",
+      "whyLegit": "Django co-creator and Datasette creator; his owned writing repeatedly includes code, sources, corrections, and runnable artifacts.",
+      "whyJerry": "He demonstrates the exact loop Jerry needs: inspect a new system, explain the mechanism, build a tiny artifact, and state the boundary.",
+      "doNotInfer": "High volume and strong inspection do not make every tool safe or every sponsored preview neutral.",
+      "incentive": "Consulting, sponsors, vendor previews, credits, and high-volume publishing; prefer source-backed posts.",
+      "feed": "Six-plus current posts sampled; repeated original code and inspection, mixed with small demos and personal experiments.",
+      "readRule": "Home feed, but open only posts with a mechanism, artifact, or failure boundary.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 5, "independence": 4, "jerryFit": 5},
+      "feedAudit": {"window": "2026-07-07 through 2026-07-16", "postsSampled": 6, "usefulOriginals": 4, "note": "High volume; count only artifacts, mechanisms, investigations, and corrections."},
+      "proofs": [
+        {"label": "Owned biography", "url": "https://simonwillison.net/about/"},
+        {"label": "Owned tools and development artifacts", "url": "https://tools.simonwillison.net/"}
+      ],
+      "proof": {"label": "About and owned guides", "url": "https://simonwillison.net/about/"},
+      "representative": {"url": "https://x.com/simonw/status/2077545830802976796", "date": "2026-07-15", "label": "Inspected the newly open-sourced Grok Build codebase", "paraphrase": "Instead of repeating the launch, Simon inspected the 844k-line Rust repository, documented what it does, then extracted its Mermaid renderer into a WASM demo."},
+      "trustEvents": [
+        {"date": "2026-07-14", "bucket": "core", "reason": "Repeated source-backed tool analysis across the current feed."},
+        {"date": "2026-07-16", "bucket": "core", "reason": "Fresh Grok Build inspect → explain → build sequence strengthened the recurring-method case."}
+      ]
+    },
+    {
+      "id": "mitchell-hashimoto",
+      "name": "Mitchell Hashimoto",
+      "handle": "@mitchellh",
+      "profileUrl": "https://x.com/mitchellh",
+      "bucket": "core",
+      "lane": "Systems craft, bounded automation, and careful performance claims",
+      "role": "Foundational builder / operator",
+      "whyLegit": "HashiCorp cofounder, Terraform co-creator, and part of the initial engineering teams behind Vagrant, Packer, Consul, Terraform, Vault, and Nomad; still ships inspectable open-source systems.",
+      "whyJerry": "His useful pattern is not ‘use Ghostty.’ It is narrow permissions, explicit measurements, honest null results, and human verification before action.",
+      "doNotInfer": "Terraform credibility does not make every AI opinion correct, and one personal invoice result is not a general success rate.",
+      "incentive": "Builds and promotes Ghostty, a terminal app. That proves ongoing craft; it does not make Ghostty relevant to Jerry.",
+      "feed": "Five fresh posts sampled: invoice audit, Sol Ultra comparison, Ghostty memory test, Bun rewrite methodology, and one personal post; four contained concrete method or limits.",
+      "readRule": "Home feed for builder judgment; skip terminal details unless the method transfers.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 5, "independence": 4, "jerryFit": 5},
+      "feedAudit": {"window": "2026-07-09 through 2026-07-16", "postsSampled": 5, "usefulOriginals": 4, "note": "Invoice audit, Sol comparison, Ghostty measurement, and rewrite methodology all exposed controls or limits."},
+      "proofs": [
+        {"label": "Owned biography and foundational projects", "url": "https://mitchellh.com/"},
+        {"label": "Ghostty's official project explanation", "url": "https://ghostty.org/docs/about"}
+      ],
+      "proof": {"label": "Owned biography and projects", "url": "https://mitchellh.com/"},
+      "representative": {"url": "https://x.com/mitchellh/status/2077053324835389497", "date": "2026-07-14", "label": "Read-only construction-invoice audit", "paraphrase": "He gave an agent read-only email access, restricted sending to himself, received a report, and manually verified findings before contacting anyone."},
+      "trustEvents": [
+        {"date": "2026-07-14", "bucket": "study", "reason": "One excellent workflow, but the initial feed sample looked Ghostty-heavy."},
+        {"date": "2026-07-16", "bucket": "core", "reason": "A broader fresh sample showed four method-rich posts and explicit null/limit reporting; promoted for builder judgment, not fame."}
+      ]
+    },
+    {
+      "id": "cindy-sridharan",
+      "name": "Cindy Sridharan",
+      "handle": "@copyconstruct",
+      "profileUrl": "https://x.com/copyconstruct",
+      "bucket": "core",
+      "lane": "Reliability, observability, debugging, and code ownership",
+      "role": "Independent engineering writer",
+      "whyLegit": "Author of O'Reilly's Distributed Systems Observability and a long record of primary reliability writing grounded in real systems.",
+      "whyJerry": "Her current argument targets Jerry's largest risk directly: if an agent wrote a system you cannot understand, debug, or divide into coherent changes, you do not own it.",
+      "doNotInfer": "Reliability authority is not frontier-model or product-ranking authority.",
+      "incentive": "Low promotional pressure in the sampled feed; specialist infrastructure content can still be too advanced for Jerry.",
+      "feed": "Four fresh posts directly covered code ownership, asking basic questions, historical context, craft, and coherent diffs; low engagement but high lane fit.",
+      "readRule": "Home feed despite low popularity; translate each post into one ownership check.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 4, "independence": 5, "jerryFit": 5},
+      "feedAudit": {"window": "2026-07-07 through 2026-07-16", "postsSampled": 4, "usefulOriginals": 4, "note": "Low cadence; all four current posts reinforced ownership, context, debugging, or coherent-diff judgment."},
+      "proofs": [
+        {"label": "O'Reilly book", "url": "https://www.oreilly.com/library/view/distributed-systems-observability/9781492033431/"},
+        {"label": "Owned observability essay", "url": "https://copyconstruct.medium.com/monitoring-and-observability-8417d1952e1c"}
+      ],
+      "proof": {"label": "O'Reilly book", "url": "https://www.oreilly.com/library/view/distributed-systems-observability/9781492033431/"},
+      "representative": {"url": "https://x.com/copyconstruct/status/2077461252704739450", "date": "2026-07-15", "label": "Generated code still needs an owner", "paraphrase": "If Claude produced code you do not understand, you cannot reliably debug, operate, or take responsibility for it."},
+      "trustEvents": [
+        {"date": "2026-07-14", "bucket": "study", "reason": "Strong reliability boundary but only three current posts had been sampled."},
+        {"date": "2026-07-16", "bucket": "core", "reason": "Four fresh, coherent ownership posts mapped unusually closely to Jerry's recurring production gap."}
+      ]
+    },
+    {
+      "id": "hamel-husain",
+      "name": "Hamel Husain",
+      "handle": "@HamelHusain",
+      "profileUrl": "https://x.com/HamelHusain",
+      "bucket": "core",
+      "lane": "Production AI evaluation and failure analysis",
+      "role": "Evaluation practitioner",
+      "whyLegit": "Long ML engineering record at Airbnb and GitHub, dozens of applied AI projects, and owned guides that expose traces, labels, judge validation, and limitations.",
+      "whyJerry": "He turns vague dissatisfaction into a concrete product question: if outputs are hard to evaluate, the task or interface may be underspecified.",
+      "doNotInfer": "Not every task needs a large evaluation program, and his course does not make his tools the only path.",
+      "incentive": "Sells consulting, a live course, and a forthcoming book; prefer posts with real traces, methods, or sample sizes.",
+      "feed": "Seven current posts sampled; repeated original eval methods plus course/community promotion.",
+      "readRule": "Home feed; take the smallest eval method and ignore the program until a real failure corpus exists.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 5, "independence": 3, "jerryFit": 5},
+      "feedAudit": {"window": "2026-07-07 through 2026-07-16", "postsSampled": 7, "usefulOriginals": 4, "note": "Methods and current tool criticism recur alongside course/community promotion."},
+      "proofs": [
+        {"label": "O'Reilly author record for a forthcoming book", "url": "https://www.oreilly.com/library/view/evals-for-ai/9798341660717/colophon01.html"},
+        {"label": "Owned evaluation guide", "url": "https://hamel.dev/blog/posts/evals/"}
+      ],
+      "proof": {"label": "Owned evaluation guide", "url": "https://hamel.dev/blog/posts/evals/"},
+      "representative": {"url": "https://x.com/HamelHusain/status/2071710766663979322", "date": "2026-06-29", "label": "‘Hard to eval’ can be a product smell", "paraphrase": "When nobody can state what a good output looks like, the product surface may be wrong; adding a grader cannot repair an undefined job."},
+      "trustEvents": [
+        {"date": "2026-07-14", "bucket": "core", "reason": "Repeated method-backed evaluation guidance in a seven-post sample."},
+        {"date": "2026-07-16", "bucket": "core", "reason": "Current Fable quota critique remained concrete and commercially adverse rather than launch cheerleading."}
+      ]
+    },
+    {
+      "id": "shreya-shankar",
+      "name": "Shreya Shankar",
+      "handle": "@sh_reya",
+      "profileUrl": "https://x.com/sh_reya",
+      "bucket": "core",
+      "lane": "Human-centered evaluation, data systems, and adaptive failure taxonomies",
+      "role": "Researcher / tool builder",
+      "whyLegit": "Berkeley EECS PhD, incoming CMU professor, and owner of inspectable systems including DocETL and EvalGen with primary research behind them.",
+      "whyJerry": "Her work explains how to name new failure classes and make each long Codex task improve the next one.",
+      "doNotInfer": "A taxonomy is inert unless Jerry labels actual failures and reruns the checks.",
+      "incentive": "Promotes tools, research, a course, and a book she helped create; methods and artifacts remain inspectable.",
+      "feed": "Low-to-medium cadence but repeated current posts link owned artifacts and concrete evaluation methods.",
+      "readRule": "Home feed; save only posts that change a failure category or test.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 5, "independence": 4, "jerryFit": 5},
+      "feedAudit": {"window": "2026-07-07 through 2026-07-16", "postsSampled": 6, "usefulOriginals": 5, "note": "Low-to-medium cadence with repeated owned artifacts and evaluation methods."},
+      "proofs": [
+        {"label": "Owned research profile", "url": "https://shreyashankar.com/"},
+        {"label": "EvalGen primary paper", "url": "https://arxiv.org/abs/2404.12272"}
+      ],
+      "proof": {"label": "Owned research and projects", "url": "https://shreyashankar.com/"},
+      "representative": {"url": "https://x.com/sh_reya/status/2077453877830656281", "date": "2026-07-15", "label": "Use an artifact to find concrete document failures", "paraphrase": "Her current DocETL example converts a vague ‘our docs are bad’ complaint into inspectable error categories."},
+      "trustEvents": [
+        {"date": "2026-07-14", "bucket": "core", "reason": "Six-post sample showed recurring artifact-backed evaluation guidance."},
+        {"date": "2026-07-16", "bucket": "core", "reason": "Fresh owned-tool example preserved the same inspect → categorize → improve method."}
+      ]
+    },
+    {
+      "id": "andrej-karpathy",
+      "name": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "profileUrl": "https://x.com/karpathy",
+      "bucket": "study",
+      "lane": "First-principles AI education and experimental research workflows",
+      "role": "Conceptual anchor",
+      "whyLegit": "Built and taught foundational deep-learning systems and publishes inspectable code, lectures, and experiments such as autoresearch.",
+      "whyJerry": "His best value is a durable principle—objective feedback enables useful autonomy—not a demand that Jerry reproduce advanced research loops.",
+      "doNotInfer": "A Karpathy repost does not transfer his authority to the reposted person, and an advanced artifact is not automatically actionable.",
+      "incentive": "High status causes the network to over-amplify his links; the current feed is sparse and repost-heavy.",
+      "feed": "Current profile sample was mostly selective reposts and short reactions; use projects and long-form artifacts, not daily-feed completeness.",
+      "readRule": "Study shelf. Open only with a translation question or a real prerequisite-matched project.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 5, "independence": 4, "jerryFit": 3},
+      "proofs": [
+        {"label": "Owned biography, teaching, and projects", "url": "https://karpathy.ai/"},
+        {"label": "Autoresearch repository", "url": "https://github.com/karpathy/autoresearch"}
+      ],
+      "proof": {"label": "Owned biography, teaching, and projects", "url": "https://karpathy.ai/"},
+      "representative": {"url": "https://x.com/karpathy/status/2030371219518931079", "date": "2026-03-07", "label": "Autoresearch experiment loop", "paraphrase": "A code agent repeatedly changes a training experiment against a fixed evaluator. The idea is powerful; running it is a project with code, metric, compute, sandbox, and review—not a tip."},
+      "trustEvents": [
+        {"date": "2026-07-12", "bucket": "study", "reason": "Activation audit correctly moved autoresearch to project-only."},
+        {"date": "2026-07-16", "bucket": "study", "reason": "Sparse repost-heavy current feed reinforced artifact-first use and the no-reputation-transfer rule."}
+      ]
+    },
+    {
+      "id": "boris-cherny",
+      "name": "Boris Cherny",
+      "handle": "@bcherny",
+      "profileUrl": "https://x.com/bcherny",
+      "bucket": "study",
+      "lane": "Claude Code workflows and product-insider engineering practice",
+      "role": "Lab/product insider",
+      "whyLegit": "Creator/lead voice around Claude Code with direct product and engineering experience; his strongest posts expose concrete team practices.",
+      "whyJerry": "His automation rule maps directly to repeated Jerry corrections: the second recurring review rejection should become a test, instruction, or CI check.",
+      "doNotInfer": "Claude Code affiliation makes him a strong mechanism source, not a neutral cross-product evaluator.",
+      "incentive": "Anthropic/Claude Code product adoption; much of the current feed amplifies launches and colleague posts.",
+      "feed": "One exceptional original automation essay in a mostly Claude-product/repost-heavy weekly sample.",
+      "readRule": "Study/search, not scarce home attention. Keep originals with methods; skip amplification.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 4, "independence": 2, "jerryFit": 5},
+      "proof": {"label": "Official Anthropic Claude Code service-delivery session", "url": "https://www.anthropic.com/webinars/claude-code-service-delivery"},
+      "representative": {"url": "https://x.com/bcherny/status/2077460395279692197", "date": "2026-07-15", "label": "Repeated review feedback is an automation failure", "paraphrase": "Tests, lint, CI, comments, skills, and project instructions should encode repeated team knowledge; a counterpoint warns that speed without craft can automate meaningless output."},
+      "trustEvents": [
+        {"date": "2026-07-14", "bucket": "study", "reason": "High authority, but affiliation and feed recurrence required a discount."},
+        {"date": "2026-07-16", "bucket": "study", "reason": "Exceptional original post; surrounding feed remained product-amplification heavy, so no Core promotion."}
+      ]
+    },
+    {
+      "id": "armin-ronacher",
+      "name": "Armin Ronacher",
+      "handle": "@mitsuhiko",
+      "profileUrl": "https://x.com/mitsuhiko",
+      "bucket": "study",
+      "lane": "Developer-tool design, model/tool failure receipts, and open-source craft",
+      "role": "Builder / maintainer",
+      "whyLegit": "Creator of Flask and a long-running open-source builder who publishes implementation details and concrete tool failures.",
+      "whyJerry": "His ‘better model, worse tool’ receipts teach Jerry to judge the complete harness instead of the model name.",
+      "doNotInfer": "A few tool-call failures do not rank every model or product globally.",
+      "incentive": "Building Earendil and discusses personal/political topics; the feed is mixed and can be noisy for Jerry.",
+      "feed": "Strong owned technical artifacts mixed with politics, gear, and personal posts.",
+      "readRule": "Study/search when evaluating a coding tool; not a default home feed.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 5, "independence": 4, "jerryFit": 3},
+      "proofs": [
+        {"label": "Owned biography and Flask/Jinja2 record", "url": "https://lucumr.pocoo.org/about/"},
+        {"label": "Owned technical writing", "url": "https://lucumr.pocoo.org/"}
+      ],
+      "proof": {"label": "Owned biography and Flask/Jinja2 record", "url": "https://lucumr.pocoo.org/about/"},
+      "representative": {"url": "https://x.com/mitsuhiko/status/2073488508816151038", "date": "2026-07-04", "label": "Better model, worse tool", "paraphrase": "Concrete Pi edit-tool failures show that model intelligence and tool reliability can move in opposite directions."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "study", "reason": "Strong builder receipts, but a mixed high-noise feed and narrower Jerry activation gate."}]
+    },
+    {
+      "id": "sebastian-raschka",
+      "name": "Sebastian Raschka",
+      "handle": "@rasbt",
+      "profileUrl": "https://x.com/rasbt",
+      "bucket": "study",
+      "lane": "Code-first model fundamentals and transparent small benchmarks",
+      "role": "Fundamentals teacher",
+      "whyLegit": "Longtime AI engineer/educator and author of LLMs From Scratch, with executable implementations of core model components.",
+      "whyJerry": "Use him when Jerry commits to understanding model internals or needs to see benchmark cost, configuration, and harness—not for everyday tool choice.",
+      "doNotInfer": "A small benchmark or chart cannot predict Jerry's task or full product experience.",
+      "incentive": "Books, education, publication, lab, and consulting interests are adjacent to his content.",
+      "feed": "Technically dense current architecture and comparison posts, often above Jerry's present prerequisite level.",
+      "readRule": "Study shelf for a deliberate fundamentals track; otherwise skip without guilt.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 5, "independence": 4, "jerryFit": 2},
+      "proof": {"label": "LLMs From Scratch", "url": "https://github.com/rasbt/LLMs-from-scratch"},
+      "representative": {"url": "https://x.com/rasbt/status/2077540575255880126", "date": "2026-07-15", "label": "Technical model architecture analysis", "paraphrase": "A strong example of transparent fundamentals work that is valuable only when Jerry actually wants the architecture prerequisite."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "study", "reason": "Excellent fundamentals authority; current feed remains beyond Jerry's active track."}]
+    },
+    {
+      "id": "francois-chollet",
+      "name": "François Chollet",
+      "handle": "@fchollet",
+      "profileUrl": "https://x.com/fchollet",
+      "bucket": "study",
+      "lane": "Generalization, intelligence measurement, and first-principles evaluation",
+      "role": "Researcher / conceptual frame",
+      "whyLegit": "Creator of Keras and ARC-AGI with primary research on how to measure skill acquisition and generalization.",
+      "whyJerry": "His most useful current idea is simple: code agents benefit from executable feedback; non-code work needs an observable acceptance loop too.",
+      "doNotInfer": "His benchmark and anti-scaling positions are informed research views, not neutral consensus.",
+      "incentive": "Cofounder of Ndea and ARC Prize; frequently discusses research programs he helps lead.",
+      "feed": "Terse first-principles claims, benchmark updates, and jokes; valuable only when unpacked.",
+      "readRule": "Study shelf. Translate each terse claim into a test before retaining it.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 4, "independence": 3, "jerryFit": 4},
+      "proof": {"label": "Owned biography and research", "url": "https://fchollet.com/"},
+      "representative": {"url": "https://x.com/fchollet/status/2077202144265212108", "date": "2026-07-14", "label": "Code is unusually testable", "paraphrase": "Executable feedback helps explain why coding agents progress faster than many office workflows; the mechanism is useful, not universal proof."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "study", "reason": "Durable first principles but terse delivery and research-program incentives require translation."}]
+    },
+    {
+      "id": "ethan-mollick",
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "profileUrl": "https://x.com/emollick",
+      "bucket": "core",
+      "lane": "AI-assisted knowledge work, adoption, and education",
+      "role": "Research translator",
+      "whyLegit": "Wharton professor with randomized research on where AI improves knowledge work and where it increases confident errors.",
+      "whyJerry": "He is accessible at Jerry's level and useful for everyday work boundaries, examples, and taste—not software internals.",
+      "doNotInfer": "Knowledge-work evidence does not validate model architecture, coding-agent internals, or security claims.",
+      "incentive": "Books, publication, speaking, and organizational advising; some broad trend posts and promotion.",
+      "feed": "Accessible research interpretation mixed with jokes and broad AI trend framing.",
+      "readRule": "Home feed for accessible work-design evidence; open the underlying study before using a strong performance claim.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 4, "independence": 4, "jerryFit": 5},
+      "feedAudit": {"window": "2026-07-07 through 2026-07-16", "postsSampled": 5, "usefulOriginals": 3, "note": "Accessible evidence-backed work design mixed with jokes, trend posts, and publication promotion."},
+      "proofs": [
+        {"label": "Wharton faculty profile", "url": "https://mgmt.wharton.upenn.edu/profile/emollick/"},
+        {"label": "Randomized workplace study", "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838"}
+      ],
+      "proof": {"label": "Wharton profile", "url": "https://mgmt.wharton.upenn.edu/profile/emollick/"},
+      "representative": {"url": "https://x.com/emollick/status/2077226285919531191", "date": "2026-07-14", "label": "Generic anti-slop prompts cannot replace taste", "paraphrase": "Concrete examples and editing matter more than stacking universal style rules."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "core", "reason": "Five-post current sample had three useful originals and uniquely accessible transfer to Jerry's nontechnical AI use; lane remains knowledge work only."}]
+    },
+    {
+      "id": "amelia-wattenberger",
+      "name": "Amelia Wattenberger",
+      "handle": "@Wattenberger",
+      "profileUrl": "https://x.com/Wattenberger",
+      "bucket": "study",
+      "lane": "Human–AI interfaces, visualization, and tools for thought",
+      "role": "Interface researcher / prototype builder",
+      "whyLegit": "Shipped Code Atlas and other inspectable developer-interface experiments, with a strong owned body of visual explanation work.",
+      "whyJerry": "She helps answer how a human should see and steer a large body of AI output without pretending that scanning equals understanding.",
+      "doNotInfer": "A beautiful prototype is not measured productivity or production reliability.",
+      "incentive": "GitHub affiliation and episodic low cadence; owned prototypes may benefit her employer's interface direction.",
+      "feed": "Two strong fresh posts on semantic triage and what is lost when people stop writing code; not enough cadence for Core.",
+      "readRule": "Study/search during interface design; open the artifact, not the whole feed.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 4, "independence": 3, "jerryFit": 5},
+      "proof": {"label": "Owned portfolio", "url": "https://wattenberger.com/"},
+      "representative": {"url": "https://x.com/Wattenberger/status/2077041697981428140", "date": "2026-07-14", "label": "What disappears when we stop writing code", "paraphrase": "Removing mechanics also removes flow, learning, and the intimate system knowledge needed to steer well."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "study", "reason": "Excellent fit and artifacts, but low cadence prevents scarce home-feed allocation."}]
+    },
+    {
+      "id": "chip-huyen",
+      "name": "Chip Huyen",
+      "handle": "@chipro",
+      "profileUrl": "https://x.com/chipro",
+      "bucket": "study",
+      "lane": "Production ML systems and long-form agent fundamentals",
+      "role": "Author / systems educator",
+      "whyLegit": "Author and engineer with durable owned technical guides that synthesize production systems and agent design.",
+      "whyJerry": "Her maintained long-form artifacts are better for structured study than a stream of launch reactions.",
+      "doNotInfer": "A strong essay shelf does not mean the weekly X feed is currently active or essential.",
+      "incentive": "Books, speaking, and owned publication; transparent but commercially adjacent.",
+      "feed": "Very low current X activity; current value lives primarily in the pinned agents guide and website.",
+      "readRule": "Website-first study shelf, not a daily follow.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 5, "independence": 4, "jerryFit": 3},
+      "proof": {"label": "Agents guide", "url": "https://huyenchip.com/2025/01/07/agents.html"},
+      "representative": {"url": "https://x.com/chipro", "date": "2026-07-16", "label": "Low-cadence profile; use the maintained agents guide", "paraphrase": "Reputation can justify a study artifact without justifying scarce home-feed attention."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "study", "reason": "High artifact value, low current feed value; website-first."}]
+    },
+    {
+      "id": "eugene-yan",
+      "name": "Eugene Yan",
+      "handle": "@eugeneyan",
+      "profileUrl": "https://x.com/eugeneyan",
+      "bucket": "study",
+      "lane": "Applied ML systems, evaluations, and careful technical synthesis",
+      "role": "Practitioner / long-form writer",
+      "whyLegit": "Long-running owned technical essays that connect research, implementation, evaluation, and production tradeoffs.",
+      "whyJerry": "His site can teach one complete system at a time without the context collapse of X.",
+      "doNotInfer": "Sparse current activity means reputation alone cannot earn a home-feed slot.",
+      "incentive": "Owned publication and employer-adjacent expertise; generally artifact-forward.",
+      "feed": "Low current X volume; recent long-form work on cybersecurity evals and working with AI is the useful unit.",
+      "readRule": "Website-first. Use one essay for a committed study rep.",
+      "scores": {"laneCredibility": 5, "evidenceDiscipline": 5, "independence": 4, "jerryFit": 4},
+      "proof": {"label": "Owned writing", "url": "https://eugeneyan.com/writing/"},
+      "representative": {"url": "https://x.com/eugeneyan", "date": "2026-07-16", "label": "Low-cadence profile; follow the essay, not the feed", "paraphrase": "A reputable practitioner can be highly useful without deserving daily attention."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "study", "reason": "Strong durable writing, insufficient weekly feed recurrence for Core."}]
+    },
+    {
+      "id": "peter-steinberger",
+      "name": "Peter Steinberger",
+      "handle": "@steipete",
+      "profileUrl": "https://x.com/steipete",
+      "bucket": "radar",
+      "lane": "Fast coding-agent product use, demos, limits, and network discovery",
+      "role": "High-volume sensor",
+      "whyLegit": "Prolific real product builder with hands-on coding-agent use and current OpenAI affiliation.",
+      "whyJerry": "He surfaces new workflows, outages, and people early; that is useful radar, not final judgment.",
+      "doNotInfer": "Volume, employer access, reposts, and demos do not independently establish model superiority.",
+      "incentive": "OpenAI affiliation, OpenClaw visibility, launch access, product excitement, and a high-volume personal brand.",
+      "feed": "Very high volume: useful workflow edges mixed with memes, demos, reposts, and product cheerleading.",
+      "readRule": "Radar list only. Trace a claim to the original artifact or independent test before acting.",
+      "scores": {"laneCredibility": 4, "evidenceDiscipline": 3, "independence": 2, "jerryFit": 4},
+      "proof": {"label": "Official OpenAI Build Week profile", "url": "https://openai.com/build-week/"},
+      "representative": {"url": "https://x.com/steipete/status/2077614430658191825", "date": "2026-07-15", "label": "Fast reaction to Sol/goal behavior", "paraphrase": "Useful as a current product-experience signal; not an independent evaluation."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "radar", "reason": "High discovery value and high affiliation/volume discount."}]
+    },
+    {
+      "id": "swyx",
+      "name": "swyx",
+      "handle": "@swyx",
+      "profileUrl": "https://x.com/swyx",
+      "bucket": "radar",
+      "lane": "AI engineering scene, vocabulary, conference graph, and emerging people",
+      "role": "Curator / media connector",
+      "whyLegit": "Built a durable AI-engineering media and conference graph and is effective at spotting emerging vocabulary and people.",
+      "whyJerry": "Use him to discover who or what the scene is paying attention to, then leave for primary evidence.",
+      "doNotInfer": "Conference presence, repeated retweets, and confident forecasts are not technical corroboration.",
+      "incentive": "AI Engineer media, events, sponsors, network growth, investment, and attention all benefit from scene expansion.",
+      "feed": "High-volume forecasts, conference clips, promotion, reposts, and some useful historical synthesis.",
+      "readRule": "Radar list; one hop only before opening the original source.",
+      "scores": {"laneCredibility": 4, "evidenceDiscipline": 3, "independence": 2, "jerryFit": 3},
+      "proof": {"label": "Owned writing", "url": "https://www.swyx.io/"},
+      "representative": {"url": "https://x.com/swyx/status/2077475285205958771", "date": "2026-07-15", "label": "Historical framing for computer-use agents", "paraphrase": "Useful map-making, but the historical claim still needs original sources."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "radar", "reason": "Strong network value; commercial/media incentives keep him out of the authority list."}]
+    },
+    {
+      "id": "theo-browne",
+      "name": "Theo Browne",
+      "handle": "@theo",
+      "profileUrl": "https://x.com/theo",
+      "bucket": "radar",
+      "lane": "Fast developer-product outages, limits, controversy, and culture",
+      "role": "Meme / reaction sensor",
+      "whyLegit": "Radar admission does not rely on technical authority: a large hands-on developer audience and fast reporting make him useful for noticing an incident quickly.",
+      "whyJerry": "He supplies the high-volume meme layer Jerry asked for: quotas, resets, drama, and what developers are reacting to right now.",
+      "doNotInfer": "Anger, confidence, reach, and speed are not evidence of cause or a fair product ranking.",
+      "incentive": "Audience growth, video/media output, sponsorship, product drama, and strong personal positioning.",
+      "feed": "Extremely high reaction and meme volume with occasional actionable outage or quota signal.",
+      "readRule": "Radar only. Verify with official status, docs, or a reproducible test.",
+      "scores": {"laneCredibility": 3, "evidenceDiscipline": 2, "independence": 3, "jerryFit": 3},
+      "proof": {"label": "Current profile", "url": "https://x.com/theo"},
+      "representative": {"url": "https://x.com/theo/status/2077625416651800752", "date": "2026-07-15", "label": "Quota/reset reaction", "paraphrase": "Fast evidence that users are feeling product friction; not enough to diagnose the system or rank products."},
+      "trustEvents": [{"date": "2026-07-16", "bucket": "radar", "reason": "Intentionally admitted for velocity and meme culture, with an explicit no-authority boundary."}]
+    }
+  ],
+  "deepDives": [
+    {
+      "id": "grok-build",
+      "title": "Grok Build: important as a trust test, not because it is popular",
+      "personId": "simon-willison",
+      "source": {"url": "https://x.com/simonw/status/2077545830802976796", "date": "2026-07-15", "paraphrase": "Simon inspected the newly open-sourced Grok Build codebase and built a small extracted artifact instead of repeating launch claims."},
+      "layers": [
+        {"label": "1 · Exact claim", "text": "Grok Build is SpaceXAI/xAI's terminal coding-agent harness: a Rust application that can search, edit, run commands, and manage long tasks. The source release made the client inspectable."},
+        {"label": "2 · Recent-feed pattern", "text": "Simon repeatedly follows inspect → explain → build. In the same day he documented the large Rust repository and extracted its Mermaid renderer into a WebAssembly demo. That recurrence, not the launch's popularity, earns attention."},
+        {"label": "3 · Owned artifact", "text": "The official Apache-2.0 repository is public and states that it is synced from a monorepo and does not currently accept external contributions. Open source lets people inspect this client version; it does not reveal every server behavior."},
+        {"label": "4 · Counterevidence and incentive", "text": "An independent canary-repo wire analysis reported that a tested version uploaded a git bundle containing unread files/history and .env canary contents even with model improvement off. That shows transmission/storage broader than a user might infer. It does not establish training or code theft. xAI's stated controls and the independent runtime observation must remain separate claims."},
+        {"label": "5 · Jerry activation", "text": "Do not install Grok Build because Tech Twitter discussed it. Keep one operating rule: test a new agent in a synthetic canary repo, start read-only/sandboxed, inspect permissions and data policy, and use runtime evidence when the repository is sensitive."}
+      ],
+      "links": [
+        {"label": "Official Grok Build repository", "url": "https://github.com/xai-org/grok-build"},
+        {"label": "Independent version-specific wire analysis", "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547"},
+        {"label": "Simon's extracted Mermaid artifact", "url": "https://tools.simonwillison.net/grok-mermaid"},
+        {"label": "Hari's X incident post", "url": "https://x.com/hrkrshnn/status/2076822544280379403"}
+      ]
+    },
+    {
+      "id": "mitchell-ghostty",
+      "title": "Mitchell matters; Ghostty mostly does not",
+      "personId": "mitchell-hashimoto",
+      "source": {"url": "https://x.com/mitchellh/status/2077053324835389497", "date": "2026-07-14", "paraphrase": "A permission-bounded invoice audit produced a report that Mitchell manually verified before taking action."},
+      "layers": [
+        {"label": "1 · Exact claim", "text": "A read-only agent searched years of email and invoice context, could only send to Mitchell, surfaced roughly $45K of confirmed errors, and left every consequential action to a human."},
+        {"label": "2 · Recent-feed pattern", "text": "The surrounding sample also included a two-day Sol Ultra comparison with no tangible quality gain, a Ghostty memory reduction with an explicit ‘no measured I/O effect’ limit, and a clean-context Bun rewrite methodology. The pattern is measured builder judgment, not AI hype."},
+        {"label": "3 · Owned artifact", "text": "Mitchell co-founded HashiCorp, co-created Terraform, and worked on the initial engineering teams behind Terraform, Vault, Vagrant, and other foundational tools. Ghostty is his newer terminal emulator. Jerry does not need a new terminal to benefit from his reasoning."},
+        {"label": "4 · Counterevidence and incentive", "text": "The invoice result is one technically sophisticated person's anecdote, not a safety or success benchmark. Ghostty dominates some of his feed because it is his active project. The recommendation is scoped to method, not product adoption."},
+        {"label": "5 · Jerry activation", "text": "For personal admin, begin with read-only search, a narrow output, an API-enforced communication boundary, and manual verification. Do not let the agent send, pay, dispute, or modify records on the first pass."}
+      ],
+      "links": [
+        {"label": "Mitchell's owned biography", "url": "https://mitchellh.com/"},
+        {"label": "What Ghostty is", "url": "https://ghostty.org/docs/about"},
+        {"label": "Sol Ultra comparison", "url": "https://x.com/mitchellh/status/2075644892211196392"}
+      ]
+    },
+    {
+      "id": "cindy-ownership",
+      "title": "Cheap code raises the ownership bar",
+      "personId": "cindy-sridharan",
+      "source": {"url": "https://x.com/copyconstruct/status/2077461252704739450", "date": "2026-07-15", "paraphrase": "If an agent wrote code you cannot understand, you cannot reliably debug or own it."},
+      "layers": [
+        {"label": "1 · Exact claim", "text": "Generation makes code volume cheap; responsibility for debugging, reliability, and consequences remains with the person shipping it."},
+        {"label": "2 · Recent-feed pattern", "text": "Four current posts repeat one coherent view: read code, ask basic questions, learn historical context, prototype alternatives, and split giant changes into semantic increments."},
+        {"label": "3 · Owned artifact", "text": "Cindy's O'Reilly book and long-form observability writing establish real expertise in logs, traces, failure, debugging, and operational tradeoffs."},
+        {"label": "4 · Counterevidence and incentive", "text": "These are expert judgments, not a randomized study of AI code review. Her lane is reliability, not model ranking. Low engagement is irrelevant to lane authority but means popularity did not select her."},
+        {"label": "5 · Jerry activation", "text": "For one generated feature, draw the data and failure path, explain it without AI, split the diff, inject one safe failure, and repair it. If that is impossible, narrow the feature or require an expert review."}
+      ],
+      "links": [
+        {"label": "Distributed Systems Observability", "url": "https://www.oreilly.com/library/view/distributed-systems-observability/9781492033431/"},
+        {"label": "Earlier coherent-diff post", "url": "https://x.com/copyconstruct/status/2074408092939497472"}
+      ]
+    },
+    {
+      "id": "boris-automation",
+      "title": "Automate repeated judgment without automating away craft",
+      "personId": "boris-cherny",
+      "source": {"url": "https://x.com/bcherny/status/2077460395279692197", "date": "2026-07-15", "paraphrase": "Recurring review feedback should be encoded in tests, lint, CI, comments, skills, or project instructions."},
+      "layers": [
+        {"label": "1 · Exact claim", "text": "The best engineers automate repeated work and repeated mistakes; agents multiply the value of domain knowledge already encoded in a repository."},
+        {"label": "2 · Recent-feed pattern", "text": "This was the exceptional original in a current feed otherwise weighted toward Claude Code launches and colleague amplification. That supports Study, not automatic Core."},
+        {"label": "3 · Owned artifact", "text": "Boris speaks from direct Claude Code product and engineering work. That makes him strong on the mechanism and team workflow, but affiliated on comparisons."},
+        {"label": "4 · Counterevidence and incentive", "text": "A thoughtful reply warned that maniacal speed can destroy craft and produce more meaningless output. Anthropic benefits when teams encode work for Claude Code. The right synthesis is automation of known rejection classes plus preserved human product judgment."},
+        {"label": "5 · Jerry activation", "text": "When Jerry gives the same correction twice, create one candidate guardrail. Prefer a deterministic validator or failing fixture; keep taste-heavy decisions as examples and human review rather than pretending every judgment is lintable."}
+      ],
+      "links": [
+        {"label": "Open Boris's post and conversation", "url": "https://x.com/bcherny/status/2077460395279692197"}
+      ]
+    },
+    {
+      "id": "hamel-product-smell",
+      "title": "‘Hard to evaluate’ can be a product smell",
+      "personId": "hamel-husain",
+      "source": {"url": "https://x.com/HamelHusain/status/2071710766663979322", "date": "2026-06-29", "paraphrase": "‘Hard to evaluate’ can signal a product/interface problem rather than a missing grader."},
+      "layers": [
+        {"label": "1 · Exact claim", "text": "An evaluation problem is sometimes downstream of an undefined user job: stakeholders cannot agree what ‘good’ means because the output surface is wrong."},
+        {"label": "2 · Recent-feed pattern", "text": "Hamel repeatedly publishes trace review, failure taxonomy, human labeling, and judge-validation methods; he also posts course and community promotion."},
+        {"label": "3 · Owned artifact", "text": "His evaluation guide exposes concrete production methods and their limitations rather than only advertising a score."},
+        {"label": "4 · Counterevidence and incentive", "text": "He sells evaluation consulting, training, and a book, so complex eval programs align with his business. The product-smell framing is valuable partly because it argues against adding evaluation machinery too early."},
+        {"label": "5 · Jerry activation", "text": "Before asking Codex to improve an output, name who decides, what observable change matters, and two examples of pass/fail. If that remains impossible, redesign or narrow the task before adding an AI judge."}
+      ],
+      "links": [
+        {"label": "Hamel's evaluation guide", "url": "https://hamel.dev/blog/posts/evals/"}
+      ]
+    },
+    {
+      "id": "karpathy-autoresearch",
+      "title": "Autoresearch is a project, not a post Jerry can ‘use’",
+      "personId": "andrej-karpathy",
+      "source": {"url": "https://x.com/karpathy/status/2030371219518931079", "date": "2026-03-07", "paraphrase": "A coding agent repeatedly changes an experiment against a fixed evaluator and keeps improvements."},
+      "layers": [
+        {"label": "1 · Exact claim", "text": "With a fast objective evaluator and a bounded codebase, an agent can iterate on research experiments and retain measured improvements."},
+        {"label": "2 · Recent-feed pattern", "text": "Karpathy's current X profile is sparse and often repost-driven. His highest value lives in major owned artifacts and conceptual frames, not a guaranteed useful daily feed."},
+        {"label": "3 · Owned artifact", "text": "The public autoresearch repository exposes the loop and code. That makes the experiment inspectable; it does not make it easy or universally transferable."},
+        {"label": "4 · Counterevidence and incentive", "text": "The evaluator shapes and can be gamed by the optimizer; transfer to held-out tasks and larger systems must be tested. Network status also causes people he reposts to inherit attention they have not independently earned."},
+        {"label": "5 · Jerry activation", "text": "The no-build lesson is enough for now: autonomy improves when feedback is objective and fast. Run autoresearch only after Jerry has a real experiment repo, metric he understands, reproducible sandbox, compute, version control, held-out checks, and at least a half-day to inspect failures."}
+      ],
+      "links": [
+        {"label": "Autoresearch repository", "url": "https://github.com/karpathy/autoresearch"},
+        {"label": "Karpathy's result follow-up", "url": "https://x.com/karpathy/status/2031135152349524125"},
+        {"label": "Harness limitation follow-up", "url": "https://x.com/karpathy/status/2031083551387701698"}
+      ]
+    }
+  ],
+  "cuts": [
+    {"name": "Hari Mulackal", "handle": "@hrkrshnn", "category": "Incident source, not recurring follow", "whyConsidered": "A reproducible, version-specific Grok Build wire investigation surfaced a real privacy/control concern.", "whyCut": "His Solidity/compiler/security record is real but does not transfer into broad AI authority, and one cross-lane incident does not prove a recurring AI feed.", "retain": "Keep the incident in the Grok Build case study. Do not call it code theft or training evidence."},
+    {"name": "Peter Gostev", "handle": "@petergostev", "category": "Admission error", "whyConsidered": "Karpathy reposted his long Fable demo, so it entered the discovery graph.", "whyCut": "The prior release incorrectly let discovery by a prestigious person feel like credibility. A Power BI professional's one demo can be an anecdote, but it does not establish recurring AI evaluation authority or a high-value feed.", "retain": "Keep the demo only as a product-use anecdote if independently useful. Never transfer Karpathy's reputation through the repost."},
+    {"name": "Matei Zaharia", "handle": "@matei_zaharia", "category": "Paper/reference only", "whyConsidered": "Top-tier Spark/MLflow/production-systems credentials and strong work on measuring deployed agents.", "whyCut": "The current feed is vendor-heavy and advanced for Jerry; Databricks commercialization creates a direct comparison conflict.", "retain": "Open the production-agent paper when building a benchmark; do not allocate home-feed attention."},
+    {"name": "Geoffrey Litt", "handle": "@geoffreylitt", "category": "Project-only interface source", "whyConsidered": "Thoughtful interface prototypes and human-programmable software ideas.", "whyCut": "Current recurrence and immediate Jerry application were weaker than Amelia's; another interface feed would duplicate the role.", "retain": "Search when a specific end-user programming interface problem exists."},
+    {"name": "Thariq Shihipar", "handle": "@trq212", "category": "Affiliated insider source", "whyConsidered": "Direct Claude product behavior and useful mechanism explanations.", "whyCut": "Employer/product incentives and narrow current claims do not justify a recurring neutral-authority slot.", "retain": "Use for exact Claude behavior, then seek independent product comparison."},
+    {"name": "Daniel Litt", "handle": "@littmath", "category": "One-use-case anecdote", "whyConsidered": "A concrete founder/operator workflow made an AI use case visible.", "whyCut": "Insufficient recurring evidence in a unique lane and low transfer to Jerry's current study plan.", "retain": "Keep the specific workflow only if its mechanism is independently useful."},
+    {"name": "Nathan Lambert", "handle": "@natolambert", "category": "Advanced specialist", "whyConsidered": "Reputable open-model researcher with strong policy and training context.", "whyCut": "The current feed requires more model-training context than Jerry's active track and does not change a near-term decision.", "retain": "Open for a committed open-model or policy question, not general browsing."},
+    {"name": "Alex Harri Jónsson", "handle": "@alexharri_", "category": "Watchlist newcomer", "whyConsidered": "A strong owned artifact showed that newcomers can earn a chance without fame.", "whyCut": "One artifact and one current post are not enough recurrence for an attention allocation.", "retain": "Re-audit after two or more distinct, inspectable pieces of work."},
+    {"name": "Zhengyao Jiang", "handle": "@zhengyaojiang", "category": "Project prerequisite mismatch", "whyConsidered": "Owned bilevel-autoresearch work and a real research artifact.", "whyCut": "Jerry lacks the benchmark, code, compute, held-out tests, and review commitment needed to use it; Karpathy already covers the no-build principle more clearly.", "retain": "Revisit only with a real experiment project and evaluator."},
+    {"name": "Kale-ab Tessera", "handle": "@KaliTessera", "category": "One incident, low fit", "whyConsidered": "A current agent/tool incident supplied a potential failure signal.", "whyCut": "Insufficient lane record, recurrence, and Jerry-specific decision change.", "retain": "Use the incident as a test prompt, not the person as an authority."},
+    {"name": "Artificial Analysis", "handle": "@ArtificialAnlys", "category": "Reference service, not person", "whyConsidered": "Useful cost, latency, and benchmark tables.", "whyCut": "A benchmark brand is not a human feed, and its score cannot represent Jerry's full tool/harness task.", "retain": "Consult as one shortlist input, then run Jerry's benchmark."},
+    {"name": "Guillermo Rauch", "handle": "@rauchg", "category": "Vendor founder", "whyConsidered": "Strong product-builder record and fast platform insight.", "whyCut": "Current AI framing is commercially aligned with Vercel and too launch-oriented for a scarce independent slot.", "retain": "Use for Vercel product behavior, not neutral agent comparison."},
+    {"name": "Aaron Levie", "handle": "@levie", "category": "Founder framing", "whyConsidered": "High-volume enterprise AI and business model observations.", "whyCut": "Short-form founder framing, commercial Box incentives, and limited inspectable method create more narrative than Jerry-ready practice.", "retain": "Treat as culture/business radar only when a concrete claim can be sourced."},
+    {"name": "Marco Russo", "handle": "@marcorus", "category": "Historical non-AI admission error", "whyConsidered": "Excellent Power BI/DAX authority was once used as an ‘AI-overuse counterweight.’", "whyCut": "Domain authority is not AI authority. Mixing a non-AI expert into the AI trust graph displaced people with primary AI evidence.", "retain": "Keep in a separate Power BI/domain source map, not this roster."},
+    {"name": "Chris Webb", "handle": "@technitrain", "category": "Historical non-AI admission error", "whyConsidered": "Excellent Power BI domain expertise and practical skepticism.", "whyCut": "The same category error: useful domain authority does not satisfy the AI-relevance gate.", "retain": "Keep in a separate Power BI/domain map only."}
+  ],
+  "methodology": {
+    "selectionQuestion": "Does this person repeatedly improve a decision Jerry can actually make, in a lane where their proof is real?",
+    "fiveLayers": [
+      {"name": "Exact claim and conversation", "test": "What did the post actually say, what does it not prove, and did replies or corrections change it?"},
+      {"name": "Recent-feed recurrence", "test": "Across a current sample, is the value repeated or was this a lucky one-off? What is the noise?"},
+      {"name": "Owned or primary proof", "test": "What did this person build, publish, measure, or maintain in the exact lane?"},
+      {"name": "Network, counterevidence, and incentive", "test": "Who amplified it, where did the claim originate, what conflicts exist, and what serious objection survives?"},
+      {"name": "Jerry activation", "test": "What changes now, what can be retained without building, and what prerequisites make implementation honest?"}
+    ],
+    "scoreRules": [
+      "Lane credibility is scoped. Terraform does not create universal AI authority; Solidity security does not create general agent-privacy authority.",
+      "Popularity and verification are shown only as culture context. They add zero authority by themselves.",
+      "A respected repost is a discovery edge, never evidence about the reposted person's trustworthiness.",
+      "Core requires repeated current-feed value plus primary/owned proof and a Jerry-ready use. Study can be highly reputable but low cadence, advanced, or project-gated.",
+      "Radar is intentionally high-volume and lower-evidence. It is useful for outages, limits, memes, vocabulary, and network discovery—not final claims.",
+      "One event can move a scoped rating, but it cannot manufacture a whole-person record. Trust changes are dated rather than silently overwritten."
+    ],
+    "refresh": {
+      "cadence": "Run only as a substantial Codex review when the page is stale or a real decision requires it—not as a background timeline scraper.",
+      "staleAfterDays": 42,
+      "owner": "Jerry starts the review; Codex reads signed-in X read-only, owned artifacts, and recent personal task patterns, proposes changes, validates the bounded data, deploys, then records exact proof.",
+      "privacy": "Store public-safe abstractions from personal tasks and representative public sources. Never store raw private threads, work/customer data, credentials, DMs, or full timelines.",
+      "noWrites": "Refresh never follows, unfollows, likes, reposts, bookmarks, creates X Lists, posts, messages, or changes account settings."
+    }
+  }
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4f0e7" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Wisdom Demo" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Wisdom · people-first library demo</title>
+    <link rel="manifest" href="/wisdom/demo/people-library/manifest.webmanifest" />
+    <link rel="icon" href="/wisdom/icons/wisdom-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wisdom/icons/wisdom-icon-180.png" />
+    <link rel="stylesheet" href="/wisdom/demo/people-library/styles.css?v=20260719-1" />
+  </head>
+  <body>
+    <a class="skipLink" href="#app">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Wisdom demo home">
+        <img src="/wisdom/icons/wisdom-icon.svg" alt="" />
+        <span>
+          <strong>Wisdom</strong>
+          <small>people-first library demo</small>
+        </span>
+      </a>
+      <a class="quietLink" href="https://wisdom-reader.onrender.com/" target="_blank" rel="noopener">Current site</a>
+    </header>
+
+    <nav class="routeNav" aria-label="Wisdom sections">
+      <a href="#home" data-route-link="home">Home</a>
+      <a href="#people" data-route-link="people">People</a>
+      <a href="#listen" data-route-link="listen">Listen</a>
+      <a href="#read" data-route-link="read">Read</a>
+      <a href="#library" data-route-link="library">Library</a>
+    </nav>
+
+    <main id="app" tabindex="-1"></main>
+
+    <dialog id="sourceDialog" class="sourceDialog" aria-labelledby="sourceDialogTitle">
+      <form method="dialog" id="sourceForm">
+        <div class="dialogTop">
+          <div>
+            <p class="eyebrow">One-time setup · this device</p>
+            <h2 id="sourceDialogTitle">Link your Kafka audio</h2>
+          </div>
+          <button class="iconButton" value="cancel" aria-label="Close">×</button>
+        </div>
+        <p>Paste the exact YouTube, Spotify, Audible, Apple Books, or other player link you already use. Wisdom stores it only in this browser.</p>
+        <label for="sourceUrl">Exact audio link</label>
+        <input id="sourceUrl" name="sourceUrl" type="url" inputmode="url" autocomplete="url" placeholder="https://…" required />
+        <p class="formError" id="sourceError" role="alert"></p>
+        <div class="dialogActions">
+          <button class="secondaryButton" value="cancel">Cancel</button>
+          <button class="primaryButton" id="saveSource" value="default">Save link</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="/wisdom/demo/people-library/data.js?v=20260719-1"></script>
+    <script src="/wisdom/demo/people-library/app.js?v=20260719-1"></script>
+    <script src="/wisdom/demo/people-library/pwa.js?v=20260719-1"></script>
+  </body>
+</html>

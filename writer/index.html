@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quiet — a writing room</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="A distraction-free Markdown writing room: typewriter scrolling, sentence focus, part-of-speech highlighting, a style check, and drafts that never leave your browser." />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141312" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Quiet" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href="manifest.webmanifest?v=20260729a" />
+    <link rel="icon" href="icons/icon.svg?v=20260729a" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png?v=20260729a" />
+    <link rel="stylesheet" href="styles.css?v=20260729a" />
+  </head>
+  <body data-typeface="serif" data-size="m" data-measure="normal">
+    <a class="skip" href="#input">Skip to the page</a>
+
+    <header class="bar" id="bar">
+      <div class="barSide">
+        <button class="tab" id="draftsButton" aria-expanded="false" aria-controls="drafts">Drafts</button>
+      </div>
+      <h1 class="title" id="title">Untitled</h1>
+      <div class="barSide barEnd">
+        <button class="tab" data-mode="focus" aria-pressed="false">Focus</button>
+        <button class="tab" data-mode="typewriter" aria-pressed="false">Typewriter</button>
+        <button class="tab" id="lensButton" aria-expanded="false" aria-controls="lens">Lens</button>
+        <button class="tab" id="notesButton" aria-expanded="false" aria-controls="notes">Notes</button>
+        <button class="tab tabIcon" id="roomButton" aria-expanded="false" aria-controls="room" aria-label="Type and theme">Aa</button>
+      </div>
+    </header>
+
+    <main class="page" id="page">
+      <div class="sheet" id="sheet">
+        <pre class="mirror" id="mirror" aria-hidden="true"></pre>
+        <textarea
+          id="input"
+          class="input"
+          spellcheck="true"
+          autocapitalize="sentences"
+          autocomplete="off"
+          autocorrect="on"
+          aria-label="Draft"
+        ></textarea>
+      </div>
+    </main>
+
+    <footer class="foot" id="foot">
+      <span id="count">0 words</span>
+      <span class="dim" id="savedState">saved here only</span>
+      <span class="footEnd">
+        <button class="link" id="readButton">Read</button>
+        <button class="link" id="exportButton">Export</button>
+        <button class="link" id="installButton" hidden>Install</button>
+      </span>
+    </footer>
+
+    <!-- Drafts ------------------------------------------------------------- -->
+    <aside class="panel panelLeft" id="drafts" hidden aria-label="Drafts">
+      <div class="panelHead">
+        <h2>Drafts</h2>
+        <button class="link" data-close="drafts">Close</button>
+      </div>
+      <div class="panelRow">
+        <button class="action" id="newDraft">New draft</button>
+        <label class="action" for="importFile">Import .md</label>
+        <input type="file" id="importFile" accept=".md,.markdown,.txt,text/markdown,text/plain" hidden />
+      </div>
+      <ul class="draftList" id="draftList"></ul>
+      <p class="note">
+        Drafts live in this browser only — no account, no server, no sync. That is
+        the privacy guarantee and the limit: clearing site data clears them, so
+        export anything you would be upset to lose.
+      </p>
+    </aside>
+
+    <!-- Lens --------------------------------------------------------------- -->
+    <aside class="panel panelRight" id="lens" hidden aria-label="Lens">
+      <div class="panelHead">
+        <h2>Lens</h2>
+        <button class="link" data-close="lens">Close</button>
+      </div>
+      <p class="note">Colour one habit at a time. Turn a lens off to read again.</p>
+      <div class="chips" role="group" aria-label="Parts of speech">
+        <button class="chip" data-part="adj" aria-pressed="false"><i class="swatch swatch-adj"></i>Adjectives</button>
+        <button class="chip" data-part="adv" aria-pressed="false"><i class="swatch swatch-adv"></i>Adverbs</button>
+        <button class="chip" data-part="noun" aria-pressed="false"><i class="swatch swatch-noun"></i>Nouns</button>
+        <button class="chip" data-part="verb" aria-pressed="false"><i class="swatch swatch-verb"></i>Verbs</button>
+        <button class="chip" data-part="conj" aria-pressed="false"><i class="swatch swatch-conj"></i>Joins</button>
+      </div>
+      <div class="chips">
+        <button class="chip" data-lens="style" aria-pressed="false">Style check</button>
+        <button class="chip" data-lens="authorship" aria-pressed="false">Authorship</button>
+      </div>
+      <p class="note">
+        The tagger is a lexicon plus suffix rules running on every keystroke — no
+        model, no network, and wrong perhaps one word in seven. It is here to make
+        a habit visible, not to label language correctly. Style check flags filler,
+        hedges, clichés, and redundancy; none of it is a rule.
+        <strong>Authorship</strong> tints text you pasted rather than typed.
+      </p>
+    </aside>
+
+    <!-- Notes -------------------------------------------------------------- -->
+    <aside class="panel panelRight" id="notes" hidden aria-label="Notes">
+      <div class="panelHead">
+        <h2>Notes</h2>
+        <button class="link" data-close="notes">Close</button>
+      </div>
+      <dl class="stats" id="statList"></dl>
+      <h3 class="subhead">Worth a look <span class="badge" id="flagCount">0</span></h3>
+      <ul class="flagList" id="flagList"></ul>
+      <p class="note" id="readingNote"></p>
+    </aside>
+
+    <!-- Room --------------------------------------------------------------- -->
+    <aside class="panel panelRight" id="room" hidden aria-label="Type and theme">
+      <div class="panelHead">
+        <h2>Room</h2>
+        <button class="link" data-close="room">Close</button>
+      </div>
+      <div class="setting">
+        <span class="settingName">Light</span>
+        <div class="segmented" role="group" aria-label="Theme">
+          <button data-theme="system" aria-pressed="true">Auto</button>
+          <button data-theme="light" aria-pressed="false">Paper</button>
+          <button data-theme="sepia" aria-pressed="false">Sepia</button>
+          <button data-theme="dark" aria-pressed="false">Night</button>
+        </div>
+      </div>
+      <div class="setting">
+        <span class="settingName">Type</span>
+        <div class="segmented" role="group" aria-label="Typeface">
+          <button data-typeface="serif" aria-pressed="true">Serif</button>
+          <button data-typeface="duo" aria-pressed="false">Mono</button>
+          <button data-typeface="sans" aria-pressed="false">Sans</button>
+        </div>
+      </div>
+      <div class="setting">
+        <span class="settingName">Size</span>
+        <div class="segmented" role="group" aria-label="Text size">
+          <button data-size="s" aria-pressed="false">S</button>
+          <button data-size="m" aria-pressed="true">M</button>
+          <button data-size="l" aria-pressed="false">L</button>
+        </div>
+      </div>
+      <div class="setting">
+        <span class="settingName">Measure</span>
+        <div class="segmented" role="group" aria-label="Line width">
+          <button data-measure="narrow" aria-pressed="false">Narrow</button>
+          <button data-measure="normal" aria-pressed="true">Normal</button>
+          <button data-measure="wide" aria-pressed="false">Wide</button>
+        </div>
+      </div>
+      <div class="setting">
+        <span class="settingName">Focus dims</span>
+        <div class="segmented" role="group" aria-label="Focus granularity">
+          <button data-grain="sentence" aria-pressed="true">Sentence</button>
+          <button data-grain="paragraph" aria-pressed="false">Paragraph</button>
+        </div>
+      </div>
+      <p class="note">
+        Five settings, on purpose. Every additional choice is a way to work on the
+        room instead of the writing.
+      </p>
+      <h3 class="subhead">Keys</h3>
+      <ul class="keys">
+        <li><kbd>⌘</kbd><kbd>⇧</kbd><kbd>F</kbd> focus</li>
+        <li><kbd>⌘</kbd><kbd>⇧</kbd><kbd>T</kbd> typewriter</li>
+        <li><kbd>⌘</kbd><kbd>⏎</kbd> read</li>
+        <li><kbd>⌘</kbd><kbd>S</kbd> export</li>
+        <li><kbd>⌘</kbd><kbd>⇧</kbd><kbd>N</kbd> new draft</li>
+        <li><kbd>esc</kbd> close</li>
+      </ul>
+    </aside>
+
+    <!-- Reading view ------------------------------------------------------- -->
+    <section class="reader" id="reader" hidden aria-label="Reading view">
+      <div class="readerBar">
+        <span class="readerTitle" id="readerTitle"></span>
+        <span class="readerActions">
+          <button class="link" id="printButton">Print / PDF</button>
+          <button class="link" data-close="reader">Close</button>
+        </span>
+      </div>
+      <article class="prose" id="readerBody"></article>
+    </section>
+
+    <div class="scrim" id="scrim" hidden></div>
+
+    <div class="banner" id="updateBanner" hidden role="status">
+      A new version is ready.
+      <button class="link" id="activateUpdate">Reload</button>
+    </div>
+
+    <dialog class="dialog" id="installDialog">
+      <h2>Install Quiet</h2>
+      <p>On iPhone or iPad: tap <strong>Share</strong>, then <strong>Add to Home Screen</strong>. It then opens full screen and works offline.</p>
+      <button class="action" data-install-close>Done</button>
+    </dialog>
+
+    <script type="module" src="app.js?v=20260729a"></script>
+    <script src="pwa.js?v=20260729a" defer></script>
+  </body>
+</html>

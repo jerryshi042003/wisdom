@@ -1,0 +1,21 @@
+{
+  "id": "/wisdom/writer/",
+  "name": "Quiet — a writing room",
+  "short_name": "Quiet",
+  "description": "A distraction-free Markdown writing room: typewriter scrolling, sentence focus, part-of-speech highlighting, a style check, and drafts that never leave your browser.",
+  "start_url": "/wisdom/writer/",
+  "scope": "/wisdom/writer/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#fbfaf8",
+  "theme_color": "#fbfaf8",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    { "src": "icons/icon.svg?v=20260729a", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icons/icon-180.png?v=20260729a", "sizes": "180x180", "type": "image/png" },
+    { "src": "icons/icon-192.png?v=20260729a", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png?v=20260729a", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png?v=20260729a", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

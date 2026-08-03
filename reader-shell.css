@@ -1,0 +1,495 @@
+:root {
+  --bg: #f5f5f7;
+  --paper: #ffffff;
+  --ink: #1d1d1f;
+  --muted: #6e6e73;
+  --line: rgba(60, 60, 67, 0.16);
+  --blue: #007aff;
+  --blue-soft: #eef6ff;
+  --gold: #6e6e68;
+  --green: #315f88;
+  --shadow: none;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: clip;
+}
+
+a,
+button {
+  touch-action: manipulation;
+}
+
+.appShell {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.sideRail {
+  padding-top: max(22px, calc(16px + env(safe-area-inset-top)));
+  padding-bottom: max(22px, calc(18px + env(safe-area-inset-bottom)));
+  background: rgba(245, 245, 247, 0.88);
+}
+
+.readerPane {
+  padding-top: max(48px, calc(36px + env(safe-area-inset-top)));
+  padding-bottom: max(128px, calc(96px + env(safe-area-inset-bottom)));
+}
+
+.homeLink,
+.modeButton,
+.chapterNav button,
+.copyButton,
+.headerActions a {
+  min-height: 44px;
+}
+
+.modeSwitch {
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  padding: 0 0 10px;
+  box-shadow: none;
+}
+
+.modeButton.active {
+  background: transparent;
+  color: var(--ink);
+  box-shadow: inset 0 -2px var(--ink);
+}
+
+.chapterNav button {
+  padding: 0 10px;
+}
+
+.noteBand,
+.highlightCard,
+.chapterBlock {
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.chapterBlock {
+  background: var(--paper);
+  padding-inline: 0;
+}
+
+.readerEditBody {
+  border-left-color: rgba(22, 114, 70, 0.34);
+}
+
+.chapterContext,
+.readerEditNotes,
+.chapterNote {
+  border-left-color: var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+
+.appShell { display: block; }
+.sideRail {
+  position: sticky; top: calc(var(--wisdom-header-height, 52px) + env(safe-area-inset-top)); z-index: 12; display: block; height: auto;
+  overflow: hidden; border-right: 0; border-bottom: 1px solid var(--line); padding: 7px max(16px, calc((100vw - 760px) / 2));
+}
+.modeSwitch { display: flex; width: max-content; margin: 0; border-bottom: 0; padding: 0; }
+.modeButton { padding-inline: 11px; }
+.chapterNav { display: flex; width: 100%; min-width: 0; gap: 2px; margin-top: 4px; overflow-x: auto; scrollbar-width: none; }
+.chapterNav::-webkit-scrollbar { display: none; }
+.chapterNav button { width: auto; flex: 0 0 auto; padding-inline: 9px; text-align: center; }
+.navNumber { width: auto; }
+.navTitle { display: none; }
+.readerPane { width: min(100%, 760px); padding-inline: 34px; }
+.readerHeader { border-bottom: 1px solid var(--line); }
+.eyebrow, .chapterKicker, .comparisonLabel, .chapterContextLabel,
+.readerEditNotesLabel, .chapterNoteLabel { color: var(--muted); }
+.noteBand { padding-inline: 0; background: transparent; }
+.highlightGrid { grid-template-columns: 1fr; gap: 0; }
+.highlightCard { border-left: 0; padding-inline: 0; }
+.highlightCard .passageRole { border: 0; border-radius: 0; background: transparent; color: var(--muted); padding-inline: 0; }
+.chapterNav button { border-radius: 10px; }
+.chapterNav button:hover, .chapterNav button:focus-visible { background: var(--blue-soft); }
+.copyButton { border-radius: 12px; box-shadow: none; }
+
+.toast {
+  bottom: max(18px, calc(14px + env(safe-area-inset-bottom)));
+}
+
+.copyPanel {
+  bottom: max(18px, calc(14px + env(safe-area-inset-bottom)));
+}
+
+@supports ((-webkit-backdrop-filter: blur(16px)) or (backdrop-filter: blur(16px))) {
+  .sideRail {
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+    backdrop-filter: saturate(180%) blur(16px);
+  }
+}
+
+@media (max-width: 860px) {
+  .sideRail {
+    position: sticky;
+    top: calc(var(--wisdom-header-height, 52px) + env(safe-area-inset-top));
+    z-index: 12;
+    padding: 7px 12px;
+    border-bottom-color: var(--line);
+    box-shadow: none;
+  }
+
+  .modeSwitch {
+    margin: 0;
+  }
+
+  .chapterNav {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 0;
+    scroll-padding-inline: 14px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chapterNav button {
+    width: auto;
+    flex: 0 0 auto;
+    min-width: 44px;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    background: var(--paper);
+    text-align: center;
+    scroll-snap-align: start;
+  }
+
+  .chapterNav button:hover,
+  .chapterNav button:focus-visible {
+    border-color: rgba(31, 95, 209, 0.36);
+  }
+
+  .readerPane {
+    padding: 28px 12px max(132px, calc(100px + env(safe-area-inset-bottom)));
+  }
+
+  .readerHeader {
+    padding-bottom: 24px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .headerActions a,
+  .copyButton {
+    min-height: 44px;
+    padding-inline: 14px;
+  }
+
+  .noteBand,
+  .chapterBlock {
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--paper);
+  }
+}
+
+@media (max-width: 920px) and (max-height: 500px) and (orientation: landscape) {
+  .sideRail {
+    display: block;
+    padding: max(8px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) 8px
+      max(12px, env(safe-area-inset-left));
+  }
+
+  .modeSwitch {
+    margin: 0;
+  }
+
+  .modeButton {
+    font-size: 0.78rem;
+  }
+
+  .chapterNav {
+    padding: 0;
+  }
+
+  .chapterNav button {
+    padding-inline: 9px;
+  }
+
+  .readerPane {
+    padding-top: 18px;
+  }
+
+  .readerHeader {
+    padding-bottom: 18px;
+  }
+
+  .noteBand,
+  .chapterBlock {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chapterNav {
+    grid-template-columns: none;
+  }
+
+  .noteBand,
+  .chapterBlock {
+    padding: 19px 17px;
+  }
+
+  .copyPanel {
+    inset: auto max(10px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom))
+      max(10px, env(safe-area-inset-left));
+  }
+}
+/* Shared repeat-use controls for the legacy long readers. */
+details:not([open]) > :not(summary) {
+  display: none !important;
+}
+.v5LegacyBar {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.v5LegacyCurrent {
+  color: var(--muted);
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.chapterPicker,
+.v5LegacyOptions {
+  position: relative;
+}
+
+.chapterPicker > summary,
+.v5LegacyOptions > summary {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.chapterPicker > summary::-webkit-details-marker,
+.v5LegacyOptions > summary::-webkit-details-marker {
+  display: none;
+}
+
+.chapterPicker .chapterNav,
+.v5LegacyOptionsBody {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 7px);
+  min-width: min(320px, calc(100vw - 24px));
+  max-height: min(62vh, 480px);
+  overflow: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 14px 34px rgba(32, 36, 43, 0.12);
+}
+
+.chapterPicker .chapterNav {
+  left: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.chapterPicker .chapterNav button {
+  width: 100%;
+  min-height: 42px;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.v5LegacyOptionsBody {
+  right: 0;
+}
+
+.v5LegacyOptionsBody .modeSwitch {
+  display: grid;
+  width: 100%;
+  min-width: 180px;
+  gap: 2px;
+  border: 0;
+  padding: 0;
+}
+
+.v5LegacyOptionsBody .modeButton {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.readerFocusPage .wisdomHeaderInner {
+  justify-content: flex-start;
+}
+
+.readerFocusPage .wisdomTabs,
+.readerFocusPage .chapterList .copyButton {
+  display: none !important;
+}
+
+.v5LegacyOptionsBody .readerAbout,
+.v5LegacyOptionsBody .wisdomLongState,
+.v5LegacyOptionsBody .readerPrelude,
+.v5LegacyOptionsBody .readerGuide {
+  margin: 0;
+  border-inline: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 480px) {
+  .v5LegacyBar { gap: 8px; }
+  .v5LegacyCurrent { font-size: 12px; }
+}
+.chapterPicker > summary,
+.readerAbout > summary,
+.readerGuide > summary,
+.readerPrelude > summary,
+.wisdomLongState > summary {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+}
+
+.chapterPicker > summary::-webkit-details-marker,
+.readerAbout > summary::-webkit-details-marker,
+.readerPrelude > summary::-webkit-details-marker,
+.wisdomLongState > summary::-webkit-details-marker { display: none; }
+
+.chapterPicker > summary::after,
+.readerAbout > summary::after,
+.readerGuide > summary::after,
+.readerPrelude > summary::after,
+.wisdomLongState > summary::after { content: "+"; }
+
+.chapterPicker[open] > summary::after,
+.readerAbout[open] > summary::after,
+.readerGuide[open] > summary::after,
+.readerPrelude[open] > summary::after,
+.wisdomLongState[open] > summary::after { content: "−"; }
+
+.chapterPicker > summary { display: none; }
+
+.readerAbout {
+  margin-top: 12px;
+  border-top: 1px solid var(--line, #d9dee7);
+}
+
+.readerGuide {
+  margin: 0;
+  border-top: 1px solid var(--line, #d9dee7);
+}
+
+.readerGuide > .guideBand {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--line, #d9dee7);
+  border-radius: 0;
+}
+.readerAbout > summary { padding-top: 10px; color: var(--accent, #245f73); font-size: 13px; font-weight: 800; }
+.readerAbout .subtitle { margin: 10px 0 0; }
+.readerAbout .headerActions { margin-top: 12px; }
+
+.readerPrelude,
+.wisdomLongState {
+  margin: 0 0 18px;
+  border: 1px solid var(--line, #d9dee7);
+  border-radius: 12px;
+  background: var(--paper, #fffdf8);
+  overflow: clip;
+}
+
+.readerPrelude > summary,
+.wisdomLongState > summary { padding: 9px 14px; color: var(--accent, #245f73); font-size: 13px; font-weight: 800; }
+.readerPrelude > section { margin: 0 !important; border: 0 !important; border-top: 1px solid var(--line, #d9dee7) !important; border-radius: 0 !important; }
+
+.wisdomLongStateBody { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; border-top: 1px solid var(--line, #d9dee7); padding: 14px; }
+.wisdomLongField { display: grid; gap: 5px; color: var(--muted, #667085); font-size: 12px; font-weight: 750; }
+.wisdomLongField:first-child { grid-column: 1 / -1; max-width: 220px; }
+.wisdomLongField select,
+.wisdomLongField textarea { width: 100%; min-height: 44px; border: 1px solid var(--line, #d9dee7); border-radius: 8px; background: #fff; color: var(--ink, #20242b); padding: 9px 10px; font: inherit; }
+.wisdomLongField textarea { min-height: 72px; resize: vertical; line-height: 1.45; }
+.wisdomLongSave { grid-column: 1 / -1; justify-self: start; min-height: 44px; border: 0; border-radius: 8px; background: var(--ink, #20242b); color: #fff; padding: 9px 16px; font: inherit; font-weight: 750; }
+.wisdomRecoveryNotice { grid-column: 1 / -1; margin: 0; color: #8a4b23; font-size: 12px; line-height: 1.45; }
+
+.wisdomUnitPager { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; margin: 18px 0 0; }
+.wisdomUnitPager button { min-height: 46px; border: 1px solid var(--line, #d9dee7); border-radius: 9px; background: #fff; color: var(--ink, #20242b); padding: 8px 12px; font: inherit; font-weight: 720; }
+.wisdomUnitPager button:last-child { justify-self: stretch; }
+.wisdomUnitPager button[aria-pressed="true"] { border-color: var(--accent, #245f73); color: var(--accent, #245f73); }
+.wisdomUnitPager button:disabled { opacity: 0.42; }
+
+@media (max-width: 860px) {
+  .chapterPicker { border-top: 1px solid var(--line, #d9dee7); }
+  .chapterPicker > summary { display: flex; padding: 8px 4px; color: var(--accent, #245f73); font-size: 13px; font-weight: 800; }
+  .chapterPicker .chapterNav { border-top: 1px solid var(--line, #d9dee7); padding-top: 10px; }
+}
+
+@media (max-width: 520px) {
+  .wisdomLongStateBody { grid-template-columns: 1fr; }
+  .wisdomLongStateBody > * { grid-column: 1 !important; }
+  .wisdomUnitPager { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .wisdomUnitPager button { padding-inline: 7px; font-size: 12px; }
+}
+
+.chapterPicker > summary:focus-visible,
+.readerAbout > summary:focus-visible,
+.readerGuide > summary:focus-visible,
+.readerPrelude > summary:focus-visible,
+.wisdomLongState > summary:focus-visible,
+.wisdomLongField select:focus-visible,
+.wisdomLongField textarea:focus-visible,
+.wisdomLongSave:focus-visible,
+.wisdomUnitPager button:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent, #245f73) 40%, white); outline-offset: 2px; }
+
+/* V5 bar wins over the older mobile chapter-picker presentation. */
+.v5LegacyBar .chapterPicker {
+  border: 0;
+}
+
+.v5LegacyBar .chapterPicker > summary {
+  display: inline-flex;
+  min-height: 44px;
+  padding: 0;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.v5LegacyBar .chapterPicker > summary::after {
+  margin-left: 5px;
+}
+
+.v5LegacyBar .chapterPicker .chapterNav {
+  border-top: 0;
+  padding: 8px;
+}

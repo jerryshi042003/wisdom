@@ -1,0 +1,99 @@
+/* Documentation page. Reuses the app's tokens from styles.css; this file only
+   adds the prose layout the tool itself does not need. */
+
+body.doc { background: var(--bg); }
+
+.doc-main {
+  /* styles.css puts the app's two-column grid on <main>; the doc page is prose. */
+  display: block;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 22px 90px;
+}
+
+.doc-main h1 {
+  font-family: var(--serif);
+  font-size: clamp(30px, 5vw, 42px);
+  line-height: 1.12;
+  margin-bottom: 16px;
+  max-width: 22ch;
+}
+.lede {
+  font-size: clamp(17px, 2.2vw, 19px);
+  line-height: 1.55;
+  color: var(--ink-2);
+  margin: 0 0 22px;
+}
+.stamp {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink-4);
+  line-height: 1.8;
+  margin: 0 0 8px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.doc-main h2 {
+  font-family: var(--serif);
+  font-size: clamp(22px, 3vw, 27px);
+  margin: 46px 0 12px;
+}
+.doc-main h3 { font-size: 17px; margin: 26px 0 8px; }
+.doc-main p { font-size: 16px; line-height: 1.62; color: var(--ink-2); margin: 0 0 14px; }
+.doc-main p b, .doc-main li b { color: var(--ink); font-weight: 600; }
+.fine { font-size: 13.5px !important; color: var(--ink-4) !important; }
+
+.gates {
+  display: grid; gap: 1px; background: var(--line-soft);
+  border: 1px solid var(--line-soft); border-radius: 12px; overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  margin: 18px 0 10px;
+}
+.gate { background: var(--bg); padding: 18px 18px 20px; }
+.gate .n {
+  display: block; font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: .07em; color: var(--accent); font-weight: 600; margin-bottom: 9px;
+}
+.gate p { font-size: 14px !important; line-height: 1.5; color: var(--ink-3) !important; margin: 0 !important; }
+.gate .rule {
+  margin-top: 11px; font-family: var(--mono); font-size: 11.5px;
+  color: var(--ink-2); background: var(--bg-2); padding: 8px 10px;
+  border-radius: 6px; line-height: 1.55;
+}
+
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; min-width: 600px; }
+th, td { text-align: left; padding: 8px 11px; border-bottom: 1px solid var(--line-soft); }
+th {
+  font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--ink-4); font-weight: 600; border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+td.num, th.num { text-align: right; font-family: var(--mono); font-size: 12.5px; white-space: nowrap; }
+tr.pass td:first-child { font-weight: 600; color: var(--ink); }
+tr.fail td { color: var(--ink-4); }
+.verdict { font-family: var(--mono); font-size: 11px; white-space: nowrap; }
+.verdict.in { color: #1a7f37; }
+@media (prefers-color-scheme: dark) { .verdict.in { color: #4ac26b; } }
+.verdict.out { color: var(--ink-4); }
+
+.callout {
+  border: 1px solid var(--line); border-radius: 12px; background: var(--bg-2);
+  padding: 20px 22px; margin: 16px 0 0;
+}
+.callout h3:first-child { margin-top: 0; }
+.callout p:last-child { margin-bottom: 0; }
+
+ul.src { padding-left: 20px; margin: 12px 0; }
+ul.src li { font-size: 14.5px; line-height: 1.6; color: var(--ink-2); margin-bottom: 8px; }
+
+#credits td:nth-child(2) { font-size: 12px; color: var(--ink-3); }
+#credits td:nth-child(3) { font-size: 12px; }
+#credits td:nth-child(4) { font-family: var(--mono); font-size: 11.5px; white-space: nowrap; }
+
+.foot { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line-soft); }
+
+/* Wide tables scroll inside themselves. The page body must never scroll
+   sideways — on a phone that turns the whole document into a swipe target. */
+.table-scroll table { min-width: 560px; }

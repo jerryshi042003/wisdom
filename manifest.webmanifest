@@ -1,0 +1,58 @@
+{
+  "id": "/wisdom/",
+  "name": "Wisdom Reader",
+  "short_name": "Wisdom",
+  "description": "One place to continue, browse essays, and read books with source-aware context.",
+  "start_url": "/wisdom/",
+  "scope": "/wisdom/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "categories": ["books", "education"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/wisdom/icons/wisdom-icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/wisdom/icons/wisdom-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/wisdom/icons/wisdom-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Continue the current reading path.",
+      "url": "/wisdom/",
+      "icons": [{ "src": "/wisdom/icons/wisdom-icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Essays",
+      "short_name": "Essays",
+      "description": "Browse essays and stories by domain and reading path.",
+      "url": "/wisdom/essays/",
+      "icons": [{ "src": "/wisdom/icons/wisdom-icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Books",
+      "short_name": "Books",
+      "description": "Open the six book and long-work paths.",
+      "url": "/wisdom/books/",
+      "icons": [{ "src": "/wisdom/icons/wisdom-icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}

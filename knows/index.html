@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#faf8f4">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Knows">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<title>Knows · what's solid, what's fuzzy</title>
+<link rel="manifest" href="/wisdom/manifest.webmanifest">
+<link rel="icon" href="/wisdom/icons/wisdom-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/wisdom/icons/wisdom-icon-180.png">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="crumbRow">
+    <a class="crumb" href="/wisdom/">Wisdom</a>
+    <span id="syncDot" class="syncDot" title="sync state"></span>
+  </div>
+  <h1>Knows</h1>
+  <p class="sub">A ledger of what's solid, what's fuzzy, and what's worth learning next —
+  people and concepts, sorted honestly.</p>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <a href="#/" data-tab="home">Ledger</a>
+    <a href="#/map" data-tab="map">Map</a>
+    <a href="#/quiz/due" data-tab="quiz">Quiz</a>
+  </nav>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<footer class="foot">
+  <p id="syncLine" class="syncLine"></p>
+  <details class="how">
+    <summary>How this works</summary>
+    <p><strong>Filter</strong> deals each card once: <em>Know it</em> means you could
+    explain it to someone; <em>Fuzzy</em> means you've heard of it but couldn't;
+    <em>New to me</em> means it's new. <strong>Quiz</strong> then tests the ones you
+    claimed, and a wrong answer honestly downgrades the claim.</p>
+    <p>Answers stay in this browser and sync — no account, no login — to a private
+    ledger the reading tools consult, so recommendations stop guessing what you
+    already know. A few cards arrive pre-marked from reading history; override
+    them freely.</p>
+    <div class="dataActions">
+      <button id="exportLedger" type="button">Export ledger</button>
+      <button id="resetLocal" type="button">Reset local state</button>
+    </div>
+  </details>
+</footer>
+</div>
+<script src="data-people.js?v=2"></script>
+<script src="data-concepts.js?v=2"></script>
+<script src="data-tennis.js?v=2"></script>
+<script src="data-work.js?v=2"></script>
+<script src="sync.js?v=2"></script>
+<script src="app.js?v=2"></script>
+</body>
+</html>

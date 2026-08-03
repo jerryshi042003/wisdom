@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#13273c" />
+  <meta name="description" content="Jerry's evidence-backed AI study plan and role-based Tech Twitter field guide." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AI Field Manual" />
+  <meta property="og:title" content="Jerry's AI Field Manual" />
+  <meta property="og:description" content="Turn AI posts into judgment, practice, and proof." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="social-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Jerry's AI Field Manual</title>
+  <link rel="manifest" href="manifest.json?v=20260717-8570d1f4ec90" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png?v=20260717-8570d1f4ec90" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png?v=20260717-8570d1f4ec90" />
+  <link rel="stylesheet" href="styles.css?v=20260717-8570d1f4ec90" />
+</head>
+<body>
+  <a class="skipLink" href="#content">Skip to content</a>
+
+  <header class="siteHeader">
+    <a class="brand" href="#start" aria-label="Jerry's AI Field Manual home">
+      <span class="brandMark" aria-hidden="true">J</span>
+      <span>
+        <strong>AI Field Manual</strong>
+        <small>judgment before velocity</small>
+      </span>
+    </a>
+    <div class="headerActions">
+      <span class="connection" id="connection" role="status">Checking connection</span>
+      <button class="quietButton" id="installButton" type="button" hidden>Install</button>
+    </div>
+  </header>
+
+  <div class="appFrame">
+    <nav class="chapterNav" aria-label="Field manual chapters">
+      <a href="#start" data-route="start"><span aria-hidden="true">01</span>Start</a>
+      <a href="#study" data-route="study"><span aria-hidden="true">02</span>Practice</a>
+      <a href="#x-map" data-route="x-map"><span aria-hidden="true">03</span>X map</a>
+      <a href="#dossiers" data-route="dossiers"><span aria-hidden="true">04</span>Cases</a>
+      <a href="#method" data-route="method"><span aria-hidden="true">05</span>Method</a>
+    </nav>
+
+    <main class="content" id="content" tabindex="-1" aria-live="polite">
+      <div class="loadingCard" id="loadingCard">
+        <span class="loadingPulse" aria-hidden="true"></span>
+        <p>Opening the field manual…</p>
+      </div>
+    </main>
+  </div>
+
+  <div class="statusBanner" id="statusBanner" role="status" hidden></div>
+  <div class="updateBanner" id="updateBanner" role="status" aria-live="polite" hidden>
+    <span>A newer field manual is ready.</span>
+    <button type="button" id="activateUpdate">Update now</button>
+  </div>
+
+  <dialog class="personDialog installDialog" id="installDialog" aria-labelledby="installDialogTitle">
+    <button class="dialogClose" type="button" data-install-close aria-label="Close install instructions">×</button>
+    <div class="dialogBody">
+      <p class="eyebrow">iPhone shortcut</p>
+      <h2 id="installDialogTitle">Add the manual to your Home Screen</h2>
+      <ol class="stepList">
+        <li>Open this page in Safari.</li>
+        <li>Tap the Share button.</li>
+        <li>Choose <strong>Add to Home Screen</strong>, then tap <strong>Add</strong>.</li>
+      </ol>
+      <p>The installed manual opens standalone and keeps every saved explanation available offline. Live X conversations still require a connection and a tap.</p>
+    </div>
+  </dialog>
+
+  <dialog class="personDialog" id="personDialog" aria-labelledby="personDialogTitle">
+    <button class="dialogClose" type="button" data-close-dialog aria-label="Close person dossier">×</button>
+    <div id="personDialogBody"></div>
+  </dialog>
+
+  <input id="importInput" type="file" accept="application/json" hidden />
+
+  <noscript>
+    <div class="noscript">This manual needs JavaScript for its chapters and saved progress. The public sources remain available in the repository data file.</div>
+  </noscript>
+
+  <script src="pwa.js?v=20260717-8570d1f4ec90" defer></script>
+  <script src="app.js?v=20260717-8570d1f4ec90" defer></script>
+</body>
+</html>

@@ -1,0 +1,579 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f7f9;
+  --paper: #ffffff;
+  --ink: #16181d;
+  --muted: #636b76;
+  --line: #dfe4ea;
+  --blue: #2563eb;
+  --blue-soft: #eaf0ff;
+  --gold: #b45309;
+  --gold-soft: #fff4d6;
+  --green: #16803c;
+  --shadow: 0 18px 60px rgba(20, 28, 42, 0.08);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.appShell {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.sideRail {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow: auto;
+  border-right: 1px solid var(--line);
+  background: #fbfcfd;
+  padding: 22px 16px;
+}
+
+.homeLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.modeSwitch {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  margin: 18px 0;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.modeSwitch.singleMode {
+  grid-template-columns: 1fr;
+}
+
+.modeButton {
+  min-height: 36px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition:
+    background-color 140ms ease,
+    color 140ms ease,
+    transform 140ms ease;
+}
+
+.modeButton.active {
+  background: var(--blue);
+  color: #ffffff;
+}
+
+.modeButton:active,
+.chapterNav button:active,
+.copyButton:active {
+  transform: translateY(1px);
+}
+
+.chapterNav {
+  display: grid;
+  gap: 4px;
+}
+
+.chapterNav button {
+  width: 100%;
+  min-height: 38px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    background-color 140ms ease,
+    color 140ms ease,
+    transform 140ms ease;
+}
+
+.chapterNav button:hover,
+.chapterNav button:focus-visible {
+  background: var(--blue-soft);
+  color: var(--ink);
+  outline: none;
+}
+
+.navNumber {
+  display: inline-block;
+  width: 34px;
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.readerPane {
+  width: min(100%, 1040px);
+  margin: 0 auto;
+  padding: 48px 38px 80px;
+}
+
+.readerHeader {
+  padding-bottom: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 760px;
+  margin-bottom: 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 4.3rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.subtitle {
+  max-width: 720px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.headerActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.headerActions a,
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  border-radius: 7px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.headerActions a {
+  color: var(--blue);
+}
+
+.copyButton {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0 13px;
+  transition:
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    transform 140ms ease;
+}
+
+.copyButton:hover,
+.copyButton:focus-visible {
+  border-color: var(--blue);
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.12);
+  outline: none;
+}
+
+.noteBand,
+.highlightCard,
+.chapterBlock {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.noteBand {
+  margin-bottom: 28px;
+  padding: 24px;
+}
+
+.noteBand h2,
+.highlights h2 {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.noteBand p,
+.highlightCard p,
+.chapterBody p,
+.chapterNote p {
+  color: #272b32;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.08rem;
+  line-height: 1.74;
+}
+
+.noteBand p:last-child,
+.highlightCard p:last-child,
+.chapterBody p:last-child,
+.chapterNote p:last-child {
+  margin-bottom: 0;
+}
+
+.highlights {
+  margin-bottom: 34px;
+}
+
+.highlightGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.highlightCard {
+  padding: 18px;
+  border-left: 4px solid var(--gold);
+}
+
+.highlightCard h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.highlightCard blockquote {
+  margin: 0 0 12px;
+  padding-left: 14px;
+  border-left: 3px solid var(--line);
+  color: #1d232b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.04rem;
+  line-height: 1.65;
+}
+
+.highlightCard p {
+  font-size: 0.99rem;
+}
+
+.chapterList {
+  display: grid;
+  gap: 18px;
+}
+
+.chapterBlock {
+  scroll-margin-top: 20px;
+  padding: 26px;
+  animation: chapterIn 180ms ease both;
+}
+
+@keyframes chapterIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chapterHeader {
+  display: flex;
+  gap: 14px;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.chapterKicker {
+  margin-bottom: 8px;
+  color: var(--blue);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.chapterBlock h3 {
+  margin-bottom: 0;
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  letter-spacing: 0;
+}
+
+.comparisonSection {
+  padding-top: 4px;
+}
+
+.comparisonSection + .comparisonSection {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.comparisonLabel {
+  margin-bottom: 10px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.readerEditSection .comparisonLabel {
+  color: var(--green);
+}
+
+.readerEditBody {
+  padding-left: 14px;
+  border-left: 3px solid #d9eadf;
+}
+
+.readerEditNotes {
+  margin-top: 16px;
+  padding: 13px 15px;
+  border-left: 3px solid var(--green);
+  background: #f2fbf4;
+}
+
+.readerEditNotesLabel {
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.readerEditNotes p {
+  color: #35443b;
+  font-size: 0.96rem;
+  line-height: 1.58;
+}
+
+.chapterContext {
+  margin: 8px 0 20px;
+  padding: 13px 15px;
+  border-left: 3px solid var(--blue);
+  background: #f3f7ff;
+}
+
+.chapterContextLabel {
+  margin-bottom: 5px;
+  color: var(--blue);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chapterContext p {
+  color: #3d4856;
+  font-size: 0.96rem;
+  line-height: 1.58;
+}
+
+.chapterNote {
+  margin-top: 18px;
+  padding: 16px;
+  border-left: 4px solid var(--green);
+  background: #edf9f0;
+}
+
+.chapterNoteLabel {
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.toast {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  max-width: min(320px, calc(100vw - 36px));
+  padding: 11px 13px;
+  border-radius: 7px;
+  background: #16181d;
+  color: #ffffff;
+  font-size: 0.92rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.copyPanel {
+  position: fixed;
+  inset: auto 18px 18px auto;
+  z-index: 20;
+  display: grid;
+  gap: 10px;
+  width: min(560px, calc(100vw - 36px));
+  max-height: min(520px, calc(100vh - 36px));
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 24px 80px rgba(20, 28, 42, 0.18);
+}
+
+.copyPanelHeader {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyPanel h2 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.copyArea {
+  width: 100%;
+  min-height: 260px;
+  resize: vertical;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px;
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+body.sourceMode .noteBand,
+body.sourceMode .highlights {
+  display: none;
+}
+
+body.sourceMode .chapterBody p {
+  font-size: 1rem;
+}
+
+body.compareMode .chapterContext {
+  margin-bottom: 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media (max-width: 860px) {
+  .appShell {
+    display: block;
+  }
+
+  .sideRail {
+    position: static;
+    height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .chapterNav {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .chapterNav button {
+    text-align: center;
+  }
+
+  .navNumber {
+    width: auto;
+  }
+
+  .navTitle {
+    display: none;
+  }
+
+  .readerPane {
+    padding: 30px 18px 58px;
+  }
+
+  .highlightGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .chapterHeader {
+    display: grid;
+  }
+
+  .copyPanel {
+    inset: auto 10px 10px 10px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .chapterNav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .noteBand,
+  .chapterBlock {
+    padding: 20px;
+  }
+}

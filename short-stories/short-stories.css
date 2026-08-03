@@ -1,0 +1,64 @@
+* { box-sizing: border-box; }
+html { background: var(--wisdom-bg); color: var(--wisdom-ink); font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+body { min-height: 100vh; min-height: 100dvh; margin: 0; background: var(--wisdom-bg); }
+button { font: inherit; }
+
+.storyShell { width: min(calc(100% - 32px), 760px); margin: 0 auto; padding: clamp(42px, 7vw, 78px) 0 72px; }
+.storyIntro { margin-bottom: 24px; }
+.storyIntro p, .pathHeading p { margin: 0 0 5px; color: var(--wisdom-accent); font-size: 0.68rem; font-weight: 820; letter-spacing: 0.12em; }
+.storyIntro h1 { margin: 0 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.7rem, 6vw, 4.2rem); font-weight: 500; letter-spacing: -0.05em; line-height: 0.95; }
+.storyIntro span { color: var(--wisdom-muted); font-size: 0.95rem; }
+
+.readSection, .pathSection { overflow: hidden; border-block: 1px solid var(--wisdom-line); background: var(--wisdom-paper); }
+.sectionTop { display: flex; justify-content: space-between; align-items: baseline; min-height: 52px; gap: 14px; padding: 14px 18px; }
+.sectionTop h2 { margin: 0; font-size: 0.9rem; }
+.sectionTop span { color: var(--wisdom-muted); font-size: 0.75rem; }
+.readGrid { display: grid; grid-template-columns: 1fr; border-top: 1px solid var(--wisdom-line); }
+.readItem { display: flex; min-width: 0; min-height: 104px; flex-direction: column; justify-content: space-between; color: inherit; padding: 16px 18px; text-decoration: none; }
+.readItem + .readItem { border-top: 1px solid var(--wisdom-line); }
+.readItem strong, .readItem small { display: block; }
+.readItem strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.03rem; line-height: 1.2; }
+.readItem small { margin-top: 4px; color: var(--wisdom-muted); }
+.readStatus { color: var(--wisdom-accent); font-size: 0.72rem; font-weight: 760; }
+
+.pathPicker { display: flex; gap: 18px; overflow-x: auto; margin: 28px 0 10px; border-bottom: 1px solid var(--wisdom-line); padding: 0; scrollbar-width: none; }
+.pathPicker::-webkit-scrollbar { display: none; }
+.pathOption { flex: 0 0 auto; min-height: 44px; border: 0; border-bottom: 2px solid transparent; background: var(--wisdom-paper); color: var(--wisdom-muted); padding: 9px 0; font-size: 0.8rem; font-weight: 730; }
+.pathOption[aria-pressed="true"] { border-color: var(--wisdom-ink); background: transparent; color: var(--wisdom-ink); }
+
+.pathHeading { display: flex; justify-content: space-between; gap: 20px; align-items: end; min-height: 92px; border-bottom: 1px solid var(--wisdom-line); padding: 20px 22px; }
+.pathHeading h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.55rem, 3vw, 2.25rem); font-weight: 500; letter-spacing: -0.035em; }
+.pathHeading > span { max-width: 300px; color: var(--wisdom-muted); font-size: 0.82rem; line-height: 1.42; text-align: right; }
+.storyList { margin: 0; padding: 0; list-style: none; }
+.storyList li + li { border-top: 1px solid var(--wisdom-line); }
+.storyRow { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 14px; align-items: center; min-height: 124px; color: inherit; padding: 19px 22px; text-decoration: none; }
+.storyRow:hover, .readItem:hover { background: var(--wisdom-accent-soft); }
+.storyIndex { align-self: start; color: var(--wisdom-accent); font-size: 0.7rem; font-weight: 820; }
+.storyCopy { display: grid; gap: 5px; }
+.storyCopy strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.16rem; line-height: 1.18; }
+.storyCopy small, .storyQuestion, .storyAvailability { color: var(--wisdom-muted); font-size: 0.76rem; line-height: 1.42; }
+.storyQuestion { max-width: 680px; }
+.storyAvailability { white-space: nowrap; font-weight: 730; }
+.storyFooter { margin-top: 18px; color: var(--wisdom-muted); font-size: 0.74rem; line-height: 1.5; }
+.storyRow:focus-visible, .readItem:focus-visible, .pathOption:focus-visible { outline: 3px solid rgba(45, 91, 73, 0.28); outline-offset: -3px; }
+
+@media (max-width: 680px) {
+  .storyShell { width: min(calc(100% - 24px), var(--wisdom-shell-width)); padding-top: 26px; }
+  .readGrid { grid-template-columns: 1fr; }
+  .readItem { min-height: 82px; }
+  .readItem + .readItem { border-top: 1px solid var(--wisdom-line); border-left: 0; }
+  .pathHeading { align-items: start; flex-direction: column; gap: 8px; }
+  .pathHeading > span { max-width: none; text-align: left; }
+  .storyRow { grid-template-columns: 24px minmax(0, 1fr); padding: 17px; }
+  .storyAvailability { grid-column: 2; white-space: normal; }
+}
+
+@media (max-height: 460px) and (orientation: landscape) {
+  .storyShell { padding-top: 20px; }
+  .storyIntro { margin-bottom: 16px; }
+  .storyIntro h1 { font-size: 3rem; }
+  .readGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .readItem + .readItem { border-top: 0; border-left: 1px solid var(--wisdom-line); }
+}
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

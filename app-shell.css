@@ -1,0 +1,127 @@
+:root {
+  --wisdom-bg: #f5f5f7;
+  --wisdom-paper: #ffffff;
+  --wisdom-ink: #1d1d1f;
+  --wisdom-muted: #6e6e73;
+  --wisdom-line: rgba(60, 60, 67, 0.16);
+  --wisdom-accent: #007aff;
+  --wisdom-accent-soft: #eef6ff;
+  --wisdom-shell-width: 1040px;
+  --wisdom-header-height: 52px;
+  --wisdom-safe-top: env(safe-area-inset-top, 0px);
+  --wisdom-safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.wisdomSkip {
+  position: fixed;
+  top: 8px;
+  left: 12px;
+  z-index: 1000;
+  min-height: 44px;
+  transform: translateY(-160%);
+  border-radius: 10px;
+  background: var(--wisdom-ink);
+  color: #fff;
+  padding: 11px 14px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.wisdomSkip:focus { transform: translateY(0); }
+
+.wisdomHeader {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-height: calc(var(--wisdom-header-height) + var(--wisdom-safe-top));
+  border-bottom: 1px solid var(--wisdom-line);
+  background: rgba(245, 245, 247, 0.82);
+  color: var(--wisdom-ink);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.wisdomHeaderInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  width: min(calc(100% - 32px), var(--wisdom-shell-width));
+  min-height: var(--wisdom-header-height);
+  padding-top: var(--wisdom-safe-top);
+  margin: 0 auto;
+}
+
+.wisdomBrand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: inherit;
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: 1.12rem;
+  font-weight: 760;
+  letter-spacing: -0.025em;
+  text-decoration: none;
+}
+
+.wisdomTabs {
+  display: flex;
+  align-items: stretch;
+  align-self: stretch;
+  gap: 4px;
+}
+
+.wisdomTabs a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 68px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--wisdom-muted);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.wisdomTabs a::after {
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  left: 12px;
+  height: 2px;
+  border-radius: 99px 99px 0 0;
+  background: transparent;
+  content: "";
+}
+
+.wisdomTabs a[aria-current="page"] { color: var(--wisdom-accent); }
+.wisdomTabs a[aria-current="page"]::after { background: var(--wisdom-accent); }
+
+.wisdomBrand:focus-visible,
+.wisdomTabs a:focus-visible {
+  outline: 2px solid rgba(49, 95, 136, 0.34);
+  outline-offset: -3px;
+}
+
+@media (max-width: 520px) {
+  :root { --wisdom-header-height: 50px; }
+  .wisdomHeaderInner { width: min(calc(100% - 24px), var(--wisdom-shell-width)); gap: 8px; }
+  .wisdomBrand { font-size: 0.96rem; }
+  .wisdomTabs { gap: 0; }
+  .wisdomTabs a { min-width: 58px; padding-inline: 8px; font-size: 0.8rem; }
+  .wisdomTabs a::after { right: 9px; left: 9px; }
+}
+
+@media (max-height: 460px) and (orientation: landscape) {
+  :root { --wisdom-header-height: 48px; }
+  .wisdomHeaderInner { width: min(calc(100% - 28px), var(--wisdom-shell-width)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wisdomSkip { transition: none; }
+}

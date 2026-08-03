@@ -1,0 +1,2241 @@
+{
+  "schemaVersion": 1,
+  "builtFrom": "five-rights-cleared-wisdom-readers",
+  "builtAtCutoff": "2026-07-17",
+  "maxStartNext": 3,
+  "transformationModes": {
+    "Original": "Untouched source wording except transcription cleanup.",
+    "Clean": "Tiny source-close fixes that remove friction without changing the argument.",
+    "Guided": "Full source stays visible with local context or glosses.",
+    "Teaching Edit": "Direct sentence/paragraph rewrite preserving order, images, claims, and important quotes.",
+    "Jerry Edition": "Direct sentence/paragraph rewrite preserving order, images, claims, and important quotes.",
+    "Lecture": "Source claim plus definitions, worked example, why it matters, and misunderstanding to avoid."
+  },
+  "works": [
+    {
+      "id": "seneca",
+      "kind": "Essay",
+      "studioId": "seneca-shortness",
+      "slug": "seneca-shortness-of-life",
+      "person": "Seneca",
+      "themes": [
+        "time",
+        "agency",
+        "busyness",
+        "attention"
+      ],
+      "difficulty": 2,
+      "minutes": 20,
+      "rights": "public-domain",
+      "modes": [
+        "Original",
+        "Clean",
+        "Teaching Edit"
+      ],
+      "modeParams": {
+        "Original": "source",
+        "Clean": "adapted",
+        "Teaching Edit": "compare"
+      },
+      "defaultMode": "Teaching Edit",
+      "path": {
+        "whyNow": "Seneca's distinction between real constraint and false necessity turns the essay into a practical agency test.",
+        "context": [
+          "Seneca is addressing Paulinus, not writing generic productivity advice.",
+          "Roman status and busyness are examples of surrendered agency, not merely bad scheduling."
+        ],
+        "sequence": [
+          "Chapter I: Read Original, then Teaching Edit. Mark where the claim changes from lifespan to waste.",
+          "Chapters II–III: List one imposed demand and one chosen demand that Seneca would treat the same."
+        ],
+        "comprehension": "Explain the claim without using the words busy, time, or productivity.",
+        "strongestIdeas": [
+          "Life feels short when attention is continuously pre-committed.",
+          "False necessity hides the fact that many obligations were accepted, repeated, or never renegotiated."
+        ],
+        "counterargument": "Care obligations, money, illness, and coercive work can genuinely constrain agency; Seneca's elite position makes his rebuke too universal.",
+        "output": {
+          "kind": "training-change",
+          "prompt": "Write one if/then rule that removes a false necessity from tomorrow, and name the first 10-minute action.",
+          "minimumChars": 80,
+          "doingMinutes": 25,
+          "studyMinutes": 10
+        },
+        "layer": "Teaching Edit"
+      },
+      "title": "Seneca: Of the Shortness of Life",
+      "subtitle": "A near-original reader with context notes, a full teaching edit, and the untouched source beside it.",
+      "unitLabel": "Chapter",
+      "source": {
+        "label": "Project Gutenberg eBook 64576",
+        "url": "https://www.gutenberg.org/ebooks/64576",
+        "version": "Aubrey Stewart public-domain English translation · Project Gutenberg eBook 64576",
+        "provenance": null
+      },
+      "units": [
+        {
+          "id": "i",
+          "number": "I",
+          "title": "Chapter I",
+          "context": [
+            "Seneca opens as if he is answering a common Roman complaint: life feels unfairly short. Paulinus is the addressee, so read this as direct counsel to a busy public man, not as a detached essay for school."
+          ]
+        },
+        {
+          "id": "ii",
+          "number": "II",
+          "title": "Chapter II",
+          "context": [
+            "This chapter is a catalog of Roman forms of self-loss: money, status, military ambition, drink, laziness, and restless travel. The point is not that one vice is worst; it is that life leaks out through whatever gets to command your attention."
+          ]
+        },
+        {
+          "id": "iii",
+          "number": "III",
+          "title": "Chapter III",
+          "context": [
+            "The property comparison matters in Roman context. People defend boundaries, inheritances, and money with legal or even physical force, but hand over time without noticing that it is the deeper possession."
+          ]
+        },
+        {
+          "id": "iv",
+          "number": "IV",
+          "title": "Chapter IV",
+          "context": [
+            "Seneca brings in Augustus, the first emperor, to show that even supreme power does not create inner freedom. The historical examples are there to make the argument harder to dismiss as advice only for ordinary people."
+          ]
+        },
+        {
+          "id": "v",
+          "number": "V",
+          "title": "Chapter V",
+          "context": [
+            "Cicero, Cato, and Scipio are Roman public-life heroes, but Seneca treats them as warnings as well as models. He is asking whether glory can still leave a person without any room to belong to himself."
+          ]
+        },
+        {
+          "id": "vi",
+          "number": "VI",
+          "title": "Chapter VI",
+          "context": [
+            "Livius Drusus was remembered as a political reformer pulled into dangerous public conflict. Seneca uses him to show that even energetic, serious people can spend a whole life inside urgency."
+          ]
+        },
+        {
+          "id": "vii",
+          "number": "VII",
+          "title": "Chapter VII",
+          "context": [
+            "The attacks on luxury sound moralistic, but the deeper target is absorption. Banquets, grooming, sleep, sex, and display become \"business\" when they take over the whole day and leave no free mind behind."
+          ]
+        },
+        {
+          "id": "viii",
+          "number": "VIII",
+          "title": "Chapter VIII",
+          "context": [
+            "This is Seneca's time-accounting chapter. Time is hard to value because it is invisible, so people price it lower than money even though every other good depends on it."
+          ]
+        },
+        {
+          "id": "ix",
+          "number": "IX",
+          "title": "Chapter IX",
+          "context": [
+            "Here Seneca attacks postponement: the fantasy that real life starts after the next success, obligation, or calm season. Keep the focus on the present-tense theft, not on generic productivity. The poet quote is compressed: the \"best day\" is the present/nearest usable day, because it is the first to vanish if you wait."
+          ]
+        },
+        {
+          "id": "x",
+          "number": "X",
+          "title": "Chapter X",
+          "context": [
+            "Fabianus represents the older Roman ideal of philosophy as forceful moral training, not clever argument games. Seneca is preparing to define the \"busy\" person as someone internally scattered, even when outwardly successful."
+          ]
+        },
+        {
+          "id": "xi",
+          "number": "XI",
+          "title": "Chapter XI",
+          "context": [
+            "The old men in this chapter are not mocked for aging. They are frightening because they reach the end still trying to bargain for time they never learned to use while they had it."
+          ]
+        },
+        {
+          "id": "xii",
+          "number": "XII",
+          "title": "Chapter XII",
+          "context": [
+            "Seneca widens \"busy\" beyond obvious public work: courts, clients, auctions, country houses, couches, and solitary hobbies can all be forms of captivity. The test is whether the mind is actually free."
+          ]
+        },
+        {
+          "id": "xiii",
+          "number": "XIII",
+          "title": "Chapter XIII",
+          "context": [
+            "The examples of games, exercise, and trivial scholarship are about learned distraction. Seneca is not anti-learning; he is against using clever questions to avoid the work of living."
+          ]
+        },
+        {
+          "id": "xiv",
+          "number": "XIV",
+          "title": "Chapter XIV",
+          "context": [
+            "This is where philosophy becomes a larger inheritance. By reading and thinking with older minds, a person can extend life beyond one private span and join a much longer human conversation."
+          ]
+        },
+        {
+          "id": "xv",
+          "number": "XV",
+          "title": "Chapter XV",
+          "context": [
+            "The \"patrons\" here are philosophers and writers, not Roman power brokers. Seneca contrasts public patronage, which costs dependence, with the dead teachers who can be approached freely."
+          ]
+        },
+        {
+          "id": "xvi",
+          "number": "XVI",
+          "title": "Chapter XVI",
+          "context": [
+            "Seneca's time map is past, present, and future. Busy people lose all three: the past is neglected, the present is missed, and the future becomes fear."
+          ]
+        },
+        {
+          "id": "xvii",
+          "number": "XVII",
+          "title": "Chapter XVII",
+          "context": [
+            "The crying king is a reminder that power can make mortality more visible, not less. Seneca keeps returning to rulers because he wants to break the assumption that more status solves the time problem."
+          ]
+        },
+        {
+          "id": "xviii",
+          "number": "XVIII",
+          "title": "Chapter XVIII",
+          "context": [
+            "This chapter turns directly back to Paulinus. Seneca is not asking him to become idle; he is asking him to leave enough public burden behind to test whether he can handle real leisure. In this old translation, \"corn\" means grain supply generally, not American corn."
+          ]
+        },
+        {
+          "id": "xix",
+          "number": "XIX",
+          "title": "Chapter XIX",
+          "context": [
+            "The grain-supply example comes from Paulinus's public responsibilities. Seneca contrasts necessary civic administration with the larger study of nature, death, soul, and the gods."
+          ]
+        },
+        {
+          "id": "xx",
+          "number": "XX",
+          "title": "Chapter XX",
+          "context": [
+            "The closing returns to Roman honors: purple robes, forum reputation, consulship, and tomb inscriptions. Seneca's final warning is that a public name can be bought with the private life that should have been lived. The final torchlight funeral image depends on the footnote: children's funerals were associated with torchlight, so Seneca is saying some old public lives were barely lived at all."
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "title": "The thesis",
+          "excerpt": "We do not receive a short life, but we make it a short one, and we are not poor in days, but wasteful of them.",
+          "note": "This is the central claim of the essay. Seneca is not mainly complaining that death comes too soon; he is saying life feels short because people hand it over without judgment. Read every later example as evidence for this ownership problem: money, status, work, pleasure, and public duty can all spend the same life."
+        },
+        {
+          "title": "False necessity",
+          "excerpt": "Life is long enough, if you know how to use it.",
+          "note": "Important because it attacks the excuse that the life problem is only external. Seneca does not deny real obligations, but he keeps forcing the reader to separate necessity from imitation, fear, approval, and drift. The useful test is whether a supposedly unavoidable demand was chosen by judgment or copied from pressure."
+        },
+        {
+          "title": "No one belongs to himself",
+          "excerpt": "A is devoted to B, and B to C: no one belongs to himself.",
+          "note": "This is the cleanest diagnosis of the outsourcing-of-life problem. A day can be full, respected, and socially useful while still not belonging to the person living it. The point is not isolation; it is whether your attention and choices have an owner."
+        },
+        {
+          "title": "Property versus time",
+          "excerpt": "You cannot find any one who wants to distribute his money; yet among how many people does every one distribute his life?",
+          "note": "Supportive analogy: Seneca makes time feel like property because people already understand defending property. The analogy supports the thesis by making attention loss concrete. It is especially relevant if you are generous with objects but careless with tired phone-drift time."
+        },
+        {
+          "title": "Augustus wanted out",
+          "excerpt": "For this reason he longed for leisure: all his labours were based upon hopes and thoughts of leisure.",
+          "note": "Supportive historical example: Augustus is the strongest status case Seneca can choose. If the first emperor, with maximum power and honor, still dreams of being released from the role, then status cannot be the cure for the time problem. The example supports the broader trend: identity plus responsibility can become a prison even when everyone else calls it success."
+        },
+        {
+          "title": "Half a prisoner",
+          "excerpt": "I am living in my Tusculan villa almost as a prisoner.",
+          "note": "Supportive historical example: Cicero has the retreat, the villa, and the distance from public life, but not inner freedom. Seneca uses him to show that leisure is not a location. You can leave the office, city, or group and still be mentally owned by responsibility, identity, politics, and reputation."
+        },
+        {
+          "title": "Postponed life",
+          "excerpt": "There is no such obstacle to true living as waiting, which loses to-day while it is depending on the morrow.",
+          "note": "This is one of the most practical lines in the whole essay. It is not anti-planning; it is anti-postponement. Seneca is warning against storing real life inside an ideal future identity while the usable day remains unchosen."
+        },
+        {
+          "title": "The first day flies",
+          "excerpt": "The best of unhappy mortals’ days is the first to fly.",
+          "note": "Important because the poetry is easy to misread. It does not mean childhood or youth is automatically best. It means the nearest usable day is the best one because it is the first to disappear; if you wait for the ideal season, the actual day has already been spent."
+        },
+        {
+          "title": "Learning how to live",
+          "excerpt": "One's whole life must be spent in learning how to live, and, which may perhaps surprise you more, one's whole life must be spent in learning how to die.",
+          "note": "This reframes the essay away from productivity. Seneca is not saying to optimize every hour into output; he is saying living itself is a discipline. Learning how to die means keeping mortality in view so your choices are cleaner while you are alive."
+        }
+      ],
+      "readerHref": "seneca-shortness-of-life/reader/index.html",
+      "sourceArtifact": "wisdom/seneca-shortness-of-life/reader/data.js",
+      "sourceHash": "0f27aa3d12b67d6df4d67576b231b03e15cddadcaa94b26c58b7f4d123c9a095",
+      "format": "text",
+      "audio": {
+        "available": false,
+        "reason": "Voice previews are design samples, not accepted full-text audio."
+      }
+    },
+    {
+      "id": "ivan",
+      "kind": "Book",
+      "studioId": "ivan-ilyich",
+      "slug": "the-death-of-ivan-ilyich",
+      "person": "Leo Tolstoy",
+      "themes": [
+        "mortality",
+        "status",
+        "false life",
+        "family"
+      ],
+      "difficulty": 3,
+      "minutes": 25,
+      "rights": "public-domain text / CC BY-NC context",
+      "modes": [
+        "Original",
+        "Clean",
+        "Guided",
+        "Jerry Edition"
+      ],
+      "modeParams": {
+        "Original": "source",
+        "Clean": "adapted",
+        "Guided": "compare",
+        "Jerry Edition": "jerry"
+      },
+      "defaultMode": "Jerry Edition",
+      "path": {
+        "whyNow": "Jerry prefers raw moral weight to schematic cleverness; Tolstoy makes an ordinary respectable life physically and socially concrete.",
+        "context": [
+          "The bureaucratic titles and French phrases signal status performance.",
+          "Tolstoy's repetition is satire: correctness itself becomes suffocating."
+        ],
+        "sequence": [
+          "Chapter II: Read the Guided text; switch to Jerry Edition only at friction points.",
+          "Chapter VI: Track how the syllogism about death fails emotionally."
+        ],
+        "comprehension": "Which sentence shows Ivan making a life choice without experiencing it as a choice?",
+        "strongestIdeas": [
+          "A life can be socially validated and inwardly counterfeit.",
+          "Mortality becomes unbearable when it threatens the story that correctness guaranteed safety."
+        ],
+        "counterargument": "Tolstoy compresses middle-class convention into a moral indictment and can understate the dignity of ordinary compromise.",
+        "output": {
+          "kind": "paragraph",
+          "prompt": "Write 120–180 words about one socially correct script you follow: what it protects, what it costs, and one honest exception.",
+          "minimumChars": 300,
+          "doingMinutes": 30,
+          "studyMinutes": 12
+        },
+        "layer": "Guided + Jerry Edition on demand"
+      },
+      "title": "The Death of Ivan Ilyich",
+      "subtitle": "The complete Maude English edition in a mobile reader, with a full Jerry Edition rewrite path where old wording, French, Russian social code, official language, medical evasions, and Tolstoy's irony would slow Jerry down.",
+      "unitLabel": "Chapter",
+      "source": {
+        "label": "University of Minnesota Open Textbook full English edition",
+        "url": "https://open.lib.umn.edu/ivanilich/chapter/full-text-english/",
+        "version": "Full twelve-chapter English edition from the electronic study edition; Maude translation text used as the reading source.",
+        "provenance": null
+      },
+      "units": [
+        {
+          "id": "i",
+          "number": "I",
+          "title": "The Funeral and the Avoided Warning",
+          "context": [
+            "Before reading: the opening is after Ivan's death. Watch how quickly his colleagues turn death into promotions, inconvenience, etiquette, and card games. Schwartz is the polished friend who represents social normality continuing as if nothing ultimate has happened.",
+            "Name handles: Praskovya Fedorovna is Ivan's widow; Peter Ivanovich is the colleague whose viewpoint frames the funeral; Gerasim is the servant who will later become the honest counterweight to everyone else."
+          ]
+        },
+        {
+          "id": "ii",
+          "number": "II",
+          "title": "A Correct Life Takes Shape",
+          "context": [
+            "Before reading: this chapter explains how Ivan's life became 'correct.' Words like propriety, decorum, pleasantness, and comme il faut are load-bearing. They mean socially approved form, not deep goodness.",
+            "The French phrase 'Il faut que jeunesse se passe' means roughly 'youth must have its fling.' Tolstoy uses it to show how society excuses self-indulgence when it is done by the right people in the right style."
+          ]
+        },
+        {
+          "id": "iii",
+          "number": "III",
+          "title": "Promotion, House, and the Fall",
+          "context": [
+            "Before reading: the house is not background decoration. Ivan thinks he is arranging beauty and status, but Tolstoy shows the same shallow taste replicated everywhere. The fall from the ladder is physically small and narratively enormous."
+          ]
+        },
+        {
+          "id": "iv",
+          "number": "IV",
+          "title": "Doctors, Diagnosis, and Isolation",
+          "context": [
+            "Before reading: do not try to solve the medical diagnosis. The uncertainty is the design. Ivan and the doctors convert dread into technical phrases so no one has to say the real subject: he may be dying."
+          ]
+        },
+        {
+          "id": "v",
+          "number": "V",
+          "title": "The Lie Becomes the Room",
+          "context": [
+            "Before reading: Ivan is now caught between ordinary social life and private terror. The novel keeps repeating the appendix/kidney language because medical abstraction is his last defense against death."
+          ]
+        },
+        {
+          "id": "vi",
+          "number": "VI",
+          "title": "Death Stops Being Abstract",
+          "context": [
+            "Before reading: this short chapter is where death stops being an idea that happens to other people. Ivan can no longer keep it at the level of diagnosis or etiquette."
+          ]
+        },
+        {
+          "id": "vii",
+          "number": "VII",
+          "title": "Gerasim and the Only Honest Comfort",
+          "context": [
+            "Before reading: Gerasim's simplicity is not stupidity. He is the only person who tells the truth about death without cruelty, and that makes him the only person who can comfort Ivan."
+          ]
+        },
+        {
+          "id": "viii",
+          "number": "VIII",
+          "title": "Family Life Continues Around Him",
+          "context": [
+            "Before reading: the family scenes are supposed to feel unbearable. Everyone keeps ordinary life moving, while Ivan experiences that ordinary life as a lie because it refuses to acknowledge what is happening."
+          ]
+        },
+        {
+          "id": "ix",
+          "number": "IX",
+          "title": "What If My Whole Life Was Wrong?",
+          "context": [
+            "Before reading: this is the central self-judgment chapter. Ivan does not merely fear pain; he begins to suspect that the entire shape of his respectable life was wrong."
+          ]
+        },
+        {
+          "id": "x",
+          "number": "X",
+          "title": "The Scream Inside the Drawing Room",
+          "context": [
+            "Before reading: the black sack image is Ivan's felt experience of dying: being pushed toward what he cannot escape while still unable to pass through."
+          ]
+        },
+        {
+          "id": "xi",
+          "number": "XI",
+          "title": "The False Life Comes Into View",
+          "context": [
+            "Before reading: the syllogism matters because Ivan's school logic treated death as something that belongs to an abstract man named Caius, not to 'me, Vanya.' The collapse of that abstraction is the collapse of his old life-protection."
+          ]
+        },
+        {
+          "id": "xii",
+          "number": "XII",
+          "title": "Pity, Light, and the End of Death",
+          "context": [
+            "Before reading: the final turn is not an intellectual proof. Ivan sees his son and wife, pities them, stops defending himself, and the image changes from the black sack to light."
+          ]
+        }
+      ],
+      "passages": [],
+      "readerHref": "the-death-of-ivan-ilyich/reader/index.html",
+      "sourceArtifact": "wisdom/the-death-of-ivan-ilyich/reader/data.js",
+      "sourceHash": "384ad2ab5b3c74003fda8396d03fb3ec676f8d5a94d347312c50d50fb02c3897",
+      "format": "text",
+      "audio": {
+        "available": false,
+        "reason": "No accepted source-aligned audio."
+      }
+    },
+    {
+      "id": "don-quixote",
+      "kind": "Book",
+      "slug": "don-quixote",
+      "person": "Miguel de Cervantes",
+      "themes": [
+        "models",
+        "identity",
+        "imagination",
+        "reality"
+      ],
+      "difficulty": 3,
+      "minutes": 20,
+      "rights": "public-domain",
+      "modes": [
+        "Original",
+        "Clean",
+        "Jerry Edition"
+      ],
+      "modeParams": {
+        "Original": "source",
+        "Clean": "adapted",
+        "Jerry Edition": "compare"
+      },
+      "defaultMode": "Clean",
+      "path": {
+        "whyNow": "Jerry responds to mastery, self-creation, and the danger of living through borrowed models. Chapter I makes that problem funny, painful, and immediately legible.",
+        "context": [
+          "Chivalric romances were a recognizable popular genre, so the name-drops function like an obsessive private canon rather than a neutral bibliography.",
+          "The comedy depends on material scale: an aging minor gentleman converts food, clothes, a worn horse, and ordinary land into epic destiny."
+        ],
+        "sequence": [
+          "Read the focused guide, then the source-close Chapter I.",
+          "Compare the teaching rewrite only where names, genre conventions, or syntax hide the emotional move.",
+          "Name the exact beat where admiration becomes a reality-replacing mission."
+        ],
+        "comprehension": "What human need makes Don Quixote moving rather than merely delusional?",
+        "strongestIdeas": [
+          "A model can organize a life and also steal contact with reality.",
+          "The desire to matter is dignified; refusing correction is the danger."
+        ],
+        "counterargument": "Cervantes may not support a single modern psychological reading; the chapter also plays with genre, authorship, class, and literary fashion.",
+        "output": {
+          "kind": "anti-model rule",
+          "prompt": "Choose one creator, athlete, or fictional model you admire. Write what to copy, what not to copy, and one reality check that prevents imitation from replacing your own conditions.",
+          "minimumChars": 220,
+          "studyMinutes": 12,
+          "doingMinutes": 30
+        },
+        "layer": "Jerry Edition"
+      },
+      "title": "Don Quixote: Chapter I",
+      "subtitle": "A passage-sized comparison reader: each small source-close step sits beside the matching teaching rewrite, with only the note needed for that part.",
+      "unitLabel": "Chapter",
+      "source": {
+        "label": "Project Gutenberg eBook 996",
+        "url": "https://www.gutenberg.org/ebooks/996",
+        "version": "John Ormsby public-domain English translation; Part I, Chapter I only.",
+        "provenance": null
+      },
+      "units": [
+        {
+          "id": "i",
+          "number": "I",
+          "title": "Character and Pursuits",
+          "context": [
+            "Cervantes makes the household accounts concrete before the fantasy: the books cost this minor gentleman sleep, money, land, and eventually his ability to test one kind of evidence against another.",
+            "The joke is not only that he reads badly. His borrowed chivalric language gives an ordinary life purpose and scale, so the chapter keeps parody and genuine longing alive at the same time."
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "title": "Village, status, and old equipment"
+        },
+        {
+          "title": "His money mostly goes to food and appearances"
+        },
+        {
+          "title": "The household and the aging gentleman"
+        },
+        {
+          "title": "Even his name is unstable"
+        },
+        {
+          "title": "Leisure turns into obsession"
+        },
+        {
+          "title": "His favorite style is fake-deep fog"
+        },
+        {
+          "title": "He works too hard to understand nonsense"
+        },
+        {
+          "title": "He starts helping the fiction"
+        },
+        {
+          "title": "Village debates become power rankings"
+        },
+        {
+          "title": "Fiction becomes more real than history"
+        },
+        {
+          "title": "History, myth, and romance collapse together"
+        },
+        {
+          "title": "Old stories now regulate his emotions"
+        },
+        {
+          "title": "The fantasy speaks as duty"
+        },
+        {
+          "title": "Pleasure becomes action"
+        },
+        {
+          "title": "Old armor gets turned into a prop"
+        },
+        {
+          "title": "The failed test is quietly weakened"
+        },
+        {
+          "title": "A poor horse becomes heroic material"
+        },
+        {
+          "title": "The name must explain before and after"
+        },
+        {
+          "title": "Rocinante completes the transformation"
+        },
+        {
+          "title": "The man names himself into the role"
+        },
+        {
+          "title": "La Mancha is pulled into the myth"
+        },
+        {
+          "title": "Love is treated as a required slot"
+        },
+        {
+          "title": "He imagines the giant before the woman"
+        },
+        {
+          "title": "The speech is already scripted"
+        },
+        {
+          "title": "Aldonza is real, but not involved"
+        },
+        {
+          "title": "Dulcinea completes the story-world"
+        }
+      ],
+      "readerHref": "don-quixote/reader/index.html",
+      "sourceArtifact": "wisdom/don-quixote/reader/data.js",
+      "sourceHash": "89c55351dfd04d02074360f20d000ffc29bb17e799b19e55b4e795ef637e511b",
+      "format": "text",
+      "audio": {
+        "available": false,
+        "reason": "No accepted source-aligned audio."
+      }
+    },
+    {
+      "id": "nietzsche",
+      "kind": "Essay",
+      "slug": "nietzsche-schopenhauer-educator",
+      "person": "Friedrich Nietzsche",
+      "themes": [
+        "educators",
+        "creator models",
+        "culture",
+        "self-formation"
+      ],
+      "difficulty": 4,
+      "minutes": 25,
+      "rights": "public-domain translation",
+      "modes": [
+        "Original",
+        "Clean",
+        "Guided"
+      ],
+      "modeParams": {
+        "Original": "source",
+        "Clean": "adapted",
+        "Guided": "compare"
+      },
+      "defaultMode": "Guided",
+      "path": {
+        "whyNow": "Nietzsche asks how an educator can free a person from public opinion without becoming another borrowed identity.",
+        "context": [
+          "This is an essay about Schopenhauer as an educator, but much of its subject is Nietzsche's own formation and his attack on nineteenth-century German culture.",
+          "Educator means a liberator who removes obstruction; it does not mean a guru who supplies a finished self."
+        ],
+        "sequence": [
+          "Read Sections I–II for the self/educator claim.",
+          "Use context and marked passages before the near-source text in Sections V–VIII.",
+          "Treat the reader edit as guided notes, not a sentence-level rewrite."
+        ],
+        "comprehension": "How can a model free you without becoming a replacement identity?",
+        "strongestIdeas": [
+          "A real educator reveals the law of your own being rather than asking for imitation.",
+          "Culture should create conditions for real people and work, not reward safe institutional performance."
+        ],
+        "counterargument": "Nietzsche's heroic individualism can discount care, collective institutions, ordinary competence, and the ways formation depends on other people.",
+        "output": {
+          "kind": "model rule",
+          "prompt": "Write a three-part rule for one model: what the person helps liberate, what persona should not be imitated, and what independent work must follow.",
+          "minimumChars": 220,
+          "studyMinutes": 15,
+          "doingMinutes": 35
+        },
+        "layer": "Guided"
+      },
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "subtitle": "A complete public-domain Nietzsche essay on models, self-formation, culture, and why a real educator frees rather than replaces you.",
+      "unitLabel": "Section",
+      "source": {
+        "label": "Project Gutenberg eBook 38226",
+        "url": "https://www.gutenberg.org/ebooks/38226",
+        "version": "Verified public-domain English translation source; Adrian Collins translation from the Oscar Levy edition, not Nietzsche's German original.",
+        "provenance": null
+      },
+      "units": [
+        {
+          "id": "i",
+          "number": "I",
+          "title": "Public Opinion and Becoming Yourself",
+          "context": [
+            "Nietzsche opens with a familiar problem: people hide inside public taste, inherited opinions, and safe identities. \"Be yourself\" is not a soft slogan here. It means refusing to let the crowd answer for a life.",
+            "Use a simple guardrail: studying a model matters only if it turns back into action."
+          ]
+        },
+        {
+          "id": "ii",
+          "number": "II",
+          "title": "Educators as Liberators",
+          "context": [
+            "Nietzsche asks what an educator is. His answer is not \"someone who fills you with information.\" A true educator liberates what is already trying to become clear in you.",
+            "This is why Schopenhauer matters to him: not as a perfect man, but as a voice that made Nietzsche feel less trapped by the polite academic culture around him."
+          ]
+        },
+        {
+          "id": "iii",
+          "number": "III",
+          "title": "Schopenhauer as a Living Model",
+          "context": [
+            "This section turns Schopenhauer into a test case for honesty, solitude, and style. Nietzsche is not asking the reader to become Schopenhauer. He is asking what kind of person makes imitation harder after an encounter with their work.",
+            "Use that as the test for any exemplar: does the model sharpen conduct, or merely supply another personality to admire?"
+          ]
+        },
+        {
+          "id": "iv",
+          "number": "IV",
+          "title": "The Cultured Philistine",
+          "context": [
+            "Nietzsche attacks the comfortable scholar and the \"cultured Philistine.\" This is his version of saying that knowledge can become a costume.",
+            "The useful distinction is between reading that sharpens action and reading that merely decorates an identity."
+          ]
+        },
+        {
+          "id": "v",
+          "number": "V",
+          "title": "Culture as Formation",
+          "context": [
+            "This is the broadest and most metaphysical section. Nietzsche talks as if nature is trying to produce rare, higher human beings, and culture should serve that work.",
+            "Do not get stuck on the grand language. The practical point is simpler: every environment trains people toward something. Ask what conduct its incentives repeatedly produce."
+          ]
+        },
+        {
+          "id": "vi",
+          "number": "VI",
+          "title": "Forces That Bend Culture",
+          "context": [
+            "Nietzsche begins naming the forces that prevent culture from producing real people: business, state interest, polite society, fashionable education, and scholarship for its own sake.",
+            "Systems do not have to oppose formation openly. They can bend it by supplying respectable reasons to postpone serious work."
+          ]
+        },
+        {
+          "id": "vii",
+          "number": "VII",
+          "title": "Institutions and Truth",
+          "context": [
+            "This section is about the danger of confusing institutions with truth. Nietzsche is especially suspicious of state-sponsored philosophy because a paid office can make a thinker obedient.",
+            "Do not read this as a simple anti-school rant. The sharper point is about incentives: if a system pays for \"thought,\" what kinds of thought does it quietly reward?"
+          ]
+        },
+        {
+          "id": "viii",
+          "number": "VIII",
+          "title": "Building Conditions for Real Work",
+          "context": [
+            "Nietzsche ends by asking what conditions would actually allow a philosopher, artist, or genius to appear. He is not optimistic that normal institutions will do it for you.",
+            "The takeaway is not \"withdraw from everything.\" It is to build conditions that protect independent judgment and sustained work."
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "title": "The core command",
+          "excerpt": "Be yourself! all that you do and think and desire, is not--yourself!",
+          "note": "Nietzsche's point is not self-expression as vibe; it is the demand to stop outsourcing your life to public opinion."
+        },
+        {
+          "title": "Answering for your existence",
+          "excerpt": "We have to answer for our existence to ourselves; and will therefore be our own true pilots",
+          "note": "This is the practical center: no teacher, system, or model can finally answer for another person's life."
+        },
+        {
+          "title": "What an educator can do",
+          "excerpt": "thy educators can be nothing but thy deliverers.",
+          "note": "A real educator removes what blocks the self; they do not hand over a finished identity."
+        },
+        {
+          "title": "Culture's aim",
+          "excerpt": "the real aim of culture--the production of the true man",
+          "note": "For this reader, culture means formation into a person capable of real work, not a shelf of impressive references."
+        },
+        {
+          "title": "Truth versus office",
+          "excerpt": "every state fears them, and will only favour philosophers it does not fear.",
+          "note": "Nietzsche's institutional critique is an incentives critique: systems prefer thought they can safely sponsor."
+        }
+      ],
+      "readerHref": "nietzsche-schopenhauer-educator/reader/index.html",
+      "sourceArtifact": "wisdom/nietzsche-schopenhauer-educator/reader/data.js",
+      "sourceHash": "870f326625b9d553625b257440c0bbc702848f965366fe15bbce1e2e3b6fc384",
+      "format": "text",
+      "audio": {
+        "available": false,
+        "reason": "No accepted source-aligned audio."
+      }
+    },
+    {
+      "id": "arabian-nights",
+      "kind": "Book",
+      "slug": "arabian-nights",
+      "person": "Richard F. Burton / traditional corpus",
+      "themes": [
+        "storytelling",
+        "attention",
+        "violence",
+        "inheritance"
+      ],
+      "difficulty": 4,
+      "minutes": 25,
+      "rights": "public-domain translation",
+      "modes": [
+        "Original"
+      ],
+      "modeParams": {
+        "Original": "source"
+      },
+      "defaultMode": "Original",
+      "path": {
+        "whyNow": "Jerry likes singular voice and story as an engine. The Nights tests whether inherited tales can interrupt destructive repetition without being flattened into modern summary prose.",
+        "context": [
+          "Burton's 1885 English is deliberately archaizing and carries his own Victorian orientalist framing; it is not transparent access to a single original Nights.",
+          "The Shahryar–Shahrazad frame is the survival mechanism: each dawn interruption makes attention and unfinished story an action inside the plot."
+        ],
+        "sequence": [
+          "Read the frame opening through Shahrazad's decision.",
+          "Continue one nested tale at a time; use section titles as stopping points.",
+          "Keep Burton's flavor visible, but stop and record where diction creates real rather than pleasurable friction."
+        ],
+        "comprehension": "What does Shahrazad change through the form of telling, not only through a tale's moral?",
+        "strongestIdeas": [
+          "Narrative attention can interrupt a repeated violent script.",
+          "The frame makes listening consequential: continuation itself becomes survival and change."
+        ],
+        "counterargument": "Celebrating storytelling can soften the frame's gendered violence, while Burton's translation choices can be mistaken for the culture or source itself.",
+        "output": {
+          "kind": "design experiment",
+          "prompt": "Take one difficult idea you want another person to hear. Outline a three-beat story that earns attention before stating the idea, then name the manipulation risk.",
+          "minimumChars": 220,
+          "studyMinutes": 15,
+          "doingMinutes": 35
+        },
+        "layer": "Original"
+      },
+      "title": "Arabian Nights: Burton Volume 1",
+      "subtitle": "Sir Richard Francis Burton's 1885 Volume 1 translation from Project Gutenberg, beginning with the Shahryar and Shah Zaman frame story.",
+      "unitLabel": "Section",
+      "source": {
+        "label": "Project Gutenberg eBook 3435",
+        "url": "https://www.gutenberg.org/ebooks/3435",
+        "version": "Burton translation · ten-volume core series (1885) · Project Gutenberg digital transcription, Volume 1, eBook 3435",
+        "provenance": {
+          "label": "Source receipt",
+          "found_via": "Kafka on the Shore, chapter 5 · Philip Gabriel English translation · Knopf 2005 / Vintage 2006, ISBN 9781400079278",
+          "verified_as": "The novel names a multivolume Richard F. Burton translation. Its later reading-scene label, ‘Abu-l-Hasan, the Wag,’ corresponds most closely to Burton's ‘The Sleeper and the Waker’ in Supplemental Nights, Volume 1, Project Gutenberg 3445.",
+          "access_rights": "The exact supplemental tale and this core Volume 1 reader are public domain in the USA. Wisdom stores no Murakami source body.",
+          "what_changed": "The trail now distinguishes Kafka's unspecified physical set, the exact supplemental tale (Gutenberg 3445), and Wisdom's current core Volume 1 start (Gutenberg 3435).",
+          "claim": "Kafka on the Shore chapter 5 identifies Burton's multivolume translation and returns to a tale found in Burton's Supplemental Nights, Volume 1; Wisdom's existing reader remains the core Volume 1 start.",
+          "reference_label": "Kafka on the Shore · Philip Gabriel translation · Vintage 2006",
+          "reference_url": "https://www.penguinrandomhouse.com/books/118718/kafka-on-the-shore-by-haruki-murakami/9781400079278/",
+          "text_label": "Read the exact Burton tale · Project Gutenberg 3445",
+          "text_url": "https://www.gutenberg.org/cache/epub/3445/pg3445-images.html#link2H_4_0003",
+          "related_label": "Open the checked Kafka reference map",
+          "related_url": "/wisdom/books/kafka/",
+          "fidelity": "The exact-tale match and the core reader are labeled separately; neither is presented as Kafka's physical printing or the whole Burton series."
+        }
+      },
+      "units": [
+        {
+          "id": "i",
+          "number": "I",
+          "title": "Story Of King Shahryar and His Brother",
+          "context": [
+            "This is the frame story Jerry expected: Shah Zaman discovers his wife's adultery, Shahryar discovers the same betrayal at his own court, and Shahrazad later begins the nightly storytelling structure.",
+            "The violence toward women is the crisis the collection must interrupt, not a premise the reader has to endorse. Shahrazad's wager is that attention, delay, and better examples can change a ruler who has converted private injury into public terror."
+          ]
+        },
+        {
+          "id": "i-a",
+          "number": "I.a",
+          "title": "Tale of the Bull and the Ass",
+          "context": [
+            "The vizier tells this animal fable to stop Shahrazad from volunteering. Its warning about clever interference backfires at the frame level: she hears a danger story and still chooses to intervene."
+          ]
+        },
+        {
+          "id": "ii",
+          "number": "II",
+          "title": "Tale of the Trader and the Jinni",
+          "context": [
+            "The first nightly tale establishes the collection's recurring bargain: a fatal sentence can be delayed if a stranger offers a story strange enough to deserve attention. Narrative becomes legal evidence and ransom at once."
+          ]
+        },
+        {
+          "id": "ii-a",
+          "number": "II.a",
+          "title": "The First Shaykh's Story",
+          "context": [
+            "The gazelle is not decorative magic but a transformed family member. The shaykh's wonder tale turns domestic jealousy and inheritance into testimony offered to reduce another man's punishment."
+          ]
+        },
+        {
+          "id": "ii-b",
+          "number": "II.b",
+          "title": "The Second Shaykh's Story",
+          "context": [
+            "This second plea repeats the pattern with brothers, commerce, and betrayal. Repetition matters: mercy is being assembled fraction by fraction, with each teller staking his own credibility on another person's life."
+          ]
+        },
+        {
+          "id": "ii-c",
+          "number": "II.c",
+          "title": "The Third Shaykh's Story",
+          "context": [
+            "Burton withholds most of the third shaykh's story. The abrupt compression reminds us that the Nights is a transmitted, uneven compilation, not a modern novel promising equal narrative weight to every branch."
+          ]
+        },
+        {
+          "id": "iii",
+          "number": "III",
+          "title": "The Fisherman and the Jinni",
+          "context": [
+            "The fisherman's jars release power that resents the person who freed it. Watch the weak character survive by making the strong character prove his own impossible claim—the first clear victory of skeptical questioning over force."
+          ]
+        },
+        {
+          "id": "iii-a",
+          "number": "III.a",
+          "title": "The Tale of the Wazir and the Sage Duban",
+          "context": [
+            "The vizier's story inside the fisherman's story asks whether rulers can distinguish loyal expertise from convenient accusation. Duban cures without touching the king, but technical brilliance offers no protection when envy controls the court."
+          ]
+        },
+        {
+          "id": "iii-a-1",
+          "number": "III.a.1",
+          "title": "King Sindibad and his Falcon",
+          "context": [
+            "The falcon destroys the king's drink because it knows what he does not. The king reads obstruction as disobedience, acts before checking, and discovers too late that authority cannot undo a hurried interpretation."
+          ]
+        },
+        {
+          "id": "iii-a-2",
+          "number": "III.a.2",
+          "title": "The Tale of the Husband and the Parrot",
+          "context": [
+            "The parrot is an instrument of surveillance whose truthful report is defeated by a staged counterexample. The tale is less about animal magic than about how one manufactured doubt can discredit a reliable witness."
+          ]
+        },
+        {
+          "id": "iii-a-3",
+          "number": "III.a.3",
+          "title": "The Tale of the Prince and the Ogress",
+          "context": [
+            "The prince mistakes an ogress for a helpless traveler and then escapes by invoking God. In the nested argument, the point is political: a ruler who accepts appearances without testing them endangers both himself and his dependents."
+          ]
+        },
+        {
+          "id": "iii-b",
+          "number": "III.b",
+          "title": "The Tale of the Ensorcelled Prince",
+          "context": [
+            "The black islands and their petrified inhabitants expand a private marriage catastrophe into a ruined state. The ensorcelled prince's body is split just as his kingdom is split; restoration requires hearing the concealed history before fighting the visible monster."
+          ]
+        },
+        {
+          "id": "iv",
+          "number": "IV",
+          "title": "The Porter and the Three Ladies of Baghdad",
+          "context": [
+            "The porter enters a women-governed household under an explicit rule: do not ask about what does not concern you. Nearly every later disaster follows from male guests treating curiosity as an entitlement rather than a risk."
+          ]
+        },
+        {
+          "id": "iv-a",
+          "number": "IV.a",
+          "title": "The First Kalandar's Tale",
+          "context": [
+            "The first kalandar's lost eye is the visible remainder of dynastic betrayal. His tale begins the strangers' exchange of wounds: identity is earned by narrating how rank, family, and safety were stripped away."
+          ]
+        },
+        {
+          "id": "iv-b",
+          "number": "IV.b",
+          "title": "The Second Kalandar's Tale",
+          "context": [
+            "The second kalandar combines princely education with repeated failures of judgment. His accomplishments cannot prevent catastrophe; the tale keeps testing whether literacy and refinement amount to practical wisdom."
+          ]
+        },
+        {
+          "id": "iv-b-1",
+          "number": "IV.b.1",
+          "title": "The Tale of the Envier and the Envied",
+          "context": [
+            "The envier manufactures a crime against the envied man, but the intended victim's earlier kindness creates allies. The embedded tale answers envy with social memory: character can survive a false account because other witnesses exist."
+          ]
+        },
+        {
+          "id": "iv-c",
+          "number": "IV.c",
+          "title": "The Third Kalandar's Tale",
+          "context": [
+            "The third kalandar ignores a clear prohibition after receiving extraordinary hospitality. The familiar forbidden-door pattern is not merely moral bookkeeping; it makes curiosity both the engine of wonder and the cause of irreversible loss."
+          ]
+        },
+        {
+          "id": "iv-d",
+          "number": "IV.d",
+          "title": "The Eldest Lady's Tale",
+          "context": [
+            "The eldest lady's transformed sisters make family betrayal physically visible. Her survival depends on generosity to a stranger, while her punishment continues because forgiveness and justice have not yet been negotiated."
+          ]
+        },
+        {
+          "id": "iv-e",
+          "number": "IV.e",
+          "title": "Tale of the Portress",
+          "context": [
+            "The portress's scars finally explain the household's second mystery. Read the episode as testimony under unequal power: the ruler wants disclosure, but the women have already learned that telling the truth can itself be dangerous."
+          ]
+        },
+        {
+          "id": "v",
+          "number": "V",
+          "title": "The Tale of the Three Apples",
+          "context": [
+            "A murdered woman, three apples, and a caliph's deadline create a detective story, but discovery does not restore moral balance. The chain begins in love and ends in lethal certainty built from a slave's casual lie."
+          ]
+        },
+        {
+          "id": "vi",
+          "number": "VI",
+          "title": "Tale of Nur Al-din and His Son",
+          "context": [
+            "Nur al-Din's story follows a father's attempt to secure his son's future through marriage, property, and advice. The long arc tests which inheritance matters when official protection disappears: money, reputation, or learned conduct."
+          ]
+        },
+        {
+          "id": "vii",
+          "number": "VII",
+          "title": "The Hunchback's Tale",
+          "context": [
+            "The hunchback's apparent death passes from household to household because each person fears the authorities more than the corpse. Comedy grows from a serious institutional fact: innocent people expect procedure to punish them."
+          ]
+        },
+        {
+          "id": "vii-a",
+          "number": "VII.a",
+          "title": "The Nazarene Broker's Story",
+          "context": [
+            "The broker's account begins the sequence of professional storytellers trying to explain how the body reached them. Each version shifts genre and community, making Baghdad legible through overlapping minority and trade networks."
+          ]
+        },
+        {
+          "id": "vii-b",
+          "number": "VII.b",
+          "title": "The Reeve's Tale",
+          "context": [
+            "The reeve's tale turns appetite, etiquette, and bodily embarrassment into escalating farce. Status cannot protect anyone once private excess must be explained in public."
+          ]
+        },
+        {
+          "id": "vii-c",
+          "number": "VII.c",
+          "title": "Tale of the Jewish Doctor",
+          "context": [
+            "The Jewish doctor's story adds medicine to the relay of mistaken guilt. Diagnosis arrives after panic, so professional knowledge becomes another voice forced to defend itself before power."
+          ]
+        },
+        {
+          "id": "vii-d",
+          "number": "VII.d",
+          "title": "Tale of the Tailor",
+          "context": [
+            "The tailor delays his own account with the story of a young man and an unbearably talkative barber. The structural joke is deliberate: a defense about delay is itself delayed by compulsive narration."
+          ]
+        },
+        {
+          "id": "vii-e",
+          "number": "VII.e",
+          "title": "The Barber's Tale of Himself",
+          "context": [
+            "The barber calls himself the silent one while producing the longest chain of speeches. Treat his self-description as evidence to test, not a narrator's fact; the Nights often lets style expose what a speaker cannot see about himself."
+          ]
+        },
+        {
+          "id": "vii-e-1",
+          "number": "VII.e.1",
+          "title": "The Barber's Tale of his First Brother",
+          "context": [
+            "The first brother's misfortune turns erotic fantasy and commercial calculation against him. Desire is repeatedly mediated by windows, signs, and other people, so he falls for an interpretation before he knows the person."
+          ]
+        },
+        {
+          "id": "vii-e-2",
+          "number": "VII.e.2",
+          "title": "The Barber's Tale of his Second Brother",
+          "context": [
+            "The second brother's tale intensifies the same pattern of vanity and staged humiliation. The comedy is cruel, but its target is the confidence that wanting something entitles a man to understand the game around him."
+          ]
+        },
+        {
+          "id": "vii-e-3",
+          "number": "VII.e.3",
+          "title": "The Barber's Tale of his Third Brother",
+          "context": [
+            "The third brother enters a house by mistake and is trapped by hospitality performed as deception. Every polite cue has a second meaning, and he survives only after the social script has stripped him of certainty."
+          ]
+        },
+        {
+          "id": "vii-e-4",
+          "number": "VII.e.4",
+          "title": "The Barber's Tale of his Fourth Brother",
+          "context": [
+            "The fourth brother's trade and body are both damaged by a chain of reversals. Notice how quickly respectable work, accusation, punishment, and criminal adaptation become adjacent positions in the city."
+          ]
+        },
+        {
+          "id": "vii-e-5",
+          "number": "VII.e.5",
+          "title": "The Barber's Tale of his Fifth Brother",
+          "context": [
+            "The fifth brother's imagined fortune grows before any real fortune exists. His fantasy is a complete economic life built from a single basket; one careless gesture destroys both the goods and the future projected onto them."
+          ]
+        },
+        {
+          "id": "vii-e-6",
+          "number": "VII.e.6",
+          "title": "The Barber's Tale of his Sixth Brother",
+          "context": [
+            "The sixth brother's poverty makes generosity feel miraculous, then exposes him to another elaborate test. The tale asks how a hungry person is supposed to distinguish hospitality from entertainment staged at his expense."
+          ]
+        },
+        {
+          "id": "vii-f",
+          "number": "VII.f",
+          "title": "The End of the Tailor's Tale",
+          "context": [
+            "The return to the tailor closes a nest of stories that nearly displaced the original corpse. Resolution comes when the supposedly dead hunchback revives, revealing how much fear, invention, and punishment grew from an unchecked premise."
+          ]
+        }
+      ],
+      "passages": [
+        {
+          "title": "Why old stories matter",
+          "excerpt": "the histories of the Past an admonition unto the Present",
+          "note": "Burton's volume announces the Nights as inherited warning and pattern, not just entertainment."
+        },
+        {
+          "title": "The frame begins",
+          "excerpt": "there was a King of the Kings of the Banu Sasan in the Islands of India and China",
+          "note": "This is the canonical opening movement Jerry was remembering, before the individual wonder tales begin."
+        },
+        {
+          "title": "Shahrazad's wager",
+          "excerpt": "I shall tell thee a tale which shall make the King leave his practice",
+          "note": "The whole book turns on whether attention, suspense, and wisdom can interrupt destructive repetition."
+        },
+        {
+          "title": "The nightly structure",
+          "excerpt": "Shahrazad perceived the dawn of day and ceased saying her permitted say",
+          "note": "The repeated dawn-break is not an accident; it is the survival mechanism of the frame."
+        }
+      ],
+      "readerHref": "arabian-nights/reader/index.html",
+      "sourceArtifact": "wisdom/arabian-nights/reader/data.js",
+      "sourceHash": "87999e92060a8566eb13dd03ca234167150eb3c29bfce3f20898b82f8b7cb54a",
+      "format": "text",
+      "audio": {
+        "available": false,
+        "reason": "No accepted source-aligned audio."
+      }
+    }
+  ],
+  "searchRecords": [
+    {
+      "id": "work:seneca",
+      "type": "work",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "Seneca: Of the Shortness of Life",
+      "text": "Seneca: Of the Shortness of Life Seneca A near-original reader with context notes, a full teaching edit, and the untouched source beside it. Project Gutenberg eBook 64576 Aubrey Stewart public-domain English translation · Project Gutenberg eBook 64576 time agency busyness attention Seneca is addressing Paulinus, not writing generic productivity advice. Roman status and busyness are examples of surrendered agency, not merely bad scheduling. Life feels short when attention is continuously pre-committed. False necessity hides the fact that many obligations were accepted, repeated, or never renegotiated."
+    },
+    {
+      "id": "unit:seneca:i",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "I · Chapter I",
+      "unitId": "i",
+      "text": "Seneca: Of the Shortness of Life Seneca I Chapter I Seneca opens as if he is answering a common Roman complaint: life feels unfairly short. Paulinus is the addressee, so read this as direct counsel to a busy public man, not as a detached essay for school."
+    },
+    {
+      "id": "unit:seneca:ii",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "II · Chapter II",
+      "unitId": "ii",
+      "text": "Seneca: Of the Shortness of Life Seneca II Chapter II This chapter is a catalog of Roman forms of self-loss: money, status, military ambition, drink, laziness, and restless travel. The point is not that one vice is worst; it is that life leaks out through whatever gets to command your attention."
+    },
+    {
+      "id": "unit:seneca:iii",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "III · Chapter III",
+      "unitId": "iii",
+      "text": "Seneca: Of the Shortness of Life Seneca III Chapter III The property comparison matters in Roman context. People defend boundaries, inheritances, and money with legal or even physical force, but hand over time without noticing that it is the deeper possession."
+    },
+    {
+      "id": "unit:seneca:iv",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "IV · Chapter IV",
+      "unitId": "iv",
+      "text": "Seneca: Of the Shortness of Life Seneca IV Chapter IV Seneca brings in Augustus, the first emperor, to show that even supreme power does not create inner freedom. The historical examples are there to make the argument harder to dismiss as advice only for ordinary people."
+    },
+    {
+      "id": "unit:seneca:v",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "V · Chapter V",
+      "unitId": "v",
+      "text": "Seneca: Of the Shortness of Life Seneca V Chapter V Cicero, Cato, and Scipio are Roman public-life heroes, but Seneca treats them as warnings as well as models. He is asking whether glory can still leave a person without any room to belong to himself."
+    },
+    {
+      "id": "unit:seneca:vi",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "VI · Chapter VI",
+      "unitId": "vi",
+      "text": "Seneca: Of the Shortness of Life Seneca VI Chapter VI Livius Drusus was remembered as a political reformer pulled into dangerous public conflict. Seneca uses him to show that even energetic, serious people can spend a whole life inside urgency."
+    },
+    {
+      "id": "unit:seneca:vii",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "VII · Chapter VII",
+      "unitId": "vii",
+      "text": "Seneca: Of the Shortness of Life Seneca VII Chapter VII The attacks on luxury sound moralistic, but the deeper target is absorption. Banquets, grooming, sleep, sex, and display become \"business\" when they take over the whole day and leave no free mind behind."
+    },
+    {
+      "id": "unit:seneca:viii",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "VIII · Chapter VIII",
+      "unitId": "viii",
+      "text": "Seneca: Of the Shortness of Life Seneca VIII Chapter VIII This is Seneca's time-accounting chapter. Time is hard to value because it is invisible, so people price it lower than money even though every other good depends on it."
+    },
+    {
+      "id": "unit:seneca:ix",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "IX · Chapter IX",
+      "unitId": "ix",
+      "text": "Seneca: Of the Shortness of Life Seneca IX Chapter IX Here Seneca attacks postponement: the fantasy that real life starts after the next success, obligation, or calm season. Keep the focus on the present-tense theft, not on generic productivity. The poet quote is compressed: the \"best day\" is the present/nearest usable day, because it is the first to vanish if you wait."
+    },
+    {
+      "id": "unit:seneca:x",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "X · Chapter X",
+      "unitId": "x",
+      "text": "Seneca: Of the Shortness of Life Seneca X Chapter X Fabianus represents the older Roman ideal of philosophy as forceful moral training, not clever argument games. Seneca is preparing to define the \"busy\" person as someone internally scattered, even when outwardly successful."
+    },
+    {
+      "id": "unit:seneca:xi",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XI · Chapter XI",
+      "unitId": "xi",
+      "text": "Seneca: Of the Shortness of Life Seneca XI Chapter XI The old men in this chapter are not mocked for aging. They are frightening because they reach the end still trying to bargain for time they never learned to use while they had it."
+    },
+    {
+      "id": "unit:seneca:xii",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XII · Chapter XII",
+      "unitId": "xii",
+      "text": "Seneca: Of the Shortness of Life Seneca XII Chapter XII Seneca widens \"busy\" beyond obvious public work: courts, clients, auctions, country houses, couches, and solitary hobbies can all be forms of captivity. The test is whether the mind is actually free."
+    },
+    {
+      "id": "unit:seneca:xiii",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XIII · Chapter XIII",
+      "unitId": "xiii",
+      "text": "Seneca: Of the Shortness of Life Seneca XIII Chapter XIII The examples of games, exercise, and trivial scholarship are about learned distraction. Seneca is not anti-learning; he is against using clever questions to avoid the work of living."
+    },
+    {
+      "id": "unit:seneca:xiv",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XIV · Chapter XIV",
+      "unitId": "xiv",
+      "text": "Seneca: Of the Shortness of Life Seneca XIV Chapter XIV This is where philosophy becomes a larger inheritance. By reading and thinking with older minds, a person can extend life beyond one private span and join a much longer human conversation."
+    },
+    {
+      "id": "unit:seneca:xv",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XV · Chapter XV",
+      "unitId": "xv",
+      "text": "Seneca: Of the Shortness of Life Seneca XV Chapter XV The \"patrons\" here are philosophers and writers, not Roman power brokers. Seneca contrasts public patronage, which costs dependence, with the dead teachers who can be approached freely."
+    },
+    {
+      "id": "unit:seneca:xvi",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XVI · Chapter XVI",
+      "unitId": "xvi",
+      "text": "Seneca: Of the Shortness of Life Seneca XVI Chapter XVI Seneca's time map is past, present, and future. Busy people lose all three: the past is neglected, the present is missed, and the future becomes fear."
+    },
+    {
+      "id": "unit:seneca:xvii",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XVII · Chapter XVII",
+      "unitId": "xvii",
+      "text": "Seneca: Of the Shortness of Life Seneca XVII Chapter XVII The crying king is a reminder that power can make mortality more visible, not less. Seneca keeps returning to rulers because he wants to break the assumption that more status solves the time problem."
+    },
+    {
+      "id": "unit:seneca:xviii",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XVIII · Chapter XVIII",
+      "unitId": "xviii",
+      "text": "Seneca: Of the Shortness of Life Seneca XVIII Chapter XVIII This chapter turns directly back to Paulinus. Seneca is not asking him to become idle; he is asking him to leave enough public burden behind to test whether he can handle real leisure. In this old translation, \"corn\" means grain supply generally, not American corn."
+    },
+    {
+      "id": "unit:seneca:xix",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XIX · Chapter XIX",
+      "unitId": "xix",
+      "text": "Seneca: Of the Shortness of Life Seneca XIX Chapter XIX The grain-supply example comes from Paulinus's public responsibilities. Seneca contrasts necessary civic administration with the larger study of nature, death, soul, and the gods."
+    },
+    {
+      "id": "unit:seneca:xx",
+      "type": "unit",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "XX · Chapter XX",
+      "unitId": "xx",
+      "text": "Seneca: Of the Shortness of Life Seneca XX Chapter XX The closing returns to Roman honors: purple robes, forum reputation, consulship, and tomb inscriptions. Seneca's final warning is that a public name can be bought with the private life that should have been lived. The final torchlight funeral image depends on the footnote: children's funerals were associated with torchlight, so Seneca is saying some old public lives were barely lived at all."
+    },
+    {
+      "id": "passage:seneca:1",
+      "type": "passage",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "The thesis",
+      "text": "Seneca: Of the Shortness of Life Seneca The thesis We do not receive a short life, but we make it a short one, and we are not poor in days, but wasteful of them. This is the central claim of the essay. Seneca is not mainly complaining that death comes too soon; he is saying life feels short because people hand it over without judgment. Read every later example as evidence for this ownership problem: money, status, work, pleasure, and public duty can all spend the same life."
+    },
+    {
+      "id": "passage:seneca:2",
+      "type": "passage",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "False necessity",
+      "text": "Seneca: Of the Shortness of Life Seneca False necessity Life is long enough, if you know how to use it. Important because it attacks the excuse that the life problem is only external. Seneca does not deny real obligations, but he keeps forcing the reader to separate necessity from imitation, fear, approval, and drift. The useful test is whether a supposedly unavoidable demand was chosen by judgment or copied from pressure."
+    },
+    {
+      "id": "passage:seneca:3",
+      "type": "passage",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "No one belongs to himself",
+      "text": "Seneca: Of the Shortness of Life Seneca No one belongs to himself A is devoted to B, and B to C: no one belongs to himself. This is the cleanest diagnosis of the outsourcing-of-life problem. A day can be full, respected, and socially useful while still not belonging to the person living it. The point is not isolation; it is whether your attention and choices have an owner."
+    },
+    {
+      "id": "passage:seneca:4",
+      "type": "passage",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "Property versus time",
+      "text": "Seneca: Of the Shortness of Life Seneca Property versus time You cannot find any one who wants to distribute his money; yet among how many people does every one distribute his life? Supportive analogy: Seneca makes time feel like property because people already understand defending property. The analogy supports the thesis by making attention loss concrete. It is especially relevant if you are generous with objects but careless with tired phone-drift time."
+    },
+    {
+      "id": "passage:seneca:5",
+      "type": "passage",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "Augustus wanted out",
+      "text": "Seneca: Of the Shortness of Life Seneca Augustus wanted out For this reason he longed for leisure: all his labours were based upon hopes and thoughts of leisure. Supportive historical example: Augustus is the strongest status case Seneca can choose. If the first emperor, with maximum power and honor, still dreams of being released from the role, then status cannot be the cure for the time problem. The example supports the broader trend: identity plus responsibility can become a prison even when everyone else calls it success."
+    },
+    {
+      "id": "passage:seneca:6",
+      "type": "passage",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "Half a prisoner",
+      "text": "Seneca: Of the Shortness of Life Seneca Half a prisoner I am living in my Tusculan villa almost as a prisoner. Supportive historical example: Cicero has the retreat, the villa, and the distance from public life, but not inner freedom. Seneca uses him to show that leisure is not a location. You can leave the office, city, or group and still be mentally owned by responsibility, identity, politics, and reputation."
+    },
+    {
+      "id": "passage:seneca:7",
+      "type": "passage",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "Postponed life",
+      "text": "Seneca: Of the Shortness of Life Seneca Postponed life There is no such obstacle to true living as waiting, which loses to-day while it is depending on the morrow. This is one of the most practical lines in the whole essay. It is not anti-planning; it is anti-postponement. Seneca is warning against storing real life inside an ideal future identity while the usable day remains unchosen."
+    },
+    {
+      "id": "passage:seneca:8",
+      "type": "passage",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "The first day flies",
+      "text": "Seneca: Of the Shortness of Life Seneca The first day flies The best of unhappy mortals’ days is the first to fly. Important because the poetry is easy to misread. It does not mean childhood or youth is automatically best. It means the nearest usable day is the best one because it is the first to disappear; if you wait for the ideal season, the actual day has already been spent."
+    },
+    {
+      "id": "passage:seneca:9",
+      "type": "passage",
+      "workId": "seneca",
+      "title": "Seneca: Of the Shortness of Life",
+      "label": "Learning how to live",
+      "text": "Seneca: Of the Shortness of Life Seneca Learning how to live One's whole life must be spent in learning how to live, and, which may perhaps surprise you more, one's whole life must be spent in learning how to die. This reframes the essay away from productivity. Seneca is not saying to optimize every hour into output; he is saying living itself is a discipline. Learning how to die means keeping mortality in view so your choices are cleaner while you are alive."
+    },
+    {
+      "id": "work:ivan",
+      "type": "work",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "The Death of Ivan Ilyich",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy The complete Maude English edition in a mobile reader, with a full Jerry Edition rewrite path where old wording, French, Russian social code, official language, medical evasions, and Tolstoy's irony would slow Jerry down. University of Minnesota Open Textbook full English edition Full twelve-chapter English edition from the electronic study edition; Maude translation text used as the reading source. mortality status false life family The bureaucratic titles and French phrases signal status performance. Tolstoy's repetition is satire: correctness itself becomes suffocating. A life can be socially validated and inwardly counterfeit. Mortality becomes unbearable when it threatens the story that correctness guaranteed safety."
+    },
+    {
+      "id": "unit:ivan:i",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "I · The Funeral and the Avoided Warning",
+      "unitId": "i",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy I The Funeral and the Avoided Warning Before reading: the opening is after Ivan's death. Watch how quickly his colleagues turn death into promotions, inconvenience, etiquette, and card games. Schwartz is the polished friend who represents social normality continuing as if nothing ultimate has happened. Name handles: Praskovya Fedorovna is Ivan's widow; Peter Ivanovich is the colleague whose viewpoint frames the funeral; Gerasim is the servant who will later become the honest counterweight to everyone else."
+    },
+    {
+      "id": "unit:ivan:ii",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "II · A Correct Life Takes Shape",
+      "unitId": "ii",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy II A Correct Life Takes Shape Before reading: this chapter explains how Ivan's life became 'correct.' Words like propriety, decorum, pleasantness, and comme il faut are load-bearing. They mean socially approved form, not deep goodness. The French phrase 'Il faut que jeunesse se passe' means roughly 'youth must have its fling.' Tolstoy uses it to show how society excuses self-indulgence when it is done by the right people in the right style."
+    },
+    {
+      "id": "unit:ivan:iii",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "III · Promotion, House, and the Fall",
+      "unitId": "iii",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy III Promotion, House, and the Fall Before reading: the house is not background decoration. Ivan thinks he is arranging beauty and status, but Tolstoy shows the same shallow taste replicated everywhere. The fall from the ladder is physically small and narratively enormous."
+    },
+    {
+      "id": "unit:ivan:iv",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "IV · Doctors, Diagnosis, and Isolation",
+      "unitId": "iv",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy IV Doctors, Diagnosis, and Isolation Before reading: do not try to solve the medical diagnosis. The uncertainty is the design. Ivan and the doctors convert dread into technical phrases so no one has to say the real subject: he may be dying."
+    },
+    {
+      "id": "unit:ivan:v",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "V · The Lie Becomes the Room",
+      "unitId": "v",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy V The Lie Becomes the Room Before reading: Ivan is now caught between ordinary social life and private terror. The novel keeps repeating the appendix/kidney language because medical abstraction is his last defense against death."
+    },
+    {
+      "id": "unit:ivan:vi",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "VI · Death Stops Being Abstract",
+      "unitId": "vi",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy VI Death Stops Being Abstract Before reading: this short chapter is where death stops being an idea that happens to other people. Ivan can no longer keep it at the level of diagnosis or etiquette."
+    },
+    {
+      "id": "unit:ivan:vii",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "VII · Gerasim and the Only Honest Comfort",
+      "unitId": "vii",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy VII Gerasim and the Only Honest Comfort Before reading: Gerasim's simplicity is not stupidity. He is the only person who tells the truth about death without cruelty, and that makes him the only person who can comfort Ivan."
+    },
+    {
+      "id": "unit:ivan:viii",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "VIII · Family Life Continues Around Him",
+      "unitId": "viii",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy VIII Family Life Continues Around Him Before reading: the family scenes are supposed to feel unbearable. Everyone keeps ordinary life moving, while Ivan experiences that ordinary life as a lie because it refuses to acknowledge what is happening."
+    },
+    {
+      "id": "unit:ivan:ix",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "IX · What If My Whole Life Was Wrong?",
+      "unitId": "ix",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy IX What If My Whole Life Was Wrong? Before reading: this is the central self-judgment chapter. Ivan does not merely fear pain; he begins to suspect that the entire shape of his respectable life was wrong."
+    },
+    {
+      "id": "unit:ivan:x",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "X · The Scream Inside the Drawing Room",
+      "unitId": "x",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy X The Scream Inside the Drawing Room Before reading: the black sack image is Ivan's felt experience of dying: being pushed toward what he cannot escape while still unable to pass through."
+    },
+    {
+      "id": "unit:ivan:xi",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "XI · The False Life Comes Into View",
+      "unitId": "xi",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy XI The False Life Comes Into View Before reading: the syllogism matters because Ivan's school logic treated death as something that belongs to an abstract man named Caius, not to 'me, Vanya.' The collapse of that abstraction is the collapse of his old life-protection."
+    },
+    {
+      "id": "unit:ivan:xii",
+      "type": "unit",
+      "workId": "ivan",
+      "title": "The Death of Ivan Ilyich",
+      "label": "XII · Pity, Light, and the End of Death",
+      "unitId": "xii",
+      "text": "The Death of Ivan Ilyich Leo Tolstoy XII Pity, Light, and the End of Death Before reading: the final turn is not an intellectual proof. Ivan sees his son and wife, pities them, stops defending himself, and the image changes from the black sack to light."
+    },
+    {
+      "id": "work:don-quixote",
+      "type": "work",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Don Quixote: Chapter I",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes A passage-sized comparison reader: each small source-close step sits beside the matching teaching rewrite, with only the note needed for that part. Project Gutenberg eBook 996 John Ormsby public-domain English translation; Part I, Chapter I only. models identity imagination reality Chivalric romances were a recognizable popular genre, so the name-drops function like an obsessive private canon rather than a neutral bibliography. The comedy depends on material scale: an aging minor gentleman converts food, clothes, a worn horse, and ordinary land into epic destiny. A model can organize a life and also steal contact with reality. The desire to matter is dignified; refusing correction is the danger."
+    },
+    {
+      "id": "unit:don-quixote:i",
+      "type": "unit",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "I · Character and Pursuits",
+      "unitId": "i",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes I Character and Pursuits Cervantes makes the household accounts concrete before the fantasy: the books cost this minor gentleman sleep, money, land, and eventually his ability to test one kind of evidence against another. The joke is not only that he reads badly. His borrowed chivalric language gives an ordinary life purpose and scale, so the chapter keeps parody and genuine longing alive at the same time."
+    },
+    {
+      "id": "passage:don-quixote:1",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Village, status, and old equipment",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Village, status, and old equipment  "
+    },
+    {
+      "id": "passage:don-quixote:2",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "His money mostly goes to food and appearances",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes His money mostly goes to food and appearances  "
+    },
+    {
+      "id": "passage:don-quixote:3",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "The household and the aging gentleman",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes The household and the aging gentleman  "
+    },
+    {
+      "id": "passage:don-quixote:4",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Even his name is unstable",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Even his name is unstable  "
+    },
+    {
+      "id": "passage:don-quixote:5",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Leisure turns into obsession",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Leisure turns into obsession  "
+    },
+    {
+      "id": "passage:don-quixote:6",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "His favorite style is fake-deep fog",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes His favorite style is fake-deep fog  "
+    },
+    {
+      "id": "passage:don-quixote:7",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "He works too hard to understand nonsense",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes He works too hard to understand nonsense  "
+    },
+    {
+      "id": "passage:don-quixote:8",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "He starts helping the fiction",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes He starts helping the fiction  "
+    },
+    {
+      "id": "passage:don-quixote:9",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Village debates become power rankings",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Village debates become power rankings  "
+    },
+    {
+      "id": "passage:don-quixote:10",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Fiction becomes more real than history",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Fiction becomes more real than history  "
+    },
+    {
+      "id": "passage:don-quixote:11",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "History, myth, and romance collapse together",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes History, myth, and romance collapse together  "
+    },
+    {
+      "id": "passage:don-quixote:12",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Old stories now regulate his emotions",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Old stories now regulate his emotions  "
+    },
+    {
+      "id": "passage:don-quixote:13",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "The fantasy speaks as duty",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes The fantasy speaks as duty  "
+    },
+    {
+      "id": "passage:don-quixote:14",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Pleasure becomes action",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Pleasure becomes action  "
+    },
+    {
+      "id": "passage:don-quixote:15",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Old armor gets turned into a prop",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Old armor gets turned into a prop  "
+    },
+    {
+      "id": "passage:don-quixote:16",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "The failed test is quietly weakened",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes The failed test is quietly weakened  "
+    },
+    {
+      "id": "passage:don-quixote:17",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "A poor horse becomes heroic material",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes A poor horse becomes heroic material  "
+    },
+    {
+      "id": "passage:don-quixote:18",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "The name must explain before and after",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes The name must explain before and after  "
+    },
+    {
+      "id": "passage:don-quixote:19",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Rocinante completes the transformation",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Rocinante completes the transformation  "
+    },
+    {
+      "id": "passage:don-quixote:20",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "The man names himself into the role",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes The man names himself into the role  "
+    },
+    {
+      "id": "passage:don-quixote:21",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "La Mancha is pulled into the myth",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes La Mancha is pulled into the myth  "
+    },
+    {
+      "id": "passage:don-quixote:22",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Love is treated as a required slot",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Love is treated as a required slot  "
+    },
+    {
+      "id": "passage:don-quixote:23",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "He imagines the giant before the woman",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes He imagines the giant before the woman  "
+    },
+    {
+      "id": "passage:don-quixote:24",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "The speech is already scripted",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes The speech is already scripted  "
+    },
+    {
+      "id": "passage:don-quixote:25",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Aldonza is real, but not involved",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Aldonza is real, but not involved  "
+    },
+    {
+      "id": "passage:don-quixote:26",
+      "type": "passage",
+      "workId": "don-quixote",
+      "title": "Don Quixote: Chapter I",
+      "label": "Dulcinea completes the story-world",
+      "text": "Don Quixote: Chapter I Miguel de Cervantes Dulcinea completes the story-world  "
+    },
+    {
+      "id": "work:nietzsche",
+      "type": "work",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "Nietzsche: Schopenhauer as Educator",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche A complete public-domain Nietzsche essay on models, self-formation, culture, and why a real educator frees rather than replaces you. Project Gutenberg eBook 38226 Verified public-domain English translation source; Adrian Collins translation from the Oscar Levy edition, not Nietzsche's German original. educators creator models culture self-formation This is an essay about Schopenhauer as an educator, but much of its subject is Nietzsche's own formation and his attack on nineteenth-century German culture. Educator means a liberator who removes obstruction; it does not mean a guru who supplies a finished self. A real educator reveals the law of your own being rather than asking for imitation. Culture should create conditions for real people and work, not reward safe institutional performance."
+    },
+    {
+      "id": "unit:nietzsche:i",
+      "type": "unit",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "I · Public Opinion and Becoming Yourself",
+      "unitId": "i",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche I Public Opinion and Becoming Yourself Nietzsche opens with a familiar problem: people hide inside public taste, inherited opinions, and safe identities. \"Be yourself\" is not a soft slogan here. It means refusing to let the crowd answer for a life. Use a simple guardrail: studying a model matters only if it turns back into action."
+    },
+    {
+      "id": "unit:nietzsche:ii",
+      "type": "unit",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "II · Educators as Liberators",
+      "unitId": "ii",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche II Educators as Liberators Nietzsche asks what an educator is. His answer is not \"someone who fills you with information.\" A true educator liberates what is already trying to become clear in you. This is why Schopenhauer matters to him: not as a perfect man, but as a voice that made Nietzsche feel less trapped by the polite academic culture around him."
+    },
+    {
+      "id": "unit:nietzsche:iii",
+      "type": "unit",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "III · Schopenhauer as a Living Model",
+      "unitId": "iii",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche III Schopenhauer as a Living Model This section turns Schopenhauer into a test case for honesty, solitude, and style. Nietzsche is not asking the reader to become Schopenhauer. He is asking what kind of person makes imitation harder after an encounter with their work. Use that as the test for any exemplar: does the model sharpen conduct, or merely supply another personality to admire?"
+    },
+    {
+      "id": "unit:nietzsche:iv",
+      "type": "unit",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "IV · The Cultured Philistine",
+      "unitId": "iv",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche IV The Cultured Philistine Nietzsche attacks the comfortable scholar and the \"cultured Philistine.\" This is his version of saying that knowledge can become a costume. The useful distinction is between reading that sharpens action and reading that merely decorates an identity."
+    },
+    {
+      "id": "unit:nietzsche:v",
+      "type": "unit",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "V · Culture as Formation",
+      "unitId": "v",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche V Culture as Formation This is the broadest and most metaphysical section. Nietzsche talks as if nature is trying to produce rare, higher human beings, and culture should serve that work. Do not get stuck on the grand language. The practical point is simpler: every environment trains people toward something. Ask what conduct its incentives repeatedly produce."
+    },
+    {
+      "id": "unit:nietzsche:vi",
+      "type": "unit",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "VI · Forces That Bend Culture",
+      "unitId": "vi",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche VI Forces That Bend Culture Nietzsche begins naming the forces that prevent culture from producing real people: business, state interest, polite society, fashionable education, and scholarship for its own sake. Systems do not have to oppose formation openly. They can bend it by supplying respectable reasons to postpone serious work."
+    },
+    {
+      "id": "unit:nietzsche:vii",
+      "type": "unit",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "VII · Institutions and Truth",
+      "unitId": "vii",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche VII Institutions and Truth This section is about the danger of confusing institutions with truth. Nietzsche is especially suspicious of state-sponsored philosophy because a paid office can make a thinker obedient. Do not read this as a simple anti-school rant. The sharper point is about incentives: if a system pays for \"thought,\" what kinds of thought does it quietly reward?"
+    },
+    {
+      "id": "unit:nietzsche:viii",
+      "type": "unit",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "VIII · Building Conditions for Real Work",
+      "unitId": "viii",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche VIII Building Conditions for Real Work Nietzsche ends by asking what conditions would actually allow a philosopher, artist, or genius to appear. He is not optimistic that normal institutions will do it for you. The takeaway is not \"withdraw from everything.\" It is to build conditions that protect independent judgment and sustained work."
+    },
+    {
+      "id": "passage:nietzsche:1",
+      "type": "passage",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "The core command",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche The core command Be yourself! all that you do and think and desire, is not--yourself! Nietzsche's point is not self-expression as vibe; it is the demand to stop outsourcing your life to public opinion."
+    },
+    {
+      "id": "passage:nietzsche:2",
+      "type": "passage",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "Answering for your existence",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche Answering for your existence We have to answer for our existence to ourselves; and will therefore be our own true pilots This is the practical center: no teacher, system, or model can finally answer for another person's life."
+    },
+    {
+      "id": "passage:nietzsche:3",
+      "type": "passage",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "What an educator can do",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche What an educator can do thy educators can be nothing but thy deliverers. A real educator removes what blocks the self; they do not hand over a finished identity."
+    },
+    {
+      "id": "passage:nietzsche:4",
+      "type": "passage",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "Culture's aim",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche Culture's aim the real aim of culture--the production of the true man For this reader, culture means formation into a person capable of real work, not a shelf of impressive references."
+    },
+    {
+      "id": "passage:nietzsche:5",
+      "type": "passage",
+      "workId": "nietzsche",
+      "title": "Nietzsche: Schopenhauer as Educator",
+      "label": "Truth versus office",
+      "text": "Nietzsche: Schopenhauer as Educator Friedrich Nietzsche Truth versus office every state fears them, and will only favour philosophers it does not fear. Nietzsche's institutional critique is an incentives critique: systems prefer thought they can safely sponsor."
+    },
+    {
+      "id": "work:arabian-nights",
+      "type": "work",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "Arabian Nights: Burton Volume 1",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus Sir Richard Francis Burton's 1885 Volume 1 translation from Project Gutenberg, beginning with the Shahryar and Shah Zaman frame story. Project Gutenberg eBook 3435 Burton translation · ten-volume core series (1885) · Project Gutenberg digital transcription, Volume 1, eBook 3435 storytelling attention violence inheritance Burton's 1885 English is deliberately archaizing and carries his own Victorian orientalist framing; it is not transparent access to a single original Nights. The Shahryar–Shahrazad frame is the survival mechanism: each dawn interruption makes attention and unfinished story an action inside the plot. Narrative attention can interrupt a repeated violent script. The frame makes listening consequential: continuation itself becomes survival and change."
+    },
+    {
+      "id": "unit:arabian-nights:i",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "I · Story Of King Shahryar and His Brother",
+      "unitId": "i",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus I Story Of King Shahryar and His Brother This is the frame story Jerry expected: Shah Zaman discovers his wife's adultery, Shahryar discovers the same betrayal at his own court, and Shahrazad later begins the nightly storytelling structure. The violence toward women is the crisis the collection must interrupt, not a premise the reader has to endorse. Shahrazad's wager is that attention, delay, and better examples can change a ruler who has converted private injury into public terror."
+    },
+    {
+      "id": "unit:arabian-nights:i-a",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "I.a · Tale of the Bull and the Ass",
+      "unitId": "i-a",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus I.a Tale of the Bull and the Ass The vizier tells this animal fable to stop Shahrazad from volunteering. Its warning about clever interference backfires at the frame level: she hears a danger story and still chooses to intervene."
+    },
+    {
+      "id": "unit:arabian-nights:ii",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "II · Tale of the Trader and the Jinni",
+      "unitId": "ii",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus II Tale of the Trader and the Jinni The first nightly tale establishes the collection's recurring bargain: a fatal sentence can be delayed if a stranger offers a story strange enough to deserve attention. Narrative becomes legal evidence and ransom at once."
+    },
+    {
+      "id": "unit:arabian-nights:ii-a",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "II.a · The First Shaykh's Story",
+      "unitId": "ii-a",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus II.a The First Shaykh's Story The gazelle is not decorative magic but a transformed family member. The shaykh's wonder tale turns domestic jealousy and inheritance into testimony offered to reduce another man's punishment."
+    },
+    {
+      "id": "unit:arabian-nights:ii-b",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "II.b · The Second Shaykh's Story",
+      "unitId": "ii-b",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus II.b The Second Shaykh's Story This second plea repeats the pattern with brothers, commerce, and betrayal. Repetition matters: mercy is being assembled fraction by fraction, with each teller staking his own credibility on another person's life."
+    },
+    {
+      "id": "unit:arabian-nights:ii-c",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "II.c · The Third Shaykh's Story",
+      "unitId": "ii-c",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus II.c The Third Shaykh's Story Burton withholds most of the third shaykh's story. The abrupt compression reminds us that the Nights is a transmitted, uneven compilation, not a modern novel promising equal narrative weight to every branch."
+    },
+    {
+      "id": "unit:arabian-nights:iii",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "III · The Fisherman and the Jinni",
+      "unitId": "iii",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus III The Fisherman and the Jinni The fisherman's jars release power that resents the person who freed it. Watch the weak character survive by making the strong character prove his own impossible claim—the first clear victory of skeptical questioning over force."
+    },
+    {
+      "id": "unit:arabian-nights:iii-a",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "III.a · The Tale of the Wazir and the Sage Duban",
+      "unitId": "iii-a",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus III.a The Tale of the Wazir and the Sage Duban The vizier's story inside the fisherman's story asks whether rulers can distinguish loyal expertise from convenient accusation. Duban cures without touching the king, but technical brilliance offers no protection when envy controls the court."
+    },
+    {
+      "id": "unit:arabian-nights:iii-a-1",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "III.a.1 · King Sindibad and his Falcon",
+      "unitId": "iii-a-1",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus III.a.1 King Sindibad and his Falcon The falcon destroys the king's drink because it knows what he does not. The king reads obstruction as disobedience, acts before checking, and discovers too late that authority cannot undo a hurried interpretation."
+    },
+    {
+      "id": "unit:arabian-nights:iii-a-2",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "III.a.2 · The Tale of the Husband and the Parrot",
+      "unitId": "iii-a-2",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus III.a.2 The Tale of the Husband and the Parrot The parrot is an instrument of surveillance whose truthful report is defeated by a staged counterexample. The tale is less about animal magic than about how one manufactured doubt can discredit a reliable witness."
+    },
+    {
+      "id": "unit:arabian-nights:iii-a-3",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "III.a.3 · The Tale of the Prince and the Ogress",
+      "unitId": "iii-a-3",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus III.a.3 The Tale of the Prince and the Ogress The prince mistakes an ogress for a helpless traveler and then escapes by invoking God. In the nested argument, the point is political: a ruler who accepts appearances without testing them endangers both himself and his dependents."
+    },
+    {
+      "id": "unit:arabian-nights:iii-b",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "III.b · The Tale of the Ensorcelled Prince",
+      "unitId": "iii-b",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus III.b The Tale of the Ensorcelled Prince The black islands and their petrified inhabitants expand a private marriage catastrophe into a ruined state. The ensorcelled prince's body is split just as his kingdom is split; restoration requires hearing the concealed history before fighting the visible monster."
+    },
+    {
+      "id": "unit:arabian-nights:iv",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "IV · The Porter and the Three Ladies of Baghdad",
+      "unitId": "iv",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus IV The Porter and the Three Ladies of Baghdad The porter enters a women-governed household under an explicit rule: do not ask about what does not concern you. Nearly every later disaster follows from male guests treating curiosity as an entitlement rather than a risk."
+    },
+    {
+      "id": "unit:arabian-nights:iv-a",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "IV.a · The First Kalandar's Tale",
+      "unitId": "iv-a",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus IV.a The First Kalandar's Tale The first kalandar's lost eye is the visible remainder of dynastic betrayal. His tale begins the strangers' exchange of wounds: identity is earned by narrating how rank, family, and safety were stripped away."
+    },
+    {
+      "id": "unit:arabian-nights:iv-b",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "IV.b · The Second Kalandar's Tale",
+      "unitId": "iv-b",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus IV.b The Second Kalandar's Tale The second kalandar combines princely education with repeated failures of judgment. His accomplishments cannot prevent catastrophe; the tale keeps testing whether literacy and refinement amount to practical wisdom."
+    },
+    {
+      "id": "unit:arabian-nights:iv-b-1",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "IV.b.1 · The Tale of the Envier and the Envied",
+      "unitId": "iv-b-1",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus IV.b.1 The Tale of the Envier and the Envied The envier manufactures a crime against the envied man, but the intended victim's earlier kindness creates allies. The embedded tale answers envy with social memory: character can survive a false account because other witnesses exist."
+    },
+    {
+      "id": "unit:arabian-nights:iv-c",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "IV.c · The Third Kalandar's Tale",
+      "unitId": "iv-c",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus IV.c The Third Kalandar's Tale The third kalandar ignores a clear prohibition after receiving extraordinary hospitality. The familiar forbidden-door pattern is not merely moral bookkeeping; it makes curiosity both the engine of wonder and the cause of irreversible loss."
+    },
+    {
+      "id": "unit:arabian-nights:iv-d",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "IV.d · The Eldest Lady's Tale",
+      "unitId": "iv-d",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus IV.d The Eldest Lady's Tale The eldest lady's transformed sisters make family betrayal physically visible. Her survival depends on generosity to a stranger, while her punishment continues because forgiveness and justice have not yet been negotiated."
+    },
+    {
+      "id": "unit:arabian-nights:iv-e",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "IV.e · Tale of the Portress",
+      "unitId": "iv-e",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus IV.e Tale of the Portress The portress's scars finally explain the household's second mystery. Read the episode as testimony under unequal power: the ruler wants disclosure, but the women have already learned that telling the truth can itself be dangerous."
+    },
+    {
+      "id": "unit:arabian-nights:v",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "V · The Tale of the Three Apples",
+      "unitId": "v",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus V The Tale of the Three Apples A murdered woman, three apples, and a caliph's deadline create a detective story, but discovery does not restore moral balance. The chain begins in love and ends in lethal certainty built from a slave's casual lie."
+    },
+    {
+      "id": "unit:arabian-nights:vi",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VI · Tale of Nur Al-din and His Son",
+      "unitId": "vi",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VI Tale of Nur Al-din and His Son Nur al-Din's story follows a father's attempt to secure his son's future through marriage, property, and advice. The long arc tests which inheritance matters when official protection disappears: money, reputation, or learned conduct."
+    },
+    {
+      "id": "unit:arabian-nights:vii",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII · The Hunchback's Tale",
+      "unitId": "vii",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII The Hunchback's Tale The hunchback's apparent death passes from household to household because each person fears the authorities more than the corpse. Comedy grows from a serious institutional fact: innocent people expect procedure to punish them."
+    },
+    {
+      "id": "unit:arabian-nights:vii-a",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.a · The Nazarene Broker's Story",
+      "unitId": "vii-a",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.a The Nazarene Broker's Story The broker's account begins the sequence of professional storytellers trying to explain how the body reached them. Each version shifts genre and community, making Baghdad legible through overlapping minority and trade networks."
+    },
+    {
+      "id": "unit:arabian-nights:vii-b",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.b · The Reeve's Tale",
+      "unitId": "vii-b",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.b The Reeve's Tale The reeve's tale turns appetite, etiquette, and bodily embarrassment into escalating farce. Status cannot protect anyone once private excess must be explained in public."
+    },
+    {
+      "id": "unit:arabian-nights:vii-c",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.c · Tale of the Jewish Doctor",
+      "unitId": "vii-c",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.c Tale of the Jewish Doctor The Jewish doctor's story adds medicine to the relay of mistaken guilt. Diagnosis arrives after panic, so professional knowledge becomes another voice forced to defend itself before power."
+    },
+    {
+      "id": "unit:arabian-nights:vii-d",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.d · Tale of the Tailor",
+      "unitId": "vii-d",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.d Tale of the Tailor The tailor delays his own account with the story of a young man and an unbearably talkative barber. The structural joke is deliberate: a defense about delay is itself delayed by compulsive narration."
+    },
+    {
+      "id": "unit:arabian-nights:vii-e",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.e · The Barber's Tale of Himself",
+      "unitId": "vii-e",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.e The Barber's Tale of Himself The barber calls himself the silent one while producing the longest chain of speeches. Treat his self-description as evidence to test, not a narrator's fact; the Nights often lets style expose what a speaker cannot see about himself."
+    },
+    {
+      "id": "unit:arabian-nights:vii-e-1",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.e.1 · The Barber's Tale of his First Brother",
+      "unitId": "vii-e-1",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.e.1 The Barber's Tale of his First Brother The first brother's misfortune turns erotic fantasy and commercial calculation against him. Desire is repeatedly mediated by windows, signs, and other people, so he falls for an interpretation before he knows the person."
+    },
+    {
+      "id": "unit:arabian-nights:vii-e-2",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.e.2 · The Barber's Tale of his Second Brother",
+      "unitId": "vii-e-2",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.e.2 The Barber's Tale of his Second Brother The second brother's tale intensifies the same pattern of vanity and staged humiliation. The comedy is cruel, but its target is the confidence that wanting something entitles a man to understand the game around him."
+    },
+    {
+      "id": "unit:arabian-nights:vii-e-3",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.e.3 · The Barber's Tale of his Third Brother",
+      "unitId": "vii-e-3",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.e.3 The Barber's Tale of his Third Brother The third brother enters a house by mistake and is trapped by hospitality performed as deception. Every polite cue has a second meaning, and he survives only after the social script has stripped him of certainty."
+    },
+    {
+      "id": "unit:arabian-nights:vii-e-4",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.e.4 · The Barber's Tale of his Fourth Brother",
+      "unitId": "vii-e-4",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.e.4 The Barber's Tale of his Fourth Brother The fourth brother's trade and body are both damaged by a chain of reversals. Notice how quickly respectable work, accusation, punishment, and criminal adaptation become adjacent positions in the city."
+    },
+    {
+      "id": "unit:arabian-nights:vii-e-5",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.e.5 · The Barber's Tale of his Fifth Brother",
+      "unitId": "vii-e-5",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.e.5 The Barber's Tale of his Fifth Brother The fifth brother's imagined fortune grows before any real fortune exists. His fantasy is a complete economic life built from a single basket; one careless gesture destroys both the goods and the future projected onto them."
+    },
+    {
+      "id": "unit:arabian-nights:vii-e-6",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.e.6 · The Barber's Tale of his Sixth Brother",
+      "unitId": "vii-e-6",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.e.6 The Barber's Tale of his Sixth Brother The sixth brother's poverty makes generosity feel miraculous, then exposes him to another elaborate test. The tale asks how a hungry person is supposed to distinguish hospitality from entertainment staged at his expense."
+    },
+    {
+      "id": "unit:arabian-nights:vii-f",
+      "type": "unit",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "VII.f · The End of the Tailor's Tale",
+      "unitId": "vii-f",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus VII.f The End of the Tailor's Tale The return to the tailor closes a nest of stories that nearly displaced the original corpse. Resolution comes when the supposedly dead hunchback revives, revealing how much fear, invention, and punishment grew from an unchecked premise."
+    },
+    {
+      "id": "passage:arabian-nights:1",
+      "type": "passage",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "Why old stories matter",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus Why old stories matter the histories of the Past an admonition unto the Present Burton's volume announces the Nights as inherited warning and pattern, not just entertainment."
+    },
+    {
+      "id": "passage:arabian-nights:2",
+      "type": "passage",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "The frame begins",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus The frame begins there was a King of the Kings of the Banu Sasan in the Islands of India and China This is the canonical opening movement Jerry was remembering, before the individual wonder tales begin."
+    },
+    {
+      "id": "passage:arabian-nights:3",
+      "type": "passage",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "Shahrazad's wager",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus Shahrazad's wager I shall tell thee a tale which shall make the King leave his practice The whole book turns on whether attention, suspense, and wisdom can interrupt destructive repetition."
+    },
+    {
+      "id": "passage:arabian-nights:4",
+      "type": "passage",
+      "workId": "arabian-nights",
+      "title": "Arabian Nights: Burton Volume 1",
+      "label": "The nightly structure",
+      "text": "Arabian Nights: Burton Volume 1 Richard F. Burton / traditional corpus The nightly structure Shahrazad perceived the dawn of day and ceased saying her permitted say The repeated dawn-break is not an accident; it is the survival mechanism of the frame."
+    }
+  ]
+}

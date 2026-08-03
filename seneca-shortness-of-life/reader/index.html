@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Wisdom" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Seneca: Of the Shortness of Life</title>
+    <link rel="manifest" href="/wisdom/manifest.webmanifest" />
+    <link rel="icon" href="/wisdom/icons/wisdom-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wisdom/icons/wisdom-icon-180.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/wisdom/icons/wisdom-icon-192.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../reader-shell.css?v=20260723-v6" />
+    <link rel="stylesheet" href="/wisdom/app-shell.css?v=20260720-unified4" />
+  </head>
+  <body>
+    <a class="wisdomSkip" href="#readerMain">Skip to reading</a>
+    <header class="wisdomHeader">
+      <div class="wisdomHeaderInner">
+        <a class="wisdomBrand" href="/wisdom/">Wisdom</a>
+        <nav class="wisdomTabs" aria-label="Wisdom">
+          <a href="/wisdom/">Home</a>
+          <a href="/wisdom/essays/">Essays</a>
+          <a href="/wisdom/books/" aria-current="page">Books</a>
+        </nav>
+      </div>
+    </header>
+    <div class="appShell">
+      <aside class="sideRail" aria-label="Reader navigation">
+        <div class="modeSwitch" role="tablist" aria-label="Text mode">
+          <button class="modeButton active" type="button" data-mode="compare" role="tab" aria-selected="true">
+            Compare
+          </button>
+          <button class="modeButton" type="button" data-mode="adapted" role="tab" aria-selected="false">
+            Light edit
+          </button>
+          <button class="modeButton" type="button" data-mode="source" role="tab" aria-selected="false">
+            Original
+          </button>
+        </div>
+        <nav class="chapterNav" id="chapterNav" aria-label="Chapters"></nav>
+      </aside>
+
+      <main class="readerPane" id="readerMain" tabindex="-1">
+        <header class="readerHeader">
+          <p class="eyebrow">Public-domain wisdom text</p>
+          <h1 id="title">Seneca: Of the Shortness of Life</h1>
+          <p class="subtitle" id="subtitle"></p>
+          <div class="headerActions">
+            <a id="sourceLink" href="../read.md">Reading fallback</a>
+            <button class="copyButton" type="button" id="copyAll">Copy all</button>
+          </div>
+        </header>
+
+        <section class="noteBand" id="readerNoteBand" aria-labelledby="readerNoteTitle">
+          <h2 id="readerNoteTitle">Reader Note</h2>
+          <div id="readerNoteText"></div>
+        </section>
+
+        <section class="highlights" id="highlights" aria-labelledby="highlightsTitle">
+          <h2 id="highlightsTitle">Marked Original Passages</h2>
+          <div class="highlightGrid" id="highlightGrid"></div>
+        </section>
+
+        <section class="chapterList" id="chapterList" aria-label="Text chapters"></section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script src="../../reader-resume.js?v=20260723-v6" data-work-id="seneca"></script>
+    <script src="../../pwa.js?v=20260720-unified4"></script>
+  </body>
+</html>

@@ -1,0 +1,415 @@
+* { box-sizing: border-box; }
+
+html {
+  background: var(--wisdom-bg, #ffffff);
+  color: var(--wisdom-ink, #1b1b19);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-width: 0;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--wisdom-bg, #ffffff);
+}
+
+a { color: inherit; }
+
+.mapShell {
+  width: min(calc(100% - 40px), 860px);
+  margin: 0 auto;
+  padding: 26px 0 max(64px, env(safe-area-inset-bottom));
+}
+
+.mapShell:focus { outline: 0; }
+
+.crumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 44px;
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.78rem;
+}
+
+.crumb a {
+  color: var(--wisdom-accent, #2d5b49);
+  font-weight: 760;
+  text-underline-offset: 3px;
+}
+
+.mapHero {
+  max-width: 880px;
+  padding: clamp(40px, 7vw, 78px) 0 clamp(42px, 6vw, 72px);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--wisdom-accent, #2d5b49);
+  font-size: 0.69rem;
+  font-weight: 830;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mapHero h1 {
+  margin: 0;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 620;
+  letter-spacing: -0.065em;
+  line-height: 0.93;
+}
+
+.mapHero h1 em { font-weight: 450; }
+
+.mapHero > p:last-child {
+  max-width: 700px;
+  margin: 28px 0 0;
+  color: var(--wisdom-muted, #68716d);
+  font-size: clamp(1rem, 1.7vw, 1.18rem);
+  line-height: 1.65;
+}
+
+.burtonCard,
+.starts,
+.inventory,
+.corrections,
+.mapFooter {
+  border-block: 1px solid var(--wisdom-line, #e5e5df);
+  background: #ffffff;
+}
+
+.burtonCard {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(28px, 5vw, 64px);
+  padding: clamp(26px, 4.6vw, 52px);
+  color: var(--wisdom-ink, #1b1b19);
+}
+
+.burtonCard .eyebrow { color: var(--wisdom-muted, #6e6e68); }
+
+.burtonCard h2,
+.starts h2,
+.inventory h2 {
+  margin: 0;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3.4vw, 2.7rem);
+  font-weight: 620;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.burtonCopy p {
+  margin: 0;
+  color: var(--wisdom-ink, #1b1b19);
+  line-height: 1.62;
+}
+
+.burtonCopy .correction {
+  margin-top: 16px;
+  color: var(--wisdom-muted, #6e6e68);
+  font-size: 0.82rem;
+}
+
+.sourceActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.sourceActions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  border: 1px solid var(--wisdom-line, #e5e5df);
+  border-radius: 3px;
+  padding: 11px 15px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.sourceActions a:first-child { background: var(--wisdom-ink, #1b1b19); color: #ffffff; }
+
+.starts,
+.inventory { margin-top: 22px; padding: clamp(24px, 4.5vw, 48px); }
+
+.startGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: 26px;
+}
+
+.startCard {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border-top: 1px solid var(--wisdom-line, #e5e5df);
+  padding: 20px 0;
+  background: #ffffff;
+}
+
+.startNumber,
+.referenceMeta {
+  color: var(--wisdom-accent, #2d5b49);
+  font-size: 0.66rem;
+  font-weight: 820;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.startCard h3 {
+  margin: 18px 0 5px;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 630;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.startCreator {
+  margin: 0;
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.startWhy {
+  flex: 1 1 auto;
+  margin: 20px 0;
+  color: #36403c;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.startCard a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  align-self: flex-start;
+  color: var(--wisdom-accent, #2d5b49);
+  font-size: 0.78rem;
+  font-weight: 820;
+  text-underline-offset: 4px;
+}
+
+.counterargument {
+  margin: 26px 0 0;
+  border-left: 3px solid var(--wisdom-accent, #2d5b49);
+  padding: 2px 0 2px 16px;
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.85rem;
+  line-height: 1.58;
+}
+
+.inventoryHeader {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.inventoryCount {
+  margin: 0 0 5px;
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.mapControls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 0.32fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.mapControls label { min-width: 0; }
+
+.mapControls label > span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.7rem;
+  font-weight: 730;
+}
+
+.mapControls input,
+.mapControls select {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid rgba(23, 32, 29, 0.2);
+  border-radius: 3px;
+  background: #fff;
+  color: var(--wisdom-ink, #17201d);
+  padding: 10px 13px;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.mapControls input:focus-visible,
+.mapControls select:focus-visible,
+.sourceActions a:focus-visible,
+.startCard a:focus-visible,
+.referenceSource a:focus-visible,
+.corrections summary:focus-visible {
+  outline: 3px solid rgba(45, 91, 73, 0.32);
+  outline-offset: 2px;
+}
+
+.rightsLegend {
+  margin: 20px 0 4px;
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.referenceList { margin-top: 18px; }
+
+.referenceRow {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 20px;
+  padding: 23px 2px;
+  border-top: 1px solid var(--wisdom-line, rgba(23, 32, 29, 0.14));
+}
+
+.referenceChapter {
+  color: var(--wisdom-accent, #2d5b49);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 820;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.referenceIdentity { min-width: 0; }
+
+.referenceIdentity h3 {
+  margin: 6px 0 5px;
+  overflow-wrap: anywhere;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-size: clamp(1.08rem, 2vw, 1.3rem);
+  font-weight: 630;
+  letter-spacing: -0.025em;
+  line-height: 1.16;
+}
+
+.referenceCreator,
+.referenceRole,
+.referenceSource { margin: 0; }
+
+.referenceCreator {
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.referenceRole {
+  color: #36403c;
+  font-size: 0.86rem;
+  line-height: 1.58;
+}
+
+.referenceSource {
+  margin-top: 10px;
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+.referenceSource a {
+  color: var(--wisdom-accent, #2d5b49);
+  font-weight: 760;
+  text-underline-offset: 3px;
+}
+
+.emptyState {
+  margin: 24px 0 0;
+  color: var(--wisdom-muted, #68716d);
+}
+
+.corrections { margin-top: 22px; overflow: hidden; }
+
+.corrections summary {
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+  cursor: pointer;
+  padding: 12px clamp(20px, 4vw, 42px);
+  font-weight: 780;
+}
+
+.corrections > div {
+  padding: 0 clamp(20px, 4vw, 42px) 26px;
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.excludedItem {
+  margin: 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--wisdom-line, rgba(23, 32, 29, 0.14));
+}
+
+.excludedItem strong { color: var(--wisdom-ink, #17201d); }
+
+.mapFooter {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  margin-top: 22px;
+  padding: clamp(24px, 4vw, 42px);
+}
+
+.mapFooter p {
+  margin: 0;
+  color: var(--wisdom-muted, #68716d);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.mapFooter p:first-child {
+  color: var(--wisdom-ink, #17201d);
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-size: 1.08rem;
+}
+
+@media (max-width: 760px) {
+  .mapShell { width: min(calc(100% - 28px), 1100px); }
+  .mapHero h1 { font-size: clamp(2.85rem, 13vw, 4rem); }
+  .burtonCard { grid-template-columns: 1fr; gap: 22px; }
+  .startGrid { grid-template-columns: 1fr; }
+  .mapControls { grid-template-columns: 1fr; }
+  .referenceRow { grid-template-columns: 58px minmax(0, 1fr); gap: 12px; }
+  .referenceContext { grid-column: 2; }
+  .mapFooter { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 430px) {
+  .mapShell { width: min(calc(100% - 24px), 1100px); }
+  .mapHero { padding-top: 34px; }
+  .inventoryHeader { align-items: start; flex-direction: column; gap: 7px; }
+  .inventoryCount { margin: 0; }
+  .referenceRow { grid-template-columns: 1fr; }
+  .referenceContext { grid-column: 1; }
+}
+
+@media (max-height: 460px) and (orientation: landscape) {
+  .mapShell { padding-top: 18px; }
+  .mapHero { padding: 30px 0 40px; }
+  .mapHero h1 { font-size: 3.5rem; }
+  .burtonCard { grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 1.3fr); }
+  .startGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

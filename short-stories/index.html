@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Stories · Wisdom</title>
+    <link rel="manifest" href="/wisdom/manifest.webmanifest" />
+    <link rel="icon" href="/wisdom/icons/wisdom-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wisdom/icons/wisdom-icon-180.png" />
+    <link rel="stylesheet" href="/wisdom/app-shell.css?v=20260720-unified4" />
+    <link rel="stylesheet" href="/wisdom/short-stories/short-stories.css?v=20260720-unified4" />
+  </head>
+  <body>
+    <a class="wisdomSkip" href="#main">Skip to stories</a>
+    <header class="wisdomHeader">
+      <div class="wisdomHeaderInner">
+        <a class="wisdomBrand" href="/wisdom/">Wisdom</a>
+        <nav class="wisdomTabs" aria-label="Wisdom">
+          <a href="/wisdom/">Home</a>
+          <a href="/wisdom/essays/" aria-current="page">Essays</a>
+          <a href="/wisdom/books/">Books</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="storyShell" id="main" tabindex="-1">
+      <header class="storyIntro">
+        <p>ESSAYS · LITERATURE</p>
+        <h1>Stories</h1>
+        <span>Follow one question for three stories.</span>
+      </header>
+
+      <section class="readSection" aria-labelledby="readTitle">
+        <div class="sectionTop"><h2 id="readTitle">Recently read</h2><span>Reread anytime</span></div>
+        <div class="readGrid" id="readGrid"></div>
+      </section>
+
+      <nav class="pathPicker" id="pathPicker" aria-label="Story paths"></nav>
+
+      <section class="pathSection" aria-labelledby="pathTitle">
+        <div class="pathHeading">
+          <div><p>READ IN ORDER</p><h2 id="pathTitle"></h2></div>
+          <span id="pathNote"></span>
+        </div>
+        <ol class="storyList" id="storyList"></ol>
+      </section>
+
+      <footer class="storyFooter">Full text appears only when the edition permits it. Rights and source notes stay attached to each catalog record.</footer>
+    </main>
+
+    <script src="/wisdom/short-stories/catalog.js?v=20260720-unified4"></script>
+    <script src="/wisdom/short-stories/app.js?v=20260720-unified4"></script>
+    <script src="/wisdom/pwa.js?v=20260720-unified4"></script>
+  </body>
+</html>

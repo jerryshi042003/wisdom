@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Wisdom" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Books · Wisdom</title>
+    <link rel="manifest" href="/wisdom/manifest.webmanifest" />
+    <link rel="icon" href="/wisdom/icons/wisdom-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wisdom/icons/wisdom-icon-180.png" />
+    <link rel="stylesheet" href="/wisdom/app-shell.css?v=20260720-unified4" />
+    <link rel="stylesheet" href="books.css?v=20260720-kafka4" />
+    <script defer src="/wisdom/v1-data.js?v=20260720-kafka4"></script>
+    <script defer src="/wisdom/v1-model.js?v=20260720-unified4"></script>
+    <script defer src="/wisdom/essays/catalog-source-v3.js?v=20260720-unified4"></script>
+    <script defer src="/wisdom/essays/state.js?v=20260720-unified4"></script>
+    <script defer src="books.js?v=20260720-kafka4"></script>
+    <script defer src="/wisdom/pwa.js?v=20260720-unified4"></script>
+  </head>
+  <body class="booksPage">
+    <a class="wisdomSkip" href="#main">Skip to books</a>
+
+    <header class="wisdomHeader">
+      <div class="wisdomHeaderInner">
+        <a class="wisdomBrand" href="/wisdom/">Wisdom</a>
+        <nav class="wisdomTabs" aria-label="Wisdom">
+          <a href="/wisdom/">Home</a>
+          <a href="/wisdom/essays/">Essays</a>
+          <a href="/wisdom/books/" aria-current="page">Books</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="booksShell" id="main" tabindex="-1">
+      <header class="booksHero">
+        <p class="booksEyebrow">Ten reading paths</p>
+        <h1>Books</h1>
+        <p>Pick one world and stay with it.</p>
+      </header>
+
+      <p class="stateNotice" id="stateNotice" role="status" aria-live="polite" hidden></p>
+
+      <div class="bookGroups">
+        <section class="bookGroup" aria-labelledby="worldsTitle">
+          <header class="bookGroupHeader">
+            <div>
+              <p>Read in order</p>
+              <h2 id="worldsTitle">Epic &amp; story worlds</h2>
+            </div>
+            <a href="/wisdom/homer/">Homer context</a>
+          </header>
+          <div class="bookList" id="epicWorlds"></div>
+        </section>
+
+        <section class="bookGroup" aria-labelledby="selfTitle">
+          <header class="bookGroupHeader">
+            <div>
+              <p>Read in order</p>
+              <h2 id="selfTitle">Self, role &amp; mortality</h2>
+            </div>
+          </header>
+          <div class="bookList" id="selfRole"></div>
+        </section>
+
+        <section class="bookGroup" aria-labelledby="nextTitle">
+          <header class="bookGroupHeader">
+            <div>
+              <p>Complete public-domain texts</p>
+              <h2 id="nextTitle">Three larger worlds</h2>
+            </div>
+          </header>
+          <div class="bookList" id="nextClassics"></div>
+        </section>
+      </div>
+
+      <section class="bookCompanion" aria-labelledby="privateBermanTitle">
+        <a class="bookCompanionLink" href="/wisdom/books/berman-reader/">
+          <span class="bookCompanionCopy">
+            <span class="bookCompanionEyebrow">Private cleaned reader · 41 sections</span>
+            <strong id="privateBermanTitle"><cite>All That Is Solid Melts Into Air</cite></strong>
+            <span>The argument without scan debris, with selective orientation only when it helps.</span>
+          </span>
+          <span class="bookCompanionAction" aria-hidden="true">Open reader →</span>
+        </a>
+      </section>
+
+      <section class="bookCompanion" aria-labelledby="privateKafkaTitle">
+        <a class="bookCompanionLink" href="/wisdom/books/kafka-reader/">
+          <span class="bookCompanionCopy">
+            <span class="bookCompanionEyebrow">Private full-book reader · 49 chapters</span>
+            <strong id="privateKafkaTitle"><cite>Kafka on the Shore</cite></strong>
+            <span>Upload once on the computer; one encrypted device link brings every private book and marker to the phone.</span>
+          </span>
+          <span class="bookCompanionAction" aria-hidden="true">Open reader →</span>
+        </a>
+      </section>
+
+      <section class="bookCompanion" aria-labelledby="kafkaTitle">
+        <a class="bookCompanionLink" href="/wisdom/books/kafka/">
+          <span class="bookCompanionCopy">
+            <span class="bookCompanionEyebrow">Novel companion · 48 checked references</span>
+            <strong id="kafkaTitle">Inside <cite>Kafka on the Shore</cite></strong>
+            <span>Three useful starts, chapter locators, and the exact Burton trail.</span>
+          </span>
+          <span class="bookCompanionAction" aria-hidden="true">Open map →</span>
+        </a>
+      </section>
+
+      <section class="bookCompanion" aria-labelledby="kafkaAudioTitle">
+        <a class="bookCompanionLink" href="/wisdom/books/kafka-audio/">
+          <span class="bookCompanionCopy">
+            <span class="bookCompanionEyebrow">Listening guide · Prologue + 49 chapters</span>
+            <strong id="kafkaAudioTitle"><cite>Kafka on the Shore</cite> audiobook map</strong>
+            <span>Compare three voices, see exact public-upload coverage, and switch cleanly after Tangku ends.</span>
+          </span>
+          <span class="bookCompanionAction" aria-hidden="true">Choose a voice →</span>
+        </a>
+      </section>
+
+      <noscript><p class="stateNotice">JavaScript is required to show saved reading progress.</p></noscript>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Wisdom" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Essays · Wisdom</title>
+    <link rel="manifest" href="/wisdom/manifest.webmanifest" />
+    <link rel="icon" href="/wisdom/icons/wisdom-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wisdom/icons/wisdom-icon-180.png" />
+    <link rel="stylesheet" href="/wisdom/app-shell.css?v=20260720-unified4" />
+    <link rel="stylesheet" href="library.css?v=20260720-sources2" />
+  </head>
+  <body>
+    <a class="wisdomSkip" href="#main">Skip to essays</a>
+    <header class="wisdomHeader">
+      <div class="wisdomHeaderInner">
+        <a class="wisdomBrand" href="/wisdom/">Wisdom</a>
+        <nav class="wisdomTabs" aria-label="Wisdom">
+          <a href="/wisdom/">Home</a>
+          <a href="/wisdom/essays/" aria-current="page">Essays</a>
+          <a href="/wisdom/books/">Books</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="essayLibrary" id="main" tabindex="-1">
+      <header class="libraryIntro">
+        <p class="libraryEyebrow">Short works, arranged to remember</p>
+        <h1>Essays</h1>
+        <p>Choose one lane. Read its short path in order before browsing everything.</p>
+      </header>
+
+      <details class="essaySourcePolicy">
+        <summary>How essay sources work</summary>
+        <div>
+          <p><strong>Read here</strong> means an exact public-domain or permissioned source is stored with attribution.</p>
+          <p><strong>Guided here</strong> means Wisdom stores a rights-safe guide or personal-copy companion, not the copyrighted work.</p>
+          <p><strong>At source</strong> means the catalog keeps metadata, the selection reason, rights status, and a direct legal link only.</p>
+          <p>Inside a reader, open <strong>Source</strong> for the edition, current URL, capture/version information, and rights boundary.</p>
+        </div>
+      </details>
+
+      <label class="domainSelectLabel" for="domainSelect">
+        <span>Essay domain</span>
+        <select id="domainSelect" aria-label="Essay domain"></select>
+      </label>
+      <nav class="domainPicker" id="domainPicker" aria-label="Essay domains"></nav>
+
+      <section class="domainPanel" aria-labelledby="domainTitle">
+        <div class="domainHeading">
+          <div>
+            <p class="sectionLabel" id="pathKicker">Read in this order</p>
+            <h2 id="domainTitle">Stories</h2>
+          </div>
+          <p id="domainNote"></p>
+        </div>
+        <ol class="pathList" id="pathList"></ol>
+        <a class="storyShelfLink" id="storyShelfLink" href="/wisdom/short-stories/" hidden>
+          <span><strong>Open the complete story shelf</strong><small>Sources, rights, and the next bounded sequence</small></span>
+          <span aria-hidden="true">View</span>
+        </a>
+      </section>
+
+      <section class="catalogPanel" aria-labelledby="catalogTitle">
+        <div class="catalogHeading">
+          <div>
+            <p class="sectionLabel">Library</p>
+            <h2 id="catalogTitle">Browse by author</h2>
+          </div>
+          <p id="resultCount" role="status" aria-live="polite"></p>
+        </div>
+
+        <form class="libraryTools" id="libraryTools" role="search">
+          <label class="searchField" for="essaySearch">
+            <span class="srOnly">Search all essays</span>
+            <input id="essaySearch" name="q" type="search" autocomplete="off" placeholder="Search title, author, or idea" />
+          </label>
+          <label class="availabilityField" for="availabilityFilter">
+            <span class="srOnly">Availability</span>
+            <select id="availabilityFilter" name="availability">
+              <option value="ready">Read in Wisdom</option>
+              <option value="all">Everything</option>
+            </select>
+          </label>
+        </form>
+
+        <div class="catalogResults" id="catalogResults"></div>
+      </section>
+
+      <noscript>
+        <p class="noScript">JavaScript is needed to filter the catalog. You can still open <a href="/wisdom/short-stories/">Short Stories</a> or return <a href="/wisdom/">Home</a>.</p>
+      </noscript>
+    </main>
+
+    <script src="/wisdom/v1-data.js?v=20260720-unified4"></script>
+    <script src="catalog-source-v3.js"></script>
+    <script src="state.js?v=20260720-unified4"></script>
+    <script src="library.js?v=20260720-sources2"></script>
+    <script src="/wisdom/pwa.js?v=20260720-unified4"></script>
+  </body>
+</html>

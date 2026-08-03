@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f5f2eb" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Wisdom" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Kafka listening guide · Wisdom</title>
+    <link rel="manifest" href="/wisdom/manifest.webmanifest" />
+    <link rel="icon" href="/wisdom/icons/wisdom-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wisdom/icons/wisdom-icon-180.png" />
+    <link rel="stylesheet" href="/wisdom/app-shell.css?v=20260725-kafka-audio2" />
+    <link rel="stylesheet" href="styles.css?v=20260725-kafka-audio2" />
+    <script defer src="data.js?v=20260725-kafka-audio2"></script>
+    <script defer src="app.js?v=20260725-kafka-audio2"></script>
+    <script defer src="/wisdom/pwa.js?v=20260725-kafka-audio2"></script>
+  </head>
+  <body>
+    <a class="wisdomSkip" href="#main">Skip to listening guide</a>
+
+    <header class="wisdomHeader">
+      <div class="wisdomHeaderInner">
+        <a class="wisdomBrand" href="/wisdom/">Wisdom</a>
+        <nav class="wisdomTabs" aria-label="Wisdom">
+          <a href="/wisdom/">Home</a>
+          <a href="/wisdom/essays/">Essays</a>
+          <a href="/wisdom/books/" aria-current="page">Books</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="guideShell" id="main" tabindex="-1">
+      <nav class="crumb" aria-label="Breadcrumb">
+        <a href="/wisdom/books/">Books</a><span aria-hidden="true">/</span>
+        <a href="/wisdom/books/kafka/">Kafka map</a><span aria-hidden="true">/</span>
+        <span>Listening</span>
+      </nav>
+
+      <header class="hero">
+        <p class="eyebrow">Public-upload map · no audio copied</p>
+        <h1>Listen by<br /><em>chapter.</em></h1>
+        <p>Pick the voice first. Then tap any chapter to see the exact upload that covers it.</p>
+      </header>
+
+      <section class="routeCard" aria-labelledby="routeTitle">
+        <div class="routeLead">
+          <p class="eyebrow">Jerry’s route</p>
+          <h2 id="routeTitle">Tangku, then Vesa</h2>
+          <p>Use the polished voice through Chapter 21. Switch once to the complete human series at Chapter 22.</p>
+        </div>
+        <div class="routeSteps" aria-label="Recommended listening route">
+          <button class="routeStep routeStepTangku" type="button" data-jump="1">
+            <span>01</span><strong>Tangku</strong><small>Chapters 1–21</small>
+          </button>
+          <span class="routeArrow" aria-hidden="true">→</span>
+          <button class="routeStep routeStepVesa" type="button" data-jump="22">
+            <span>02</span><strong>VesaVersion2</strong><small>Chapters 22–49</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="timelineSection" aria-labelledby="timelineTitle">
+        <header class="sectionHeader">
+          <div>
+            <p class="eyebrow">Chapter timeline</p>
+            <h2 id="timelineTitle">Where every voice reaches</h2>
+          </div>
+          <div class="timelineLegend" id="timelineLegend" aria-label="Source colors"></div>
+        </header>
+
+        <div class="chapterScroller" aria-label="Choose a chapter">
+          <div class="chapterRail" id="chapterRail" role="list"></div>
+        </div>
+
+        <div class="coverageLanes" id="coverageLanes"></div>
+      </section>
+
+      <section class="chapterPanel" aria-labelledby="selectedChapterTitle">
+        <header class="chapterPanelHeader">
+          <div>
+            <p class="eyebrow" id="selectedChapterEyebrow">Selected chapter</p>
+            <h2 id="selectedChapterTitle">Chapter 1</h2>
+          </div>
+          <p id="selectedChapterCount" role="status" aria-live="polite"></p>
+        </header>
+        <div class="chapterSources" id="chapterSources"></div>
+      </section>
+
+      <section class="voicesSection" aria-labelledby="voicesTitle">
+        <header class="sectionHeader">
+          <div>
+            <p class="eyebrow">Voice guide</p>
+            <h2 id="voicesTitle">Choose by feel</h2>
+          </div>
+          <p>Observed labels are listening notes, not creator biographies.</p>
+        </header>
+        <div class="voiceGrid" id="voiceGrid"></div>
+      </section>
+
+      <details class="modelAudit">
+        <summary>
+          <span>
+            <small>Reverse-speaker audit</small>
+            <strong>What is Tangku’s model?</strong>
+          </span>
+          <span aria-hidden="true">＋</span>
+        </summary>
+        <div class="auditBody" id="modelAuditBody"></div>
+      </details>
+
+      <details class="minorSources">
+        <summary>
+          <span>
+            <small>Other public finds</small>
+            <strong>Short and incomplete series</strong>
+          </span>
+          <span aria-hidden="true">＋</span>
+        </summary>
+        <div class="minorGrid" id="minorGrid"></div>
+      </details>
+
+      <footer class="guideFooter">
+        <p>Availability can change. This guide records public YouTube listings checked on July 25, 2026; it stores links and metadata only.</p>
+        <div>
+          <a href="/wisdom/books/kafka-reader/">Open private reader</a>
+          <a href="/wisdom/books/kafka/">Open reference map</a>
+        </div>
+      </footer>
+
+      <noscript><p class="emptyState">JavaScript is required to render the chapter map.</p></noscript>
+    </main>
+  </body>
+</html>

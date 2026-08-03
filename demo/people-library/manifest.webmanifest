@@ -1,0 +1,14 @@
+{
+  "name": "Wisdom · people-first library demo",
+  "short_name": "Wisdom Demo",
+  "description": "A review build for Jerry's people-first reading and listening library.",
+  "start_url": "/wisdom/demo/people-library/#home",
+  "scope": "/wisdom/demo/people-library/",
+  "display": "standalone",
+  "background_color": "#f4f0e7",
+  "theme_color": "#f4f0e7",
+  "icons": [
+    { "src": "/wisdom/icons/wisdom-icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/wisdom/icons/wisdom-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

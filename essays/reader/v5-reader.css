@@ -1,0 +1,190 @@
+.v5ReaderBar {
+  position: sticky;
+  z-index: 8;
+  top: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 22px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.v5CurrentUnit {
+  color: var(--muted);
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.v5ReaderMenu { position: relative; }
+
+.v5ReaderMenu > summary {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.v5ReaderMenu > summary::-webkit-details-marker { display: none; }
+details:not([open]) > :not(summary) { display: none !important; }
+
+.v5ContentsList,
+.v5MoreBody {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 7px);
+  max-height: min(68vh, 560px);
+  overflow: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 14px 34px rgba(32, 36, 43, 0.12);
+}
+
+.v5ContentsList {
+  left: 0;
+  display: grid;
+  width: min(330px, calc(100vw - 24px));
+  gap: 2px;
+}
+
+.v5ContentsItem {
+  min-height: 42px;
+  color: var(--ink);
+  cursor: pointer;
+  border: 0;
+  background: #fff;
+  padding: 8px 10px;
+  text-align: left;
+  font: 650 13px/1.35 ui-sans-serif, system-ui, sans-serif;
+}
+
+.v5ContentsItem:hover,
+.v5ContentsItem:focus-visible,
+.v5ContentsItem[aria-current="true"] { background: #f4f5f5; }
+
+.v5MoreBody {
+  right: 0;
+  width: min(440px, calc(100vw - 24px));
+  padding: 4px 16px 16px;
+}
+
+.v5MoreBody > * { margin-block: 0; }
+.v6ActiveBookTools { display: grid; }
+.v6ActiveBookTools:empty { display: none; }
+.v6ActiveBookTools .privateViewToolbar { margin: 0; }
+.v6ActiveBookTools .privateBookAnalysis { margin: 0; }
+.v6ActiveBookTools .companionGuide { margin: 0; }
+.v6ActiveBookTools .unitComplete { margin: 0; }
+.v5BookUnit > summary { display: none; }
+.v5BookUnit { border-top: 0; }
+.v5BookUnit .guideUnitContent { padding-top: 0; }
+
+.v5UnitPager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+
+.v5PagerButton {
+  min-height: 44px;
+  color: var(--ink);
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: #fff;
+  font: 700 13px/1 ui-sans-serif, system-ui, sans-serif;
+}
+
+.v5PagerButton:disabled { opacity: .35; cursor: default; }
+
+.v5AfterReading {
+  margin-top: 12px;
+  border-block: 1px solid var(--line);
+}
+
+.v5AfterReading > summary {
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.v5AfterReadingBody { padding-bottom: 12px; }
+.v5Reader .continueRow { display: none; }
+
+.privateViewToolbar {
+  display: block;
+  margin: -18px 0 30px;
+  padding: 0;
+}
+
+.privateViewToolbar > summary {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  color: var(--muted);
+  font: 650 12.5px/1.2 ui-sans-serif, system-ui, sans-serif;
+}
+
+.privateViewToolbar > summary::-webkit-details-marker { display: none; }
+.privateViewToolbarBody { display: grid; gap: 2px; padding: 4px 0 8px; }
+.privateViewToolbarBody .privateModeButton { min-height: 42px; text-align: left; }
+
+@media (max-width: 480px) {
+  .v5ReaderBar { gap: 8px; }
+  .v5CurrentUnit { font-size: 12px; }
+  .v5MoreBody { right: -2px; }
+}
+
+/* Authored paragraph help stays quiet until the reader asks for it. */
+.essayReaderPage .paraNote {
+  background: transparent;
+  border-color: var(--line);
+  border-radius: 0;
+  padding: 0;
+}
+
+.essayReaderPage .paraNote > summary {
+  min-height: 44px;
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 0;
+  font: 700 12.5px/1.4 ui-sans-serif, system-ui, sans-serif;
+  list-style: none;
+}
+
+.essayReaderPage .paraNote > summary::-webkit-details-marker { display: none; }
+.essayReaderPage .paraNote > summary::after {
+  content: "+";
+  color: var(--muted);
+  font-size: 17px;
+}
+.essayReaderPage .paraNote[open] > summary::after { content: "−"; }
+
+.essayReaderPage .articleBody .paraNote > p {
+  color: #3f3729;
+  background: var(--note);
+  border-left: 2px solid #d8c9aa;
+  margin: 0 0 14px;
+  padding: 10px 12px;
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Wisdom" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wisdom-sync-base" content="https://health-sync-02qr.onrender.com" />
+    <title>Essay Reader - Wisdom</title>
+    <link rel="manifest" href="/wisdom/manifest.webmanifest" />
+    <link rel="icon" href="/wisdom/icons/wisdom-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wisdom/icons/wisdom-icon-180.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/wisdom/icons/wisdom-icon-192.png" />
+    <link rel="stylesheet" href="../essays-source-v3.css?v=20260720-unified4" />
+    <link rel="stylesheet" href="v5-reader.css?v=20260723-v7-content" />
+    <link rel="stylesheet" href="/wisdom/app-shell.css?v=20260720-unified4" />
+  </head>
+  <body>
+    <a class="skipLink wisdomSkip" href="#articleBody">Skip to reading</a>
+    <header class="wisdomHeader">
+      <div class="wisdomHeaderInner">
+        <a class="wisdomBrand" href="/wisdom/">Wisdom</a>
+        <nav class="wisdomTabs" aria-label="Wisdom">
+          <a href="/wisdom/">Home</a>
+          <a href="/wisdom/essays/" aria-current="page">Essays</a>
+          <a href="/wisdom/books/">Books</a>
+        </nav>
+      </div>
+    </header>
+    <main class="shell">
+      <nav class="readerTop" aria-label="Reader navigation">
+        <details class="readerTools">
+          <summary>Text</summary>
+          <div class="controls">
+            <button class="ctrlButton" type="button" id="fontDown" aria-label="Smaller text">A−</button>
+            <button class="ctrlButton" type="button" id="fontUp" aria-label="Larger text">A+</button>
+            <button class="ctrlButton" type="button" id="copyAll">Copy</button>
+          </div>
+        </details>
+      </nav>
+
+      <header class="readerHero">
+        <p class="eyebrow" id="eyebrow">Essay</p>
+        <h1 id="title">Loading…</h1>
+        <p class="byline" id="byline"></p>
+        <p class="sourceLine" id="sourceLine"></p>
+        <div id="provenanceSlot"></div>
+      </header>
+
+      <details class="readerContext" id="readerContext" hidden>
+        <summary>Context</summary>
+        <div class="readerContextBody">
+          <section class="whyBand" id="whyBand" hidden>
+            <h2>Why this is on the shelf</h2>
+            <p id="whyText"></p>
+          </section>
+
+          <section class="whyBand guideBand" id="guideBand" hidden>
+            <h2>How to read this</h2>
+            <div id="guideIntro"></div>
+          </section>
+        </div>
+      </details>
+
+      <section class="audioDock" id="audioDock" hidden aria-label="Listen">
+        <h2>Listen</h2>
+        <div class="parts" id="audioParts"></div>
+        <audio id="audioPlayer" controls preload="none" style="width: 100%"></audio>
+        <p class="audioNote" id="audioNote"></p>
+      </section>
+
+      <section id="metaCardSlot"></section>
+
+      <article class="articleBody" id="articleBody" tabindex="-1" aria-label="Essay text"></article>
+
+      <nav class="pagerRow" id="pagerRow" aria-label="Next essay"></nav>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../catalog-source-v3.js?v=20260720-unified4"></script>
+    <script src="../state.js?v=20260712-linked-guide1"></script>
+    <script>
+      var readerHome = new URLSearchParams(location.search).get("essay") === "homer-odyssey" ? "Books" : "Essays";
+      var readerBrand = document.querySelector(".wisdomBrand");
+      readerBrand.textContent = "‹ " + readerHome;
+      readerBrand.href = "/wisdom/" + readerHome.toLowerCase() + "/wisdom/";
+      document.querySelector(".wisdomTabs").hidden = true;
+      document.body.classList.add("readerFocusPage");
+    </script>
+    <script src="/wisdom/books/kafka-reader/sync-crypto.js?v=20260728-odyssey1"></script>
+    <script src="/wisdom/books/kafka-reader/sync-client.js?v=20260728-odyssey1"></script>
+    <script src="/wisdom/books/private-library.js?v=20260728-odyssey1"></script>
+    <script src="private-source.js?v=20260728-odyssey1"></script>
+    <script src="odyssey-sync.js?v=20260728-odyssey1"></script>
+    <script src="app-source-v3.js?v=20260728-odyssey1"></script>
+    <script src="/wisdom/pwa.js?v=20260728-odyssey1"></script>
+  </body>
+</html>

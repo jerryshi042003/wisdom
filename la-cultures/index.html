@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Where to Eat in Cultural Los Angeles</title>
+<meta name="description" content="Type a neighbourhood or ZIP code and see which communities live there, how concentrated they are, and the specific places worth going — with the reason and a test you can run yourself.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <span class="brand-name">Cultural Los Angeles</span>
+      <span class="brand-sub">17 communities · 82 places · by what you need</span>
+    </div>
+    <form class="search" id="search-form" role="search" autocomplete="off">
+      <svg class="mag" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/wisdom/><path d="M10 10l4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/wisdom/></svg>
+      <input id="q" type="search" placeholder="Baldwin Hills, SGV, Torrance, 90008…"
+             aria-label="Search a neighbourhood, city, region or ZIP code">
+      <button type="button" id="clear" class="clear" aria-label="Clear search" hidden>&times;</button>
+      <div class="suggest" id="suggest" role="listbox" hidden></div>
+    </form>
+    <a class="method-link" href="method.html">Method &amp; sources</a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ column 1 : ranked communities ============ -->
+  <section class="rail" aria-label="Communities, ranked by share of Los Angeles County">
+    <div class="rail-head">
+      <h2>Communities</h2>
+      <span class="rail-sub">by share of L.A. County</span>
+    </div>
+    <div id="rail-list" class="rail-list"></div>
+    <p class="rail-foot">
+      Ranked by population share. Jewish Los Angeles has no census figure &mdash;
+      religion is not asked &mdash; and sits last for that reason, not that one.
+      <a href="method.html">How this was decided</a>
+    </p>
+  </section>
+
+  <!-- ============ column 2 : map + picks ============ -->
+  <section class="stage">
+    <div id="place-result" class="place-result" hidden></div>
+
+    <div class="stage-head">
+      <div>
+        <h1 id="stage-title">Pick a community</h1>
+        <p id="stage-sub" class="stage-sub">Or type a neighbourhood, city or ZIP code above.</p>
+      </div>
+      <div class="stage-stats" id="stage-stats"></div>
+    </div>
+
+    <div class="mapcard">
+      <svg id="mapsvg" role="img" aria-label="Map of Los Angeles and Orange counties, ZIP code areas coloured by community concentration"></svg>
+      <div class="mapctl">
+        <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+        <button type="button" data-zoom="out" aria-label="Zoom out">&minus;</button>
+        <button type="button" data-zoom="reset" aria-label="Reset the map view">Reset</button>
+      </div>
+      <div class="maphint" id="maphint"></div>
+    </div>
+
+    <div class="picks-head">
+      <h2 id="picks-title">Where to go</h2>
+      <span class="picks-note" id="picks-note"></span>
+      <span class="picks-disc">Photos show the dish, not the restaurant &mdash;
+        <a href="method.html">why, and how these were sourced</a></span>
+    </div>
+    <div id="picks" class="picks"></div>
+  </section>
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

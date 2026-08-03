@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Wisdom" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Kafka's reading map · Wisdom</title>
+    <link rel="manifest" href="/wisdom/manifest.webmanifest" />
+    <link rel="icon" href="/wisdom/icons/wisdom-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wisdom/icons/wisdom-icon-180.png" />
+    <link rel="stylesheet" href="/wisdom/app-shell.css?v=20260720-kafka4" />
+    <link rel="stylesheet" href="kafka.css?v=20260720-kafka4" />
+    <script defer src="references.js?v=20260720-kafka4"></script>
+    <script defer src="app.js?v=20260720-kafka4"></script>
+    <script defer src="/wisdom/pwa.js?v=20260720-kafka4"></script>
+  </head>
+  <body>
+    <a class="wisdomSkip" href="#main">Skip to reading map</a>
+
+    <header class="wisdomHeader">
+      <div class="wisdomHeaderInner">
+        <a class="wisdomBrand" href="/wisdom/">Wisdom</a>
+        <nav class="wisdomTabs" aria-label="Wisdom">
+          <a href="/wisdom/">Home</a>
+          <a href="/wisdom/essays/">Essays</a>
+          <a href="/wisdom/books/" aria-current="page">Books</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mapShell" id="main" tabindex="-1">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="/wisdom/books/">Books</a><span aria-hidden="true">/</span><span>Kafka on the Shore</span></nav>
+
+      <header class="mapHero">
+        <p class="eyebrow">Chapter companion · no novel text copied</p>
+        <h1>The books inside<br /><em>Kafka on the Shore</em></h1>
+        <p id="mapSubtitle"></p>
+      </header>
+
+      <section class="burtonCard" aria-labelledby="burtonTitle">
+        <div>
+          <p class="eyebrow">The exact Nights trail</p>
+          <h2 id="burtonTitle">Burton, not a generic Arabian Nights</h2>
+        </div>
+        <div class="burtonCopy">
+          <p id="burtonSelection"></p>
+          <p class="correction" id="burtonCorrection"></p>
+          <div class="sourceActions">
+            <a id="burtonExact" target="_blank" rel="noopener noreferrer">Read the exact referenced tale</a>
+            <a id="burtonContinue">Continue the Volume 1 reader</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="starts" aria-labelledby="startsTitle">
+        <header>
+          <p class="eyebrow">One at a time</p>
+          <h2 id="startsTitle">Three useful starts</h2>
+        </header>
+        <div class="startGrid" id="startGrid"></div>
+        <p class="counterargument" id="counterargument"></p>
+      </section>
+
+      <section class="inventory" aria-labelledby="inventoryTitle">
+        <header class="inventoryHeader">
+          <div>
+            <p class="eyebrow">All references, clearly labeled</p>
+            <h2 id="inventoryTitle">Chapter map</h2>
+          </div>
+          <p class="inventoryCount" id="inventoryCount" role="status" aria-live="polite"></p>
+        </header>
+
+        <div class="mapControls" role="search">
+          <label>
+            <span>Search title, author, chapter, or idea</span>
+            <input id="referenceSearch" type="search" autocomplete="off" placeholder="Try Sōseki, spirit, chapter 23…" />
+          </label>
+          <label>
+            <span>Reference type</span>
+            <select id="referenceFilter">
+              <option value="all">Everything</option>
+              <option value="direct">Direct or named works</option>
+              <option value="author">Author or concept only</option>
+              <option value="unresolved">In-world or unresolved</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="rightsLegend"><strong>Access labels:</strong> Read source = a lawful public text; Locate source = identity/source handle only; Metadata only = no verified edition or no reproduction right.</p>
+        <div class="referenceList" id="referenceList"></div>
+        <p class="emptyState" id="emptyState" hidden>No references match that search.</p>
+      </section>
+
+      <details class="corrections">
+        <summary>Common titles this map does not pretend are direct</summary>
+        <div id="excludedList"></div>
+      </details>
+
+      <footer class="mapFooter">
+        <p id="outputPrompt"></p>
+        <p id="sourceMethod"></p>
+      </footer>
+
+      <noscript><p class="emptyState">JavaScript is required to render the checked reference manifest.</p></noscript>
+    </main>
+  </body>
+</html>
