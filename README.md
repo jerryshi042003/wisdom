@@ -2,7 +2,9 @@
 
 Public, privacy-reviewed reading tools and source-backed knowledge surfaces.
 
-Personal reading and research project. No public demo is currently available.
+Personal reading and research project. This repository preserves an earlier
+source snapshot; its GitHub Pages mirror was retired. The personal reading
+workspace continues on a separate deployment.
 
 This repository contains a standalone source snapshot, not a mirror of the private
 personal workspace. It intentionally excludes personal calibration notes,
